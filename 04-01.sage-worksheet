@@ -1,0 +1,45 @@
+{
+	"session_uuid": "b2389347-b5c9-403a-9045-ed714b7b6599",
+	"title": "Lecture 1 on April 1, 2013",
+	"description": "Description",
+	"content": [
+		{
+			"id": "734efd41-2786-4932-bf03-2ef0d06868eb",
+			"note": "Welcome to Math 480!",
+			"input": "plot(sin)",
+			"output": [
+				{
+					"file": {
+						"show": true,
+						"uuid": "dae07465-77cf-4ff4-abb0-c97c0f40a7cf",
+						"filename": "/home/64ad2532/.sage/temp/u/2975/tmp_vO3fAL.svg"
+					}
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			]
+		},
+		{
+			"id": "a8d160bf-891b-4997-add3-001b62941707",
+			"input": "2+7",
+			"output": [
+				{
+					"stdout": "9"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			]
+		},
+		{
+			"id": "efb11b88-ef1f-4c87-9ce2-58cc5fcc3459"
+		}
+	]
+}
