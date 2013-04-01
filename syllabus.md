@@ -8,6 +8,7 @@ Prerequisite: Math 126 (Calculus) and a Programming Language
 
 Text: The [Sage website](http://www.sagemath.org) has thousands of pages of resources.  Start with [the tutorial](http://sagemath.org/doc/tutorial/).
 
+
 ## Homework and Exams
 - Homework: assigned weekly
 - Final project: about 5 pages of written text and some nontrivial programming
