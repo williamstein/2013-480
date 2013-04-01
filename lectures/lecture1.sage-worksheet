@@ -1,0 +1,146 @@
+{
+	"session_uuid": "679c1943-2d04-48ba-8c5a-94989f39767e",
+	"title": "Math 480: Sage -- Open Source Mathematical Software",
+	"description": "Lecture 1 for Math 480",
+	"content": [
+		{
+			"title": "1. Syllabus",
+			"content": [
+				{
+					"id": "a432cdb1-2cbf-4c52-bd39-f6026894af01",
+					"note": "You can find the course website on github, linked to from my homepage: wstein.org.",
+					"input": "%html\n<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<h1>Math 480 (Spring 2013, UW) Syllabus</h1>                                                                                                                                                                       \n                                                                                                                                                                                                                   \n<p>Description: Math 480 is a course about the open source mathematical software Sage.</p>                                                                                                                         \n                                                                                                                                                                                                                   \n<p>Instructor: William Stein, Professor of Mathematics, Office Padelford 423, Office Hours: 12:30-2 MWF, Webpage: <a href=\"http://wstein.org\">wstein.org</a></p>                                                   \n                                                                                                                                                                                                                   \n<p>Prerequisite: Math 126 (Calculus) and a Programming Language</p>                                                                                                                                                \n                                                                                                                                                                                                                   \n<p>Text: The <a href=\"http://www.sagemath.org\">Sage website</a> has thousands of pages of resources.  Start with <a href=\"http://sagemath.org/doc/tutorial/\">the tutorial</a>.</p>                                 \n                                                                                                                                                                                                                   \n<h2>Homework and Exams</h2>                                                                                                                                                                                        \n                                                                                                                                                                                                                   \n<ul>                                                                                                                                                                                                               \n<li>Homework: assigned weekly</li>                                                                                                                                                                                 \n<li>Final project: about 5 pages of written text and some nontrivial programming</li>                                                                                                                              \n<li>Grade: Homework - 50%, Final project - 50%</li>                                                                                                                                                                \n</ul>                                                                                                                                                                                                              \n                                                                                                                                                                                                                   \n<h2>Lecture Plan and Topics</h2>                                                                                                                                                                                   \n                                                                                                                                                                                                                   \n<ul>                                                                                                                                                                                                               \n<li>I will write this at the end of the first week of class, in light of student feedback.</li>                                                                                                                    \n</ul>                                                                                                                                                                                                              \n                                                                                                                                                                                                                   \n<h2>Past Courses</h2>                                                                                                                                                                                              \n                                                                                                                                                                                                                   \n<p><a href=\"http://wiki.wstein.org/edu/2012/480\">I</a> <a href=\"http://wiki.wstein.org/11/480a\">have</a> <a href=\"http://wiki.wstein.org/edu/2010/581d\">taught</a> <a href=\"http://wiki.wstein.org/10/480b\">this</a\n> <a href=\"http://wiki.wstein.org/09/480b\">course</a> <a href=\"http://wiki.wstein.org/2008/480a\">before</a>.</p> \n</div>",
+					"output": [
+						{
+							"html": "<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<h1>Math 480 (Spring 2013, UW) Syllabus</h1>                                                                                                                                                                       \n<p>Description: Math 480 is a course about the open source mathematical software Sage.</p>                                                                                                                         \n<p>Instructor: William Stein, Professor of Mathematics, Office Padelford 423, Office Hours: 12:30-2 MWF, Webpage: <a href=\"http://wstein.org\">wstein.org</a></p>                                                   \n<p>Prerequisite: Math 126 (Calculus) and a Programming Language</p>                                                                                                                                                \n<p>Text: The <a href=\"http://www.sagemath.org\">Sage website</a> has thousands of pages of resources.  Start with <a href=\"http://sagemath.org/doc/tutorial/\">the tutorial</a>.</p>                                 \n<h2>Homework and Exams</h2>                                                                                                                                                                                        \n<ul>                                                                                                                                                                                                               \n<li>Homework: assigned weekly</li>                                                                                                                                                                                 \n<li>Final project: about 5 pages of written text and some nontrivial programming</li>                                                                                                                              \n<li>Grade: Homework - 50%, Final project - 50%</li>                                                                                                                                                                \n</ul>                                                                                                                                                                                                              \n<h2>Lecture Plan and Topics</h2>                                                                                                                                                                                   \n<ul>                                                                                                                                                                                                               \n<li>I will write this at the end of the first week of class, in light of student feedback.</li>                                                                                                                    \n</ul>                                                                                                                                                                                                              \n<h2>Past Courses</h2>                                                                                                                                                                                              \n<p><a href=\"http://wiki.wstein.org/edu/2012/480\">I</a> <a href=\"http://wiki.wstein.org/11/480a\">have</a> <a href=\"http://wiki.wstein.org/edu/2010/581d\">taught</a> <a href=\"http://wiki.wstein.org/10/480b\">this</a\n> <a href=\"http://wiki.wstein.org/09/480b\">course</a> <a href=\"http://wiki.wstein.org/2008/480a\">before</a>.</p> \n</div>"
+						},
+						{
+							"stdout": ""
+						}
+					]
+				}
+			],
+			"id": "778f9208-bce9-4e2f-8dc6-6defc637acab"
+		},
+		{
+			"title": "2. Introduction to Sage",
+			"content": [
+				{
+					"id": "8be425c3-8f27-48c1-bf17-cf825e6e4562",
+					"input": "%html\n<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n\n<img src=\"http://sagemath.org/pix/sage_logo_new.png\" class=\"pull-right\">\n\nI started the Sage software project in Jan 2005, over 8 years ago. After a year, I came up with this:<br><br>\n\n<h1>Sage Project Mission Statement</h1>    \n<h3>\nCreate a viable free open source alternative to Magma, Maple, Matlab and Mathematica.\n</h3>\n<br><br>\n<h1>What does this mean?</h1>\n\n<ol>\n<br>\n<li><b>Magma</b> - very powerful software for abstract algebra, group theory, combinatorics, arithmetic geometry, exact linear algebra; far more powerful than Maple or Mathematica at these things.   Developed in an academic environment by academics.  Few thousand highly sophisticated users.   Costs a lot of money.  Has its own programming language, which is kind of like Python.</li>\n<br>\n<li><b>Maple</b> - symbolic calculus, graphical user interface, some very powerful advanced mathematics code in certain areas (e.g., PDEs, multivariate polynomial arithmetic, Groebner basis).  About a million users (?).\n Expensive for non-academic use.  Has a straightforward PASCAL-ish (?) programming language. </li> \n<br>\n<li><b>Mathematica</b> - similar to Maple, but more American.  Is also available sort of through Wolfram Alpha, which is very popular with undergrad math students.   Often faster than Maple, in my benchmarks.  Has its own unusual programming language, which is people either love or hate.  About a million users (?)</li>\n<br>\n<li><b>Matlab</b> - focused squarely on floating point applied math computation, and is totally entrenched.  More users than Maple and Mathematica combined. Very expensive.</li>\n\n\n</ol>\n",
+					"output": [
+						{
+							"html": "<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<img src=\"http://sagemath.org/pix/sage_logo_new.png\" class=\"pull-right\">\nI started the Sage software project in Jan 2005, over 8 years ago. After a year, I came up with this:<br><br>\n<h1>Sage Project Mission Statement</h1>    \n<h3>\nCreate a viable free open source alternative to Magma, Maple, Matlab and Mathematica.\n</h3>\n<br><br>\n<h1>What does this mean?</h1>\n<ol>\n<br>\n<li><b>Magma</b> - very powerful software for abstract algebra, group theory, combinatorics, arithmetic geometry, exact linear algebra; far more powerful than Maple or Mathematica at these things.   Developed in an academic environment by academics.  Few thousand highly sophisticated users.   Costs a lot of money.  Has its own programming language, which is kind of like Python.</li>\n<br>\n<li><b>Maple</b> - symbolic calculus, graphical user interface, some very powerful advanced mathematics code in certain areas (e.g., PDEs, multivariate polynomial arithmetic, Groebner basis).  About a million users (?).\n Expensive for non-academic use.  Has a straightforward PASCAL-ish (?) programming language. </li> \n<br>\n<li><b>Mathematica</b> - similar to Maple, but more American.  Is also available sort of through Wolfram Alpha, which is very popular with undergrad math students.   Often faster than Maple, in my benchmarks.  Has its own unusual programming language, which is people either love or hate.  About a million users (?)</li>\n<br>\n<li><b>Matlab</b> - focused squarely on floating point applied math computation, and is totally entrenched.  More users than Maple and Mathematica combined. Very expensive.</li>\n</ol>"
+						},
+						{
+							"stdout": ""
+						}
+					]
+				},
+				{
+					"id": "39bbbdb4-e61c-4a07-b5cc-32fe0165b827",
+					"note": "Let's try it out",
+					"input": "2 + 3",
+					"output": [
+						{
+							"stdout": "5"
+						},
+						{
+							"stdout": "\n"
+						},
+						{
+							"stdout": ""
+						}
+					]
+				},
+				{
+					"id": "1cc313a5-537d-424b-840e-76073acb443f",
+					"note": "Something more advanced (Calculus):",
+					"input": "f = sin(x^2) - x^3+ sqrt(3); show(f)",
+					"output": [
+						{
+							"tex": {
+								"tex": "\\sqrt{3} - x^{3} + \\sin\\left(x^{2}\\right)",
+								"display": true
+							}
+						},
+						{
+							"stdout": ""
+						}
+					]
+				},
+				{
+					"id": "2964489a-1951-4915-ae0b-8cf77b424723",
+					"note": "Text output by default",
+					"input": "g = integrate(f, x); g",
+					"output": [
+						{
+							"stdout": "-1/4*x^4 + 1/8*((I + 1)*sqrt(2)*erf((1/2*I + 1/2)*sqrt(2)*x) + (I - 1)*sqrt(2)*erf((1/2*I - 1/2)*sqrt(2)*x))*sqrt(pi) + sqrt(3)*x"
+						},
+						{
+							"stdout": "\n"
+						},
+						{
+							"stdout": ""
+						}
+					]
+				},
+				{
+					"id": "21f463b8-9485-443e-9a91-1fa9c97e7d20",
+					"note": "Nice math typesetting:",
+					"input": "show(g)",
+					"output": [
+						{
+							"tex": {
+								"tex": "-\\frac{1}{4} \\, x^{4} + \\frac{1}{8} \\, {\\left(\\left(i + 1\\right) \\, \\sqrt{2} \\text{erf}\\left(\\left(\\frac{1}{2} i + \\frac{1}{2}\\right) \\, \\sqrt{2} x\\right) + \\left(i - 1\\right) \\, \\sqrt{2} \\text{erf}\\left(\\left(\\frac{1}{2} i - \\frac{1}{2}\\right) \\, \\sqrt{2} x\\right)\\right)} \\sqrt{\\pi} + \\sqrt{3} x",
+								"display": true
+							}
+						},
+						{
+							"stdout": ""
+						}
+					]
+				},
+				{
+					"id": "d0ae6bf0-9e83-40ae-8e81-dc288dea666a",
+					"note": "Plotting.",
+					"input": "plot(f, 1, 5, figsize=[8,3])",
+					"output": [
+						{
+							"file": {
+								"show": true,
+								"uuid": "66d9c4ee-6e05-47f4-9d29-3e324fcb4a59",
+								"filename": "/home/wstein/.sage/temp/u/23043/tmp_wUKPkK.svg"
+							}
+						},
+						{
+							"stdout": "\n"
+						},
+						{
+							"stdout": ""
+						}
+					]
+				},
+				{
+					"id": "d4e17d77-717f-4d9a-a122-2d813e83fe83"
+				},
+				{
+					"id": "9ce3b358-3ee4-495e-83b6-fc1cb023d463"
+				}
+			],
+			"id": "dccfd3a0-eea6-45ea-909a-9ccca6ae74fb"
+		},
+		{
+			"title": "3. Feedback from Students",
+			"content": [
+				{
+					"id": "e3c87145-214d-4504-9070-8eebe8d7536d"
+				},
+				{
+					"id": "7c6f60c7-eb4a-4fc0-9643-ae30e3fb7c87"
+				}
+			],
+			"id": "43027e4d-4e39-43b8-a096-88c68cbdd71b"
+		}
+	]
+}
