@@ -1,0 +1,28 @@
+\documentclass{article}
+\title{Math 480: Diagnostic}
+\begin{document}
+\maketitle
+
+\newcommand{\q}[1]{\par\noindent{}#1\mbox{}\vspace{3em}\mbox{}}
+
+\q{Name:}
+
+
+\q{Circle the {\em three} of the following topics that you are most interested in learning about in this course.
+\begin{itemize}
+
+\item Typesetting mathematical documents using \LaTeX{}.
+\item Programming using Python
+\item Programming using Cython (a fast Python compiler)
+\item Algorithms for linear algebra over finite fields
+\item Symbolic calculus
+\item Numerical linear algebra
+\item Computational number theory
+\item 
+
+\end{itemize}
+}
+
+
+
+\end{document}
