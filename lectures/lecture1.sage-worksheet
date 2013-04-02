@@ -17,6 +17,9 @@
 						{
 							"stdout": ""
 						}
+					],
+					"hide": [
+						"editor"
 					]
 				}
 			],
@@ -27,23 +30,41 @@
 			"content": [
 				{
 					"id": "8be425c3-8f27-48c1-bf17-cf825e6e4562",
-					"input": "%html\n<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n\n<img src=\"http://sagemath.org/pix/sage_logo_new.png\" class=\"pull-right\">\n\nI started the Sage software project in Jan 2005, over 8 years ago. After a year, I came up with this:<br><br>\n\n<h1>Sage Project Mission Statement</h1>    \n<h3>\nCreate a viable free open source alternative to Magma, Maple, Matlab and Mathematica.\n</h3>\n<br><br>\n<h1>What does this mean?</h1>\n\n<ol>\n<br>\n<li><b>Magma</b> - very powerful software for abstract algebra, group theory, combinatorics, arithmetic geometry, exact linear algebra; far more powerful than Maple or Mathematica at these things.   Developed in an academic environment by academics.  Few thousand highly sophisticated users.   Costs a lot of money.  Has its own programming language, which is kind of like Python.</li>\n<br>\n<li><b>Maple</b> - symbolic calculus, graphical user interface, some very powerful advanced mathematics code in certain areas (e.g., PDEs, multivariate polynomial arithmetic, Groebner basis).  About a million users (?).\n Expensive for non-academic use.  Has a straightforward PASCAL-ish (?) programming language. </li> \n<br>\n<li><b>Mathematica</b> - similar to Maple, but more American.  Is also available sort of through Wolfram Alpha, which is very popular with undergrad math students.   Often faster than Maple, in my benchmarks.  Has its own unusual programming language, which is people either love or hate.  About a million users (?)</li>\n<br>\n<li><b>Matlab</b> - focused squarely on floating point applied math computation, and is totally entrenched.  More users than Maple and Mathematica combined. Very expensive.</li>\n\n\n</ol>\n",
+					"input": "%html\n<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n\n<img src=\"http://sagemath.org/pix/sage_logo_new.png\" class=\"pull-right\">\n\nI started the Sage software project in Jan 2005, over 8 years ago...<br>\n\n<h1>Sage Project Mission Statement</h1>    \n<h3>\nCreate a viable free open source alternative to Magma, Maple, Matlab and Mathematica.\n</h3>\n\n<h1>What does this mean?</h1>\n\n<ol>\n<br>\n<li><b>Magma</b> - very powerful software for abstract algebra, group theory, combinatorics, arithmetic geometry, exact linear algebra; far more powerful than Maple or Mathematica at these things.   Developed in an academic environment by academics.  Few thousand highly sophisticated users.   Costs a lot of money.  Has its own programming language, which is kind of like Python.</li>\n<br>\n<li><b>Maple</b> - symbolic calculus, graphical user interface, some very powerful advanced mathematics code in certain areas (e.g., PDEs, multivariate polynomial arithmetic, Groebner basis).  About a million users (?).\n Expensive for non-academic use.  Has a straightforward PASCAL-ish (?) programming language. </li> \n<br>\n<li><b>Mathematica</b> - similar to Maple, but more American.  Is also available sort of through Wolfram Alpha, which is very popular with undergrad math students.   Often faster than Maple, in my benchmarks.  Has its own unusual programming language, which is people either love or hate.  About a million users (?)</li>\n<br>\n<li><b>Matlab</b> - focused squarely on floating point applied math computation, and is totally entrenched.  More users than Maple and Mathematica combined. Very expensive.  Has its own custom matrix-oriented programming language.   </li>\n\n\n</ol>\n<br>\n\n<b>A viable alternative:<b> comparable functionality, speed, community support, and documentation.  Need not be able to run programs of the systems.   In other words, it is at least possible to switch from one of the other systems with possibly significant effort. ",
 					"output": [
 						{
-							"html": "<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<img src=\"http://sagemath.org/pix/sage_logo_new.png\" class=\"pull-right\">\nI started the Sage software project in Jan 2005, over 8 years ago. After a year, I came up with this:<br><br>\n<h1>Sage Project Mission Statement</h1>    \n<h3>\nCreate a viable free open source alternative to Magma, Maple, Matlab and Mathematica.\n</h3>\n<br><br>\n<h1>What does this mean?</h1>\n<ol>\n<br>\n<li><b>Magma</b> - very powerful software for abstract algebra, group theory, combinatorics, arithmetic geometry, exact linear algebra; far more powerful than Maple or Mathematica at these things.   Developed in an academic environment by academics.  Few thousand highly sophisticated users.   Costs a lot of money.  Has its own programming language, which is kind of like Python.</li>\n<br>\n<li><b>Maple</b> - symbolic calculus, graphical user interface, some very powerful advanced mathematics code in certain areas (e.g., PDEs, multivariate polynomial arithmetic, Groebner basis).  About a million users (?).\n Expensive for non-academic use.  Has a straightforward PASCAL-ish (?) programming language. </li> \n<br>\n<li><b>Mathematica</b> - similar to Maple, but more American.  Is also available sort of through Wolfram Alpha, which is very popular with undergrad math students.   Often faster than Maple, in my benchmarks.  Has its own unusual programming language, which is people either love or hate.  About a million users (?)</li>\n<br>\n<li><b>Matlab</b> - focused squarely on floating point applied math computation, and is totally entrenched.  More users than Maple and Mathematica combined. Very expensive.</li>\n</ol>"
+							"html": "<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<img src=\"http://sagemath.org/pix/sage_logo_new.png\" class=\"pull-right\">\nI started the Sage software project in Jan 2005, over 8 years ago...<br>\n<h1>Sage Project Mission Statement</h1>    \n<h3>\nCreate a viable free open source alternative to Magma, Maple, Matlab and Mathematica.\n</h3>\n<h1>What does this mean?</h1>\n<ol>\n<br>\n<li><b>Magma</b> - very powerful software for abstract algebra, group theory, combinatorics, arithmetic geometry, exact linear algebra; far more powerful than Maple or Mathematica at these things.   Developed in an academic environment by academics.  Few thousand highly sophisticated users.   Costs a lot of money.  Has its own programming language, which is kind of like Python.</li>\n<br>\n<li><b>Maple</b> - symbolic calculus, graphical user interface, some very powerful advanced mathematics code in certain areas (e.g., PDEs, multivariate polynomial arithmetic, Groebner basis).  About a million users (?).\n Expensive for non-academic use.  Has a straightforward PASCAL-ish (?) programming language. </li> \n<br>\n<li><b>Mathematica</b> - similar to Maple, but more American.  Is also available sort of through Wolfram Alpha, which is very popular with undergrad math students.   Often faster than Maple, in my benchmarks.  Has its own unusual programming language, which is people either love or hate.  About a million users (?)</li>\n<br>\n<li><b>Matlab</b> - focused squarely on floating point applied math computation, and is totally entrenched.  More users than Maple and Mathematica combined. Very expensive.  Has its own custom matrix-oriented programming language.   </li>\n</ol>\n<br>\n<b>A viable alternative:<b> comparable functionality, speed, community support, and documentation.  Need not be able to run programs of the systems.   In other words, it is at least possible to switch from one of the other systems with possibly significant effort."
 						},
 						{
 							"stdout": ""
 						}
+					],
+					"hide": [
+						"editor"
+					]
+				},
+				{
+					"id": "69e3e681-8b8d-4403-9309-3bd887a0ab72",
+					"input": "%html\n<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<h1>Today (8 years later)</h1>\n\nSage is completely free and open source, and is huge.  It has hundreds of volunteer developers and tens of thousands of users, and a thriving community. \n<br><br>\n\nThis is a course about how to use Sage...\n",
+					"output": [
+						{
+							"html": "<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<h1>Today (8 years later)</h1>\nSage is completely free and open source, and is huge.  It has hundreds of volunteer developers and tens of thousands of users, and a thriving community. \n<br><br>\nThis is a course about how to use Sage..."
+						},
+						{
+							"stdout": ""
+						}
+					],
+					"hide": [
+						"editor"
 					]
 				},
 				{
 					"id": "39bbbdb4-e61c-4a07-b5cc-32fe0165b827",
-					"note": "Let's try it out",
-					"input": "2 + 3",
+					"note": "First, let's try it out",
+					"input": "2 + 193",
 					"output": [
 						{
-							"stdout": "5"
+							"stdout": "195"
 						},
 						{
 							"stdout": "\n"
@@ -55,14 +76,29 @@
 				},
 				{
 					"id": "1cc313a5-537d-424b-840e-76073acb443f",
-					"note": "Something more advanced (Calculus):",
-					"input": "f = sin(x^2) - x^3+ sqrt(3); show(f)",
+					"note": "Let's do something more advanced (Calculus):",
+					"input": "f = sin(x^3) - x^5 + sqrt(3); f",
 					"output": [
 						{
-							"tex": {
-								"tex": "\\sqrt{3} - x^{3} + \\sin\\left(x^{2}\\right)",
-								"display": true
-							}
+							"stdout": "sqrt(3) - x^5 + sin(x^3)"
+						},
+						{
+							"stdout": "\n"
+						},
+						{
+							"stdout": ""
+						}
+					]
+				},
+				{
+					"id": "da697c05-10c8-42f1-b3b5-faa1ecd1c26b",
+					"input": "type(f)",
+					"output": [
+						{
+							"stdout": "<type 'sage.symbolic.expression.Expression'>"
+						},
+						{
+							"stdout": "\n"
 						},
 						{
 							"stdout": ""
@@ -75,7 +111,7 @@
 					"input": "g = integrate(f, x); g",
 					"output": [
 						{
-							"stdout": "-1/4*x^4 + 1/8*((I + 1)*sqrt(2)*erf((1/2*I + 1/2)*sqrt(2)*x) + (I - 1)*sqrt(2)*erf((1/2*I - 1/2)*sqrt(2)*x))*sqrt(pi) + sqrt(3)*x"
+							"stdout": "-1/6*x^6 - 1/12*((I*sqrt(3) + 1)*gamma(1/3, I*x^3) + (-I*sqrt(3) + 1)*gamma(1/3, -I*x^3))*x/(x^3)^(1/3) + sqrt(3)*x"
 						},
 						{
 							"stdout": "\n"
@@ -92,7 +128,7 @@
 					"output": [
 						{
 							"tex": {
-								"tex": "-\\frac{1}{4} \\, x^{4} + \\frac{1}{8} \\, {\\left(\\left(i + 1\\right) \\, \\sqrt{2} \\text{erf}\\left(\\left(\\frac{1}{2} i + \\frac{1}{2}\\right) \\, \\sqrt{2} x\\right) + \\left(i - 1\\right) \\, \\sqrt{2} \\text{erf}\\left(\\left(\\frac{1}{2} i - \\frac{1}{2}\\right) \\, \\sqrt{2} x\\right)\\right)} \\sqrt{\\pi} + \\sqrt{3} x",
+								"tex": "-\\frac{1}{6} \\, x^{6} - \\frac{{\\left({\\left(i \\, \\sqrt{3} + 1\\right)} \\Gamma\\left(\\frac{1}{3}, i \\, x^{3}\\right) + {\\left(-i \\, \\sqrt{3} + 1\\right)} \\Gamma\\left(\\frac{1}{3}, -i \\, x^{3}\\right)\\right)} x}{12 \\, {\\left(x^{3}\\right)}^{\\left(\\frac{1}{3}\\right)}} + \\sqrt{3} x",
 								"display": true
 							}
 						},
@@ -104,13 +140,13 @@
 				{
 					"id": "d0ae6bf0-9e83-40ae-8e81-dc288dea666a",
 					"note": "Plotting.",
-					"input": "plot(f, 1, 5, figsize=[8,3])",
+					"input": "plot(f, -1, 1, figsize=[8,3])",
 					"output": [
 						{
 							"file": {
 								"show": true,
-								"uuid": "66d9c4ee-6e05-47f4-9d29-3e324fcb4a59",
-								"filename": "/home/wstein/.sage/temp/u/23043/tmp_wUKPkK.svg"
+								"uuid": "0c2c04ad-fae7-4520-a798-da18cbb1da43",
+								"filename": "/home/wstein/.sage/temp/u/23043/tmp_eh6yPp.svg"
 							}
 						},
 						{
@@ -122,10 +158,39 @@
 					]
 				},
 				{
-					"id": "d4e17d77-717f-4d9a-a122-2d813e83fe83"
+					"id": "d4e17d77-717f-4d9a-a122-2d813e83fe83",
+					"note": "Making an interactive web-based graphical interface is ridiculously easy:",
+					"input": "@interact\ndef foo(f=sin(x), c=Color('blue'), thickness=(1..5)):\n    plot(f, 0, 5, thickness=thickness, color=c).show()",
+					"output": [
+						{
+							"stdout": ""
+						}
+					],
+					"hide": [
+						"insert-below"
+					]
 				},
 				{
-					"id": "9ce3b358-3ee4-495e-83b6-fc1cb023d463"
+					"id": "9ce3b358-3ee4-495e-83b6-fc1cb023d463",
+					"note": "The language is PYTHON, which is one of the world's most popular friendly programming languages.",
+					"input": "def do_stuff(n=5):\n    m = n+3\n    k = m*n\n    return k\n\ndo_stuff(10)",
+					"output": [
+						{
+							"stdout": "130"
+						},
+						{
+							"stdout": "\n"
+						},
+						{
+							"stdout": ""
+						}
+					]
+				},
+				{
+					"id": "1f8d87ce-e5ec-4f1e-8fef-1b5fa0afa105"
+				},
+				{
+					"id": "232f779c-ab23-4f4d-bf90-936c7532f865"
 				}
 			],
 			"id": "dccfd3a0-eea6-45ea-909a-9ccca6ae74fb"
@@ -134,7 +199,19 @@
 			"title": "3. Feedback from Students",
 			"content": [
 				{
-					"id": "e3c87145-214d-4504-9070-8eebe8d7536d"
+					"id": "e3c87145-214d-4504-9070-8eebe8d7536d",
+					"input": "%html\n<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<img src=\"http://gsa.thegamernation.org/wp-content/uploads/2013/03/customer-feedbac-survey.jpg\" width=300 class=\"pull-right\">\n<h1>Survey</h1>\n<br><br>\nAnswer the questions on the paper that I handed around the room.  This will impact the selection of course topics. \n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>",
+					"output": [
+						{
+							"html": "<div style=\"border:2px solid grey; box-shadow: 6px 6px 6px 6px #bbb; margin:2em; padding:2em; font-size:15pt\">\n<img src=\"http://gsa.thegamernation.org/wp-content/uploads/2013/03/customer-feedbac-survey.jpg\" width=300 class=\"pull-right\">\n<h1>Survey</h1>\n<br><br>\nAnswer the questions on the paper that I handed around the room.  This will impact the selection of course topics. \n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>"
+						},
+						{
+							"stdout": ""
+						}
+					],
+					"hide": [
+						"editor"
+					]
 				},
 				{
 					"id": "7c6f60c7-eb4a-4fc0-9643-ae30e3fb7c87"
