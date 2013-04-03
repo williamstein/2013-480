@@ -1,0 +1,523 @@
+{
+	"session_uuid": "590a4efa-bf72-4191-9aa2-cf8763aa8ee1",
+	"title": "Title",
+	"description": "Description",
+	"content": [
+		{
+			"title": "Course Topics",
+			"content": [
+				{
+					"id": "c9a82266-0e57-4cfb-a613-b40c9fc5314d",
+					"note": "T<span style=\"font-size: 11pt;\">OPICS:<br><br>Thanks for the very helpful survey forms. &nbsp;Based on them, this is what we'll do.<br></span><div><br><div><div>&nbsp; &nbsp;1. Python/Cython -- a crash course</div><div>&nbsp; &nbsp;2. Computational number theory -- (maybe: continued fractions, exact linear algebra, arithmetic of elliptic curves)</div><div>&nbsp; &nbsp;3. Typesetting mathematics and sharing it on the web -- (maybe: creating latex documents; using MathJax; etc.)</div><div>&nbsp; &nbsp;4. Statistic/machine learning -- we'll do one solid topic: Hidden Markov Models</div><div>&nbsp; &nbsp;5. Public key cryptography -- Diffie-Hellman, RSA, El Gammal, elliptic curve crypto.</div><div><br></div><div><br></div></div></div>"
+				}
+			],
+			"id": "27e30022-4de3-4519-8e32-e76e301c0cd0"
+		},
+		{
+			"title": "Python -- a crash course. &nbsp;Starting now.",
+			"content": [
+				{
+					"title": "Section",
+					"content": [
+						{
+							"id": "f91c4347-4fdf-4a8b-b77c-ed9ae8a2db3e",
+							"note": "<br>",
+							"input": "%html\n\n<h3>Homework assignment 1</h3>\n\nDo a bunch of the Python sequences at <a href=\"http://www.codecademy.com/tracks/python\">http://www.codecademy.com/tracks/python</a> and convince me somehow (a screenshot) that you did so (send an email to 2013uw480@gmail.com). \n<br><br><br>\n\n<img src=\"http://justallie.com/wp-content/uploads/2012/01/codecademy-logo-black.png\" class=\"img-rounded\" width=400>\n\n\n<br><br><br>   \n    ",
+							"output": [
+								{
+									"html": "<h3>Homework assignment 1</h3>\nDo a bunch of the Python sequences at <a href=\"http://www.codecademy.com/tracks/python\">http://www.codecademy.com/tracks/python</a> and convince me somehow (a screenshot) that you did so (send an email to 2013uw480@gmail.com). \n<br><br><br>\n<img src=\"http://justallie.com/wp-content/uploads/2012/01/codecademy-logo-black.png\" class=\"img-rounded\" width=400>\n<br><br><br>"
+								},
+								{
+									"stdout": ""
+								}
+							],
+							"hide": [
+								"editor"
+							]
+						}
+					],
+					"id": "1529b298-efc7-40df-a560-1542ef5343b8"
+				},
+				{
+					"id": "47522337-8c5f-497b-82fc-2f3330020c29",
+					"note": "<br>",
+					"input": "%html\n<h1>Python</h1>\n\nFor this part of the course you don't specifically need to use Sage.  Just get access to some Python 2.x interpreter (sagenb.org, ipython, codeacademy, install python on your computer, just type \"python\" on the command line in OS X or Linux, since it comes with them!).   I *hope* to release a new website by the end of next weekend that will be particularly useful here (command line, editor, etc.)... it's what I'm using to give this lecture right now, but it has a couple of bugs that I want to fix first.\n\n<br><br>\n<ul>\n<li>standard data structures: lists (and list comprehensions), tuples, dictionaries, sets (Python variables are references)</li> \n<li>if, while, for, break: whitespace!</li>\n<li>def: defining functions, variable number of arguments, keywords; lambda functions</li>\n<li>exception handling</li>\n<li>classes (and multiple inheritence)</li>\n<li>modules -- putting your code in files</li>\n</ul>",
+					"output": [
+						{
+							"html": "<h1>Python</h1>\nFor this part of the course you don't specifically need to use Sage.  Just get access to some Python 2.x interpreter (sagenb.org, ipython, codeacademy, install python on your computer, just type \"python\" on the command line in OS X or Linux, since it comes with them!).   I *hope* to release a new website by the end of next weekend that will be particularly useful here (command line, editor, etc.)... it's what I'm using to give this lecture right now, but it has a couple of bugs that I want to fix first.\n\n<br><br>\n<ul>\n<li>standard data structures: lists (and list comprehensions), tuples, dictionaries, sets (Python variables are references)</li> \n<li>if, while, for, break: whitespace!</li>\n<li>def: defining functions, variable number of arguments, keywords; lambda functions</li>\n<li>exception handling</li>\n<li>classes (and multiple inheritence)</li>\n<li>modules -- putting your code in files</li>\n</ul>"
+						},
+						{
+							"stdout": ""
+						}
+					],
+					"hide": [
+						"editor"
+					]
+				}
+			],
+			"id": "4f9be17d-354b-4c6a-9eaa-58fcde31dfdf"
+		},
+		{
+			"title": "Standard data structures:&nbsp;lists (and list comprehensions), tuples, dictionaries, sets; that Python variables are references",
+			"content": [
+				{
+					"title": "Lists",
+					"content": [
+						{
+							"id": "daf4a420-b90d-401b-bfc8-6a2e3fcb9d39",
+							"note": "A list is a finite ordered list of references to arbitrary Python objects. The entries of the list do not have to have compatible types.",
+							"input": "v = [1, 2, 7, 'abc']\nv\ntype(v)",
+							"output": [
+								{
+									"stdout": "[1, 2, 7]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": "<type 'list'>"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "b9bb5919-a714-4825-8f2b-1408f6e6a1aa",
+							"note": "Here's how you obtain the length of a list:",
+							"input": "len(v)",
+							"output": [
+								{
+									"stdout": "3"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "988e1c92-de1a-47d2-8ed6-ea9d4619776c",
+							"note": "The methods on a list (note that there is no way to find the length using a method except __len__)",
+							"input": "v. # [hit tab key]",
+							"output": [
+								{
+									"stdout": "3"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "00d88e0e-cecc-41c3-b5cd-c8c55c685760",
+							"note": "You can do the standard things with a list. &nbsp;",
+							"input": "v.append(2); v",
+							"output": [
+								{
+									"stdout": "[1, 2, 7, 2]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "ff0d6393-3f2f-4500-9b64-33d3570c66ac",
+							"input": "v.pop()",
+							"output": [
+								{
+									"stdout": "2"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "58f46202-fee3-4d32-9057-0bfc2fa90485",
+							"note": "List comprehensions are very cool, especially for math:",
+							"input": "v = [n**2 for n in range(10)]; v",
+							"output": [
+								{
+									"stdout": "[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "84de1a97-42cc-4271-a94a-a911b73fc6fe",
+							"note": "<br>",
+							"input": "v = [n for n in range(100) if n%4 == 3]; v",
+							"output": [
+								{
+									"stdout": "[3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "35f36732-4e92-4f1a-b00b-95177218cc90",
+							"input": "[[n,m,n*m] for n in range(3) for m in range(3)]",
+							"output": [
+								{
+									"stdout": "[[0, 0, 0], [0, 1, 0], [0, 2, 0], [1, 0, 0], [1, 1, 1], [1, 2, 2], [2, 0, 0], [2, 1, 2], [2, 2, 4]]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "a1e76698-3df1-45bc-a65a-04b6a5b2c032",
+							"note": "NOTE: You can alway transform a list comprehension into nested for loops (with minimal re-ordering or changing of notation!):",
+							"input": "v = []\nfor n in range(3):\n    for m in range(3):\n        v.append([n,m,n*m])\nv",
+							"output": [
+								{
+									"stdout": "[[0, 0, 0], [0, 1, 0], [0, 2, 0], [1, 0, 0], [1, 1, 1], [1, 2, 2], [2, 0, 0], [2, 1, 2], [2, 2, 4]]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"title": "WATCH OUT: Python variables are references!",
+							"content": [
+								{
+									"id": "e77e4097-097f-47de-bc6a-e70b5e4cb199",
+									"note": "This is actually very good/powerful, but can be confusing if you don't realize it.",
+									"input": "v = [1,2]\nw = [3, v]\nw",
+									"output": [
+										{
+											"stdout": "[3, [1, 2]]"
+										},
+										{
+											"stdout": "\n"
+										},
+										{
+											"stdout": ""
+										}
+									]
+								},
+								{
+									"id": "87a3c02c-3d93-41b9-89a9-c82fb0f755c2",
+									"input": "w[1][0] = 5\nw",
+									"output": [
+										{
+											"stdout": "[3, [5, 2]]"
+										},
+										{
+											"stdout": "\n"
+										},
+										{
+											"stdout": ""
+										}
+									]
+								},
+								{
+									"id": "00d3b110-7e25-4e30-9534-5b678cfa6a68",
+									"input": "v",
+									"output": [
+										{
+											"stdout": "[5, 2]"
+										},
+										{
+											"stdout": "\n"
+										},
+										{
+											"stdout": ""
+										}
+									]
+								},
+								{
+									"id": "45332a5d-0594-439b-815f-50a5d95844dd",
+									"input": "v[0] = 'hi!'\nw",
+									"output": [
+										{
+											"stdout": "[3, ['hi!', 2]]"
+										},
+										{
+											"stdout": "\n"
+										},
+										{
+											"stdout": ""
+										}
+									]
+								},
+								{
+									"id": "460005d0-68ee-4c63-a0ad-48b376472419",
+									"note": "<br>"
+								},
+								{
+									"id": "33865814-e9c7-4739-92fd-30eabe42d207"
+								}
+							],
+							"id": "98440f4a-5366-4927-8274-98fd4269f574"
+						}
+					],
+					"id": "33c518a5-a1ef-4a81-bfb5-ddc4d3571368"
+				},
+				{
+					"title": "Tuples",
+					"content": [
+						{
+							"id": "533499f5-f850-46ff-bd34-95267a6e75c9",
+							"note": "<div>Note above that lists are *mutable*, i.e., you can change everything about them. &nbsp; If f is a function and v is a list, doing<br></div><div><br></div><div>&nbsp; &nbsp;f(v)</div><div><br></div><div>can hugely modify v. &nbsp;&nbsp;</div><div><br></div>Technically, a tuple is an immutable list, i.e., a list so that you can't change anything about it. &nbsp; &nbsp;That's it. &nbsp; They are written using parenthesis instead of square brackets.&nbsp;",
+							"input": "v = (1,2); v",
+							"output": [
+								{
+									"stdout": "(1, 2)"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "5e6d4590-f420-438e-9539-b65c7708c3de",
+							"input": "type(v)",
+							"output": [
+								{
+									"stdout": "<type 'tuple'>"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "df1f4b27-8e36-4702-974d-c5c62d699568",
+							"input": "v = (1,2)\nw = (3, v)\nw",
+							"output": [
+								{
+									"stdout": "(3, (1, 2))"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "2c0b6932-3b22-41f0-95cd-38683775f29a",
+							"note": "This will go boom!<br>",
+							"input": "w[0] = 5",
+							"output": [
+								{
+									"stderr": "Error in lines 1-1\n"
+								},
+								{
+									"stderr": "Traceback (most recent call last):\n"
+								},
+								{
+									"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+								},
+								{
+									"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+								},
+								{
+									"stderr": "  File \"\", line 1, in <module>\n"
+								},
+								{
+									"stderr": "TypeError: 'tuple' object does not support item assignment\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "108f6e70-84ec-434c-945f-c173a54bcc92"
+						}
+					],
+					"id": "e8c98ebb-08c7-425e-8a09-ceadc2c799f4"
+				},
+				{
+					"title": "Dictionaries",
+					"content": [
+						{
+							"id": "7cbc06e7-2d3f-4817-8bd6-11dc000a49e5",
+							"note": "Dictionaries are called \"associative arrays\" in some programming languages. &nbsp; They are called \"functions\" in mathematics :-).&nbsp;<div><br></div><div>Dictionaries are an incredibly useful (and optimized) data structure in Python. &nbsp;<div><div><br></div><div>The keys can be any object that has a __hash__ method, which is supposed to mean anything that is immutable. &nbsp;(This is unlike in Javascript, where the keys must be strings.)</div></div></div>",
+							"input": "v = {'sage':'math',   2:[1,2,3],  (1,5):[[1,2],7]}\nv",
+							"output": [
+								{
+									"stdout": "{(1, 5): [[1, 2], 7], 2: [1, 2, 3], 'sage': 'math'}"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "e6e0ce14-80ef-4e01-a34d-c4dd7830b372"
+						},
+						{
+							"id": "0295dcb2-d65b-413a-a97f-3bd9e0849e57"
+						}
+					],
+					"id": "e3f4fc75-7c76-4681-bb82-d200c6381d3e"
+				},
+				{
+					"title": "Sets",
+					"content": [
+						{
+							"id": "830e4ab2-364e-4743-a03f-a72813011c56"
+						},
+						{
+							"id": "30fda0d1-a8dd-42c9-83e2-b488d6b5380b"
+						},
+						{
+							"id": "458ea69b-2184-4655-9e3b-8a595a6cf6a7"
+						}
+					],
+					"id": "30d87419-1e5b-4171-8279-32115075ae47"
+				},
+				{
+					"id": "a1b160f1-cb8b-4807-8894-5307b5345430"
+				}
+			],
+			"id": "1626e6f6-f6ea-49c8-9ea9-141f0d692c0a"
+		},
+		{
+			"title": "If, while, for, break... and whitespace",
+			"content": [
+				{
+					"id": "3a729c83-6bf0-464f-8281-f6efb09bb130"
+				},
+				{
+					"id": "48a00a84-9881-4fc8-81e9-90048a6e7fef"
+				},
+				{
+					"id": "71f1600b-4a5d-4b47-a689-4255196d81fc"
+				},
+				{
+					"id": "3f9caa03-42ac-4e19-9fb3-b57f44ad2170"
+				}
+			],
+			"id": "278162f4-f50c-4a81-a700-3c81bf2abf77"
+		},
+		{
+			"title": "def, lambda",
+			"content": [
+				{
+					"id": "d122f98d-d4c3-42da-bf6f-e5673c961fa6"
+				},
+				{
+					"id": "1ddaa1f4-afaf-4aff-9055-2d4bca0a59af"
+				},
+				{
+					"id": "c9b6f2f7-3b0a-4a3c-8d58-2c0da0dd018e"
+				},
+				{
+					"id": "9dd2e408-3f95-45e2-a9e6-76e8d4bc9db3"
+				},
+				{
+					"id": "cee528ee-7b78-4242-98e1-c5d27b459d8e"
+				}
+			],
+			"id": "0b63237e-021f-4493-85e6-740d1ce96f6a"
+		},
+		{
+			"title": "Exception Handling",
+			"content": [
+				{
+					"id": "48131014-cb8d-41e7-9163-4c87963c5611"
+				},
+				{
+					"id": "47d2100e-75fc-43fd-9f68-63a303252ca9"
+				},
+				{
+					"id": "b6c5ab91-9d25-4309-a199-b459c6a7f2b4"
+				},
+				{
+					"id": "8eb97240-3841-4d94-bcac-bb7c9c173e03"
+				}
+			],
+			"id": "19218c4f-c27d-4762-9992-bd2c20761afa"
+		},
+		{
+			"title": "Classes and Multiple Inheritence",
+			"content": [
+				{
+					"id": "879b71a9-d898-48bd-bb19-1f21965fac5b"
+				},
+				{
+					"id": "8cba9bf5-b74b-4d4f-8c8d-cca0196021bb"
+				},
+				{
+					"id": "64d3bb16-8850-44bc-b65c-f791ae2ad900"
+				},
+				{
+					"id": "7d9a3241-91db-476d-96e6-937c5be60772"
+				}
+			],
+			"id": "32d5ba64-2cb2-4698-ad94-ee29e68657bb"
+		},
+		{
+			"title": "Modules: putting your code in files",
+			"content": [
+				{
+					"id": "7bbf780d-0e58-4255-b488-ded297940bd0"
+				},
+				{
+					"id": "c36f2496-0283-452c-87d0-671593034f39"
+				},
+				{
+					"id": "181f9769-38e3-4e42-bb15-b4092c726510"
+				}
+			],
+			"id": "ac4eb157-c430-40d0-aee9-75aa80b04f5c"
+		},
+		{
+			"id": "7748a527-8de7-4f50-bc53-42087377e658"
+		},
+		{
+			"id": "66089f43-babf-48ed-9976-c132231391ce"
+		},
+		{
+			"id": "a987e667-b245-40f0-9bd9-1c6545a1c203"
+		}
+	]
+}
