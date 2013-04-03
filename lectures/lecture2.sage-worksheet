@@ -1,6 +1,6 @@
 {
 	"session_uuid": "590a4efa-bf72-4191-9aa2-cf8763aa8ee1",
-	"title": "Title",
+	"title": "Python's Data Structures",
 	"description": "Description",
 	"content": [
 		{
@@ -14,10 +14,10 @@
 			"id": "27e30022-4de3-4519-8e32-e76e301c0cd0"
 		},
 		{
-			"title": "Python -- a crash course. &nbsp;Starting now.",
+			"title": "Python -- a crash course",
 			"content": [
 				{
-					"title": "Section",
+					"title": "HOMEWORK",
 					"content": [
 						{
 							"id": "f91c4347-4fdf-4a8b-b77c-ed9ae8a2db3e",
@@ -391,10 +391,173 @@
 							]
 						},
 						{
-							"id": "e6e0ce14-80ef-4e01-a34d-c4dd7830b372"
+							"id": "8e23e6de-e9fa-4c8b-83fb-00c70159faff",
+							"input": "v[(1,5)]",
+							"output": [
+								{
+									"stdout": "[[1, 2], 7]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
 						},
 						{
-							"id": "0295dcb2-d65b-413a-a97f-3bd9e0849e57"
+							"id": "e6e0ce14-80ef-4e01-a34d-c4dd7830b372",
+							"input": "v.keys()",
+							"output": [
+								{
+									"stdout": "[(1, 5), 2, 'sage']"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "fa95b1e4-331e-4151-b98d-ec146c456236",
+							"input": "v['sage'] = 'awesome'; v",
+							"output": [
+								{
+									"stdout": "{(1, 5): [[1, 2], 7], 2: [1, 2, 3], 'sage': 'awesome'}"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "1730baab-d8b9-45f8-bb18-956c419c8005",
+							"input": "v[5] = 10; v",
+							"output": [
+								{
+									"stdout": "{(1, 5): [[1, 2], 7], 2: [1, 2, 3], 'sage': 'math', 5: 10}"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "8ab1874e-9d68-4924-8bd9-55e17068d63e",
+							"note": "This does NOT work since lists are mutable and not hashable:",
+							"input": "v[ [1,2,3] ] = 20\nv",
+							"output": [
+								{
+									"stderr": "Error in lines 1-1\n"
+								},
+								{
+									"stderr": "Traceback (most recent call last):\n"
+								},
+								{
+									"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+								},
+								{
+									"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+								},
+								{
+									"stderr": "  File \"\", line 1, in <module>\n"
+								},
+								{
+									"stderr": "TypeError: unhashable type: 'list'\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "fcd2c129-04eb-4157-9fc7-1f3e69558df4",
+							"note": "REMARK If you are crazy and want to use lists as keys to a Python dictionary, you can do it.&nbsp;",
+							"input": "class EvilList(list):\n    def __hash__(self):\n        return hash(str(self))\n\nm = EvilList([1,2,3]); m    ",
+							"output": [
+								{
+									"stdout": "[1, 2, 3]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "75cda963-1c30-4da7-92d9-083cca11d4b4",
+							"input": "v[ m ] = 20\nv",
+							"output": [
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "5ddfdb46-4315-4c10-8a7c-669418b14023",
+							"note": "The above is a bad idea in the same way that assuming something false is a bad idea in mathematics. &nbsp;The dictionary implementation in Python makes the assumption that the keys are immutable. &nbsp;If you don't respect this, then your code will likely have subtle bugs in it. &nbsp;(Example: Sage 1.0)"
+						},
+						{
+							"id": "0295dcb2-d65b-413a-a97f-3bd9e0849e57",
+							"note": "You can try to use the keys of a dictionary (say with all values None) as a \"set\" data structure. &nbsp;I used to have to do this when I started using Python a lot in 2003.",
+							"input": "S = {2:None, 4:None, 8:None, 13:None}; S",
+							"output": [
+								{
+									"stdout": "{8: None, 2: None, 4: None, 13: None}"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "dde76d8d-70a4-478e-9d9a-57d4e1f1609d",
+							"input": "4 in S",
+							"output": [
+								{
+									"stdout": "True"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "bd419d77-fbeb-44da-8a1d-4c276516515f",
+							"input": "5 in S",
+							"output": [
+								{
+									"stdout": "False"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "1d9d192e-99df-4376-94a9-6cdfa3a6d6c5"
+						},
+						{
+							"id": "f056fe44-df4b-44af-b3b2-3908aef89755"
 						}
 					],
 					"id": "e3f4fc75-7c76-4681-bb82-d200c6381d3e"
@@ -403,13 +566,69 @@
 					"title": "Sets",
 					"content": [
 						{
-							"id": "830e4ab2-364e-4743-a03f-a72813011c56"
+							"id": "830e4ab2-364e-4743-a03f-a72813011c56",
+							"note": "Sets model the mathematical idea of a finite set. &nbsp;The elements of a set must be immutable (i.e., have a hash method). &nbsp;They are much like the keys of a dictionary, except sets have a numerous methods to make them more set-ish.",
+							"input": "S = { 2, 4, 8, 13 }; S",
+							"output": [
+								{
+									"stdout": "set([8, 2, 4, 13])"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
 						},
 						{
-							"id": "30fda0d1-a8dd-42c9-83e2-b488d6b5380b"
+							"id": "458ea69b-2184-4655-9e3b-8a595a6cf6a7",
+							"note": "Note that the order looks pretty random. &nbsp;Don't depend on it.",
+							"input": "4 in S",
+							"output": [
+								{
+									"stdout": "True"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
 						},
 						{
-							"id": "458ea69b-2184-4655-9e3b-8a595a6cf6a7"
+							"id": "ee9849e4-cb82-4c4c-a346-0fb459594591",
+							"input": "5 in S",
+							"output": [
+								{
+									"stdout": "False"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "4ba3184c-787d-46e1-abdd-5f3a4ef0e3f7",
+							"input": "S.intersection( {7, 11, 13} )",
+							"output": [
+								{
+									"stdout": "set([13])"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "6de250fd-3082-4a8a-872e-e063d95d6b8c"
 						}
 					],
 					"id": "30d87419-1e5b-4171-8279-32115075ae47"
@@ -511,13 +730,8 @@
 			"id": "ac4eb157-c430-40d0-aee9-75aa80b04f5c"
 		},
 		{
-			"id": "7748a527-8de7-4f50-bc53-42087377e658"
-		},
-		{
-			"id": "66089f43-babf-48ed-9976-c132231391ce"
-		},
-		{
-			"id": "a987e667-b245-40f0-9bd9-1c6545a1c203"
+			"id": "7748a527-8de7-4f50-bc53-42087377e658",
+			"note": "<div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div>"
 		}
 	]
 }
