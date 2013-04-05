@@ -8,7 +8,10 @@
 			"content": [
 				{
 					"id": "c9a82266-0e57-4cfb-a613-b40c9fc5314d",
-					"note": "T<span style=\"font-size: 11pt;\">OPICS:<br><br>Thanks for the very helpful survey forms. &nbsp;Based on them, this is what we'll do.<br></span><div><br><div><div>&nbsp; &nbsp;1. Python/Cython -- a crash course</div><div>&nbsp; &nbsp;2. Computational number theory -- (maybe: continued fractions, exact linear algebra, arithmetic of elliptic curves)</div><div>&nbsp; &nbsp;3. Typesetting mathematics and sharing it on the web -- (maybe: creating latex documents; using MathJax; etc.)</div><div>&nbsp; &nbsp;4. Statistic/machine learning -- we'll do one solid topic: Hidden Markov Models</div><div>&nbsp; &nbsp;5. Public key cryptography -- Diffie-Hellman, RSA, El Gammal, elliptic curve crypto.</div><div><br></div><div><br></div></div></div>"
+					"note": "T<span style=\"font-size: 11pt;\">OPICS:<br><br>Thanks for the very helpful survey forms. &nbsp;Based on them, this is what we'll do.<br></span><div><br><div><div>&nbsp; &nbsp;1. Python/Cython -- a crash course</div><div>&nbsp; &nbsp;2. Computational number theory -- (maybe: continued fractions, exact linear algebra, arithmetic of elliptic curves)</div><div>&nbsp; &nbsp;3. Typesetting mathematics and sharing it on the web -- (maybe: creating latex documents; using MathJax; etc.)</div><div>&nbsp; &nbsp;4. Statistic/machine learning -- we'll do one solid topic: Hidden Markov Models</div><div>&nbsp; &nbsp;5. Public key cryptography -- Diffie-Hellman, RSA, El Gammal, elliptic curve crypto.</div><div><br></div><div><br></div></div></div>",
+					"hide": [
+						"output"
+					]
 				}
 			],
 			"id": "27e30022-4de3-4519-8e32-e76e301c0cd0"
@@ -32,7 +35,8 @@
 								}
 							],
 							"hide": [
-								"editor"
+								"editor",
+								"output"
 							]
 						}
 					],
@@ -51,7 +55,8 @@
 						}
 					],
 					"hide": [
-						"editor"
+						"editor",
+						"output"
 					]
 				}
 			],
@@ -66,14 +71,23 @@
 						{
 							"id": "daf4a420-b90d-401b-bfc8-6a2e3fcb9d39",
 							"note": "A list is a finite ordered list of references to arbitrary Python objects. The entries of the list do not have to have compatible types.",
-							"input": "v = [1, 2, 7, 'abc']\nv\ntype(v)",
+							"input": "v = [1, 2, 7, 'abc']\nv",
 							"output": [
 								{
-									"stdout": "[1, 2, 7]"
+									"stdout": "[1, 2, 7, 'abc']"
 								},
 								{
 									"stdout": "\n"
 								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "fabe13aa-96aa-47dd-b503-aabc7e84e18b",
+							"input": "type(v)",
+							"output": [
 								{
 									"stdout": "<type 'list'>"
 								},
@@ -91,7 +105,7 @@
 							"input": "len(v)",
 							"output": [
 								{
-									"stdout": "3"
+									"stdout": "4"
 								},
 								{
 									"stdout": "\n"
@@ -104,13 +118,40 @@
 						{
 							"id": "988e1c92-de1a-47d2-8ed6-ea9d4619776c",
 							"note": "The methods on a list (note that there is no way to find the length using a method except __len__)",
-							"input": "v. # [hit tab key]",
+							"input": "v.count(2) # [hit tab key]",
 							"output": [
 								{
-									"stdout": "3"
+									"stdout": "1"
 								},
 								{
 									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "846b587f-d804-47de-aee2-44e0c9f1efaa",
+							"input": "v.count()",
+							"output": [
+								{
+									"stderr": "Error in lines 1-1\n"
+								},
+								{
+									"stderr": "Traceback (most recent call last):\n"
+								},
+								{
+									"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+								},
+								{
+									"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+								},
+								{
+									"stderr": "  File \"\", line 1, in <module>\n"
+								},
+								{
+									"stderr": "TypeError: count() takes exactly one argument (0 given)\n"
 								},
 								{
 									"stdout": ""
@@ -131,6 +172,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -146,12 +190,39 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
 							"id": "58f46202-fee3-4d32-9057-0bfc2fa90485",
 							"note": "List comprehensions are very cool, especially for math:",
 							"input": "v = [n**2 for n in range(10)]; v",
+							"output": [
+								{
+									"stdout": "[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "d7c6ebc8-4c0a-4e58-8461-eca7da52e2f4",
+							"input": "v = []\nfor n in range(10):\n    v.append(n**2)",
+							"output": [
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "6e4c9a80-b3e7-47ff-8931-5e9f5204daa5",
+							"input": "v",
 							"output": [
 								{
 									"stdout": "[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]"
@@ -178,6 +249,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -193,6 +267,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -209,6 +286,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -277,10 +357,16 @@
 								},
 								{
 									"id": "460005d0-68ee-4c63-a0ad-48b376472419",
-									"note": "<br>"
+									"note": "<br>",
+									"hide": [
+										"output"
+									]
 								},
 								{
-									"id": "33865814-e9c7-4739-92fd-30eabe42d207"
+									"id": "33865814-e9c7-4739-92fd-30eabe42d207",
+									"hide": [
+										"output"
+									]
 								}
 							],
 							"id": "98440f4a-5366-4927-8274-98fd4269f574"
@@ -308,6 +394,63 @@
 							]
 						},
 						{
+							"id": "0e991985-6914-452e-b40b-61540b38dc2e",
+							"input": "v[0] = 5",
+							"output": [
+								{
+									"stderr": "Error in lines 1-1\n"
+								},
+								{
+									"stderr": "Traceback (most recent call last):\n"
+								},
+								{
+									"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+								},
+								{
+									"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+								},
+								{
+									"stderr": "  File \"\", line 1, in <module>\n"
+								},
+								{
+									"stderr": "TypeError: 'tuple' object does not support item assignment\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "c3622250-6f6a-4233-be6f-c6933e05d89b",
+							"input": "v = ([4,5], 17); v",
+							"output": [
+								{
+									"stdout": "([4, 5], 17)"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "cc40b298-896e-477e-abe9-4d219fea5a57",
+							"input": "v[0][0] = 'hi'\nv",
+							"output": [
+								{
+									"stdout": "(['hi', 5], 17)"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
 							"id": "5e6d4590-f420-438e-9539-b65c7708c3de",
 							"input": "type(v)",
 							"output": [
@@ -320,6 +463,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -335,6 +481,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -363,10 +512,16 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
-							"id": "108f6e70-84ec-434c-945f-c173a54bcc92"
+							"id": "108f6e70-84ec-434c-945f-c173a54bcc92",
+							"hide": [
+								"output"
+							]
 						}
 					],
 					"id": "e8c98ebb-08c7-425e-8a09-ceadc2c799f4"
@@ -392,10 +547,37 @@
 						},
 						{
 							"id": "8e23e6de-e9fa-4c8b-83fb-00c70159faff",
-							"input": "v[(1,5)]",
+							"input": "w = [2,3]\nv[w]='cool stuff'\nw[0] = 5",
 							"output": [
 								{
-									"stdout": "[[1, 2], 7]"
+									"stderr": "Error in lines 2-2\n"
+								},
+								{
+									"stderr": "Traceback (most recent call last):\n"
+								},
+								{
+									"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+								},
+								{
+									"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+								},
+								{
+									"stderr": "  File \"\", line 1, in <module>\n"
+								},
+								{
+									"stderr": "TypeError: unhashable type: 'list'\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "049afc1c-2655-4598-bd21-080612bf1eae",
+							"input": "v",
+							"output": [
+								{
+									"stdout": "{(1, 5): [[1, 2], 7], 2: [1, 2, 3], 'sage': 'math'}"
 								},
 								{
 									"stdout": "\n"
@@ -440,7 +622,7 @@
 							"input": "v[5] = 10; v",
 							"output": [
 								{
-									"stdout": "{(1, 5): [[1, 2], 7], 2: [1, 2, 3], 'sage': 'math', 5: 10}"
+									"stdout": "{(1, 5): [[1, 2], 7], 2: [1, 2, 3], 'sage': 'awesome', 5: 10}"
 								},
 								{
 									"stdout": "\n"
@@ -476,6 +658,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -499,13 +684,22 @@
 							"input": "v[ m ] = 20\nv",
 							"output": [
 								{
+									"stdout": "{(1, 5): [[1, 2], 7], 2: [1, 2, 3], [1, 2, 3]: 20, 'sage': 'awesome', 5: 10}"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
 									"stdout": ""
 								}
 							]
 						},
 						{
 							"id": "5ddfdb46-4315-4c10-8a7c-669418b14023",
-							"note": "The above is a bad idea in the same way that assuming something false is a bad idea in mathematics. &nbsp;The dictionary implementation in Python makes the assumption that the keys are immutable. &nbsp;If you don't respect this, then your code will likely have subtle bugs in it. &nbsp;(Example: Sage 1.0)"
+							"note": "The above is a bad idea in the same way that assuming something false is a bad idea in mathematics. &nbsp;The dictionary implementation in Python makes the assumption that the keys are immutable. &nbsp;If you don't respect this, then your code will likely have subtle bugs in it. &nbsp;(Example: Sage 1.0)",
+							"hide": [
+								"output"
+							]
 						},
 						{
 							"id": "0295dcb2-d65b-413a-a97f-3bd9e0849e57",
@@ -521,6 +715,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -536,6 +733,9 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
@@ -551,13 +751,133 @@
 								{
 									"stdout": ""
 								}
+							],
+							"hide": [
+								"output"
 							]
 						},
 						{
-							"id": "1d9d192e-99df-4376-94a9-6cdfa3a6d6c5"
+							"id": "df6f5cd0-073b-448e-a20c-f90401839cc4",
+							"input": "v = (2,3)\nhash(v)",
+							"output": [
+								{
+									"stdout": "3713082714463740756"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
 						},
 						{
-							"id": "f056fe44-df4b-44af-b3b2-3908aef89755"
+							"id": "51f47f09-9abe-4352-8de1-3491efe841f7",
+							"input": "v = ([2,'shannon'], 3)\nv",
+							"output": [
+								{
+									"stdout": "([2, 'shannon'], 3)"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "9a03eb58-b5d1-43b2-886a-b836c03854da",
+							"input": "hash(v)",
+							"output": [
+								{
+									"stderr": "Error in lines 1-1\n"
+								},
+								{
+									"stderr": "Traceback (most recent call last):\n"
+								},
+								{
+									"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+								},
+								{
+									"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+								},
+								{
+									"stderr": "  File \"\", line 1, in <module>\n"
+								},
+								{
+									"stderr": "TypeError: unhashable type: 'list'\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "5e259673-dbcc-4552-8cfd-e0b6c1343031",
+							"input": "v = (EvilList([2,'shannon']), 3)\nv",
+							"output": [
+								{
+									"stdout": "([2, 'shannon'], 3)"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "1d9d192e-99df-4376-94a9-6cdfa3a6d6c5",
+							"input": "hash(v)",
+							"output": [
+								{
+									"stdout": "5299711486737658635"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "eb14fbd6-cc2c-4cd6-986b-c43394b2125a",
+							"input": "'shannon' in v",
+							"output": [
+								{
+									"stdout": "False"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "16193876-8ebb-4c8d-996f-c9aadb0f8b3c",
+							"input": "3 in v",
+							"output": [
+								{
+									"stdout": "True"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "f056fe44-df4b-44af-b3b2-3908aef89755",
+							"hide": [
+								"output"
+							]
 						}
 					],
 					"id": "e3f4fc75-7c76-4681-bb82-d200c6381d3e"
@@ -613,6 +933,21 @@
 							]
 						},
 						{
+							"id": "a146205f-c9fe-41bc-9c8a-d4f2c1c5a0a4",
+							"input": "S",
+							"output": [
+								{
+									"stdout": "set([8, 2, 4, 13])"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
 							"id": "4ba3184c-787d-46e1-abdd-5f3a4ef0e3f7",
 							"input": "S.intersection( {7, 11, 13} )",
 							"output": [
@@ -628,13 +963,62 @@
 							]
 						},
 						{
-							"id": "6de250fd-3082-4a8a-872e-e063d95d6b8c"
+							"id": "bb7cc049-51f7-4e29-b293-6177b1743981",
+							"input": "Primes()",
+							"output": [
+								{
+									"stdout": "Set of all prime numbers: 2, 3, 5, 7, ..."
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "6de250fd-3082-4a8a-872e-e063d95d6b8c",
+							"input": "prime_pi(10^5)",
+							"output": [
+								{
+									"stdout": "9592"
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
+						},
+						{
+							"id": "746ec8f1-6cce-45c2-a2d8-b870fb82062f",
+							"input": "plot(prime_pi, 2, 5000) + plot(Li, 2, 5000)",
+							"output": [
+								{
+									"file": {
+										"show": true,
+										"uuid": "987e53e3-e047-4b3a-aec6-7e5f5416d7cd",
+										"filename": "/home/wstein/.sage/temp/u/5945/tmp_sXsigR.svg"
+									}
+								},
+								{
+									"stdout": "\n"
+								},
+								{
+									"stdout": ""
+								}
+							]
 						}
 					],
 					"id": "30d87419-1e5b-4171-8279-32115075ae47"
 				},
 				{
-					"id": "a1b160f1-cb8b-4807-8894-5307b5345430"
+					"id": "a1b160f1-cb8b-4807-8894-5307b5345430",
+					"hide": [
+						"output"
+					]
 				}
 			],
 			"id": "1626e6f6-f6ea-49c8-9ea9-141f0d692c0a"
@@ -643,16 +1027,28 @@
 			"title": "If, while, for, break... and whitespace",
 			"content": [
 				{
-					"id": "3a729c83-6bf0-464f-8281-f6efb09bb130"
+					"id": "3a729c83-6bf0-464f-8281-f6efb09bb130",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "48a00a84-9881-4fc8-81e9-90048a6e7fef"
+					"id": "48a00a84-9881-4fc8-81e9-90048a6e7fef",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "71f1600b-4a5d-4b47-a689-4255196d81fc"
+					"id": "71f1600b-4a5d-4b47-a689-4255196d81fc",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "3f9caa03-42ac-4e19-9fb3-b57f44ad2170"
+					"id": "3f9caa03-42ac-4e19-9fb3-b57f44ad2170",
+					"hide": [
+						"output"
+					]
 				}
 			],
 			"id": "278162f4-f50c-4a81-a700-3c81bf2abf77"
@@ -661,19 +1057,34 @@
 			"title": "def, lambda",
 			"content": [
 				{
-					"id": "d122f98d-d4c3-42da-bf6f-e5673c961fa6"
+					"id": "d122f98d-d4c3-42da-bf6f-e5673c961fa6",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "1ddaa1f4-afaf-4aff-9055-2d4bca0a59af"
+					"id": "1ddaa1f4-afaf-4aff-9055-2d4bca0a59af",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "c9b6f2f7-3b0a-4a3c-8d58-2c0da0dd018e"
+					"id": "c9b6f2f7-3b0a-4a3c-8d58-2c0da0dd018e",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "9dd2e408-3f95-45e2-a9e6-76e8d4bc9db3"
+					"id": "9dd2e408-3f95-45e2-a9e6-76e8d4bc9db3",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "cee528ee-7b78-4242-98e1-c5d27b459d8e"
+					"id": "cee528ee-7b78-4242-98e1-c5d27b459d8e",
+					"hide": [
+						"output"
+					]
 				}
 			],
 			"id": "0b63237e-021f-4493-85e6-740d1ce96f6a"
@@ -682,16 +1093,28 @@
 			"title": "Exception Handling",
 			"content": [
 				{
-					"id": "48131014-cb8d-41e7-9163-4c87963c5611"
+					"id": "48131014-cb8d-41e7-9163-4c87963c5611",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "47d2100e-75fc-43fd-9f68-63a303252ca9"
+					"id": "47d2100e-75fc-43fd-9f68-63a303252ca9",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "b6c5ab91-9d25-4309-a199-b459c6a7f2b4"
+					"id": "b6c5ab91-9d25-4309-a199-b459c6a7f2b4",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "8eb97240-3841-4d94-bcac-bb7c9c173e03"
+					"id": "8eb97240-3841-4d94-bcac-bb7c9c173e03",
+					"hide": [
+						"output"
+					]
 				}
 			],
 			"id": "19218c4f-c27d-4762-9992-bd2c20761afa"
@@ -700,16 +1123,28 @@
 			"title": "Classes and Multiple Inheritence",
 			"content": [
 				{
-					"id": "879b71a9-d898-48bd-bb19-1f21965fac5b"
+					"id": "879b71a9-d898-48bd-bb19-1f21965fac5b",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "8cba9bf5-b74b-4d4f-8c8d-cca0196021bb"
+					"id": "8cba9bf5-b74b-4d4f-8c8d-cca0196021bb",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "64d3bb16-8850-44bc-b65c-f791ae2ad900"
+					"id": "64d3bb16-8850-44bc-b65c-f791ae2ad900",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "7d9a3241-91db-476d-96e6-937c5be60772"
+					"id": "7d9a3241-91db-476d-96e6-937c5be60772",
+					"hide": [
+						"output"
+					]
 				}
 			],
 			"id": "32d5ba64-2cb2-4698-ad94-ee29e68657bb"
@@ -718,20 +1153,32 @@
 			"title": "Modules: putting your code in files",
 			"content": [
 				{
-					"id": "7bbf780d-0e58-4255-b488-ded297940bd0"
+					"id": "7bbf780d-0e58-4255-b488-ded297940bd0",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "c36f2496-0283-452c-87d0-671593034f39"
+					"id": "c36f2496-0283-452c-87d0-671593034f39",
+					"hide": [
+						"output"
+					]
 				},
 				{
-					"id": "181f9769-38e3-4e42-bb15-b4092c726510"
+					"id": "181f9769-38e3-4e42-bb15-b4092c726510",
+					"hide": [
+						"output"
+					]
 				}
 			],
 			"id": "ac4eb157-c430-40d0-aee9-75aa80b04f5c"
 		},
 		{
 			"id": "7748a527-8de7-4f50-bc53-42087377e658",
-			"note": "<div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div>"
+			"note": "<div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div>",
+			"hide": [
+				"output"
+			]
 		}
 	]
 }

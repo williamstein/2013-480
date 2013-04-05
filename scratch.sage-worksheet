@@ -1,0 +1,40 @@
+{
+	"session_uuid": "a455f7e8-449e-40c9-b55a-c5186f76522b",
+	"title": "Title",
+	"description": "Description",
+	"content": [
+		{
+			"id": "9353b612-25be-43cb-9502-255b7e06ccd1",
+			"input": "p = next_probable_prime(randint(0,10^25))\nq = next_probable_prime(randint(0,10^25))\np*q",
+			"output": [
+				{
+					"stdout": "54334559688831933144970780034494033148425334985257"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			]
+		},
+		{
+			"id": "263b4a53-ebb9-48e8-b58b-31fab5193730",
+			"input": "len(str(_))",
+			"output": [
+				{
+					"stdout": "50"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			]
+		},
+		{
+			"id": "ca903626-a7bb-4dd6-9912-ec82274b2c58"
+		}
+	]
+}
