@@ -1,0 +1,1063 @@
+{
+	"session_uuid": "eae7271b-e20e-4eb0-9d75-fa5472204061",
+	"title": "<br>",
+	"description": "<br>",
+	"content": [
+		{
+			"id": "726b784f-333e-4244-9895-bf08a3ddabd3",
+			"input": "%html\n<div style='border: 1px solid black; padding:2em; box-shadow: 5px 10px 10px 20px #ddd; margin:3em; background-color:#fafafa'>\n<h1> 480 Lecture 3</h1>\n<h2> Python Crash Course: Control structures and functions</h2>\n</div>\n<br><br><br><br><br>",
+			"output": [
+				{
+					"html": "<div style='border: 1px solid black; padding:2em; box-shadow: 5px 10px 10px 20px #ddd; margin:3em; background-color:#fafafa'>\n<h1> 480 Lecture 3</h1>\n<h2> Python Crash Course: Control structures and functions</h2>\n</div>\n<br><br><br><br><br>"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "5814cf99-5f54-4b97-bb01-9989f1aec7bf",
+			"input": "%md\n\n# Control Structures\n\n## Logical control -- the if statement\n\n#### The general syntax:\n    \n    if <logical expression>:\n        <code all indentend the same>\n    elif <logical expression>:\n        <more code>\n    ...\n    else:\n        <more code>\n        \n<br>        \n#### Main points\n\n* don't forget the collons at the ends of if/elif/else lines\n* indent consistently; this matters (!)\n* the else and elif's are optional\n* It's \"elif\", not \"else if\".",
+			"output": [
+				{
+					"html": "<h1>Control Structures</h1>\n\n<h2>Logical control -- the if statement</h2>\n\n<h4>The general syntax:</h4>\n\n<pre><code>if &lt;logical expression&gt;:\n    &lt;code all indentend the same&gt;\nelif &lt;logical expression&gt;:\n    &lt;more code&gt;\n...\nelse:\n    &lt;more code&gt;\n</code></pre>\n\n<p><br>        </p>\n\n<h4>Main points</h4>\n\n<ul>\n<li>don't forget the collons at the ends of if/elif/else lines</li>\n<li>indent consistently; this matters (!)</li>\n<li>the else and elif's are optional</li>\n<li>It's \"elif\", not \"else if\".</li>\n</ul>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "a21a0bfa-0b60-44ea-b257-526ec6f026ae",
+			"input": "%md \n### Try changing things so each branch is taken below:",
+			"output": [
+				{
+					"html": "<h3>Try changing things so each branch is taken below:</h3>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "edf8d931-b3c5-44de-98d3-2e86e7bed60c",
+			"input": "b = 17\n\nif b % 2 == 0:\n    a = 2\n    v = [1,2,a]  # any code you want\n    print \"ONE\"\nelif 2==3:\n    print \"TWO\"\nelse:\n    print \"THREE\"",
+			"output": [
+				{
+					"stdout": "THREE"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "5d40477f-88ca-408c-a0b6-565b0465dfed",
+			"input": "%md\n\n## Iteration -- for and while loops\n\n    for var in iterable:\n        <indented code>\n        \n## While loops -- the only other way to do iteration\n\n    while <expression is true>:\n        <indented code to run>\n\n## And, sorry, there is no \"do\" or \"until\" loop in Python.  You have to simulate:\n\n    while True:\n        <do stuff>\n        if <condition>:\n            break",
+			"output": [
+				{
+					"html": "<h2>Iteration -- for and while loops</h2>\n\n<pre><code>for var in iterable:\n    &lt;indented code&gt;\n</code></pre>\n\n<h2>While loops -- the only other way to do iteration</h2>\n\n<pre><code>while &lt;expression is true&gt;:\n    &lt;indented code to run&gt;\n</code></pre>\n\n<h2>And, sorry, there is no \"do\" or \"until\" loop in Python.  You have to simulate:</h2>\n\n<pre><code>while True:\n    &lt;do stuff&gt;\n    if &lt;condition&gt;:\n        break\n</code></pre>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "c27e8ad6-32a8-43bc-b32b-59729fed8c4d",
+			"input": "for v in range(5):\n    print(v)",
+			"output": [
+				{
+					"stdout": "0"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "1"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "2"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "3"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "4"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "46c63e2b-4657-4892-af02-78e0374479b5",
+			"input": "i = 0\nwhile i<5:\n    i += 1\n    print(i)",
+			"output": [
+				{
+					"stdout": "1"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "2"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "3"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "4"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "5"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "56fb673e-7071-4563-8238-4c22471cc16c",
+			"input": "%md\n\n# Notes\n- The *range* function is an important source of things to iterate over. \n- The *xrange* function makes iterables without wasting memory (in Python 3.x range and xrange are the same).\n- Sage has *srange* that is more flexible than Python's range.\n- Numpy has *arange*, which is more flexible in other ways.\n\n# Examples of each",
+			"output": [
+				{
+					"html": "<h1>Notes</h1>\n\n<ul>\n<li>The <em>range</em> function is an important source of things to iterate over. </li>\n<li>The <em>xrange</em> function makes iterables without wasting memory (in Python 3.x range and xrange are the same).</li>\n<li>Sage has <em>srange</em> that is more flexible than Python's range.</li>\n<li>Numpy has <em>arange</em>, which is more flexible in other ways.</li>\n</ul>\n\n<h1>Examples of each</h1>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "1a61824e-61e3-49cf-b65d-8c7a4435b23d",
+			"input": "range(5)           # note -- it's 0 through 4, inclusive!!!",
+			"output": [
+				{
+					"stdout": "[0, 1, 2, 3, 4]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "77e2e296-fc2e-4f91-b787-c91966516449",
+			"input": "range(1,5)         # specify starting value",
+			"output": [
+				{
+					"stdout": "[1, 2, 3, 4]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "fbf3beed-070b-426c-b987-9ac0dbb911fc",
+			"input": "range(1,10, 3)     # specify step size",
+			"output": [
+				{
+					"stdout": "[1, 4, 7]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "3a62e9e4-baec-4c6c-8a1e-0b692c218da3",
+			"input": "xrange(5)",
+			"output": [
+				{
+					"stdout": "xrange(5)"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "7c75889b-bf70-4354-87dd-88eae0a41db5",
+			"input": "for i in xrange(5):\n    print i,   # comma = no newline",
+			"output": [
+				{
+					"stdout": "0"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "1"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "2"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "3"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "4"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "6ff912bc-7f5e-4110-97e9-3ca6b6a4f2ab",
+			"input": "range(1.5, 7.8)    # *yikes* -- watch out!",
+			"output": [
+				{
+					"stdout": "[1, 2, 3, 4, 5, 6]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "db46921d-6402-467f-b5d0-1f8b5aaa4121",
+			"input": "srange(1.5, 7.8)   # Sage range works fine",
+			"output": [
+				{
+					"stdout": "[1.50000000000000, 2.50000000000000, 3.50000000000000, 4.50000000000000, 5.50000000000000, 6.50000000000000, 7.50000000000000]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "0d356504-0816-44d6-b98f-3f4cd1436db3",
+			"input": "srange(pi, 7*pi, e)  # It even does symbolics",
+			"output": [
+				{
+					"stdout": "[pi, pi + e, pi + 2*e, pi + 3*e, pi + 4*e, pi + 5*e, pi + 6*e]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "11e063f3-0404-488d-824f-a4105fbac774",
+			"input": "import numpy\nnumpy.arange(1.5, 7.8)",
+			"output": [
+				{
+					"stdout": "array([ 1.5,  2.5,  3.5,  4.5,  5.5,  6.5,  7.5])"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "e5ea1ab3-af85-4be1-ba15-69605b6559af",
+			"input": "md(\"\"\"\n# Functions\n\nThey look like this:\n    \n    def foo(x,y,z, abc=2, stuff=[1,2]):\n        <indented body of function>\n        return <expression>   # can have many of these all over\n        \n- The arguments x,y,z are called *positional arguments*.        \n- The arguments abc and stuff are called *keyword arguments*.  \n\"\"\")        ",
+			"output": [
+				{
+					"html": "<h1>Functions</h1>\n\n<p>They look like this:</p>\n\n<pre><code>def foo(x,y,z, abc=2, stuff=[1,2]):\n    &lt;indented body of function&gt;\n    return &lt;expression&gt;   # can have many of these all over\n</code></pre>\n\n<ul>\n<li>The arguments x,y,z are called <em>positional arguments</em>.        </li>\n<li>The arguments abc and stuff are called <em>keyword arguments</em>.  </li>\n</ul>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "92bcb795-9e19-44d7-a3b3-341afb7d8f5e",
+			"input": "def f(x,y,z, abc=2, stuff=[1,2]):\n    print x,y,z, abc, stuff\n    return x+y+z",
+			"output": [
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "19a8438c-cd80-4a59-a025-b7216111b745",
+			"input": "f(1,2,3)",
+			"output": [
+				{
+					"stdout": "1"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "2"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "3"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "2"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "[1, 2]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "6"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "c57e4243-91ae-4675-bdd3-cc9a7044e909",
+			"input": "f(1,2)  # all arguments without defaults *must* be provided",
+			"output": [
+				{
+					"stderr": "Error in lines 1-1\n"
+				},
+				{
+					"stderr": "Traceback (most recent call last):\n"
+				},
+				{
+					"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+				},
+				{
+					"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+				},
+				{
+					"stderr": "  File \"\", line 1, in <module>\n"
+				},
+				{
+					"stderr": "TypeError: f() takes at least 3 arguments (2 given)\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "b7d18e90-da72-4079-af6c-aac7214b412e",
+			"input": "f(1,2,3, 10)",
+			"output": [
+				{
+					"stdout": "1"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "2"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "3"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "10"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "[1, 2]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "6"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "f3ff1ba8-9df6-4591-91c8-851069eb4760",
+			"input": "f(1,2,3, stuff='hello', abc=10)  # give arguments explicitly; order of keyword arguments is up to you.",
+			"output": [
+				{
+					"stdout": "1"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "2"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "3"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "10"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "hello"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "6"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "42d5a6a2-ca04-4ceb-99d8-4b4b7a790004",
+			"input": "# You CANNOT declare types of inputs in Python 2.x\ndef g(a:int):\n    print(a)",
+			"output": [
+				{
+					"stderr": "Error in lines 2-3\n"
+				},
+				{
+					"stderr": "Traceback (most recent call last):\n"
+				},
+				{
+					"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+				},
+				{
+					"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+				},
+				{
+					"stderr": "  File \"<string>\", line 1\n"
+				},
+				{
+					"stderr": "    def g(a:int):\n"
+				},
+				{
+					"stderr": "           ^\n"
+				},
+				{
+					"stderr": "SyntaxError: invalid syntax\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "3b66c071-ce7f-4216-8f9a-4d1b7fccea3a",
+			"input": "# NOTE: Surprisignly, you CAN declare types in Python 3.x, but it doesn't really do anything.\n%python3\ndef g(a:int):\n    print(a)\ng('not an int')    ",
+			"output": [
+				{
+					"stdout": "not an int\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "66c373e6-9ec2-4fae-b4b9-274049f9ef5b",
+			"input": "# locals() is also a very handy function for getting the variables local to a function\ndef f(x,y,z, abc=2, stuff=[1,2]):\n    print locals()\n    return x+y+z",
+			"output": [
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "87538031-fe35-4801-8af1-acb28542e005",
+			"input": "f(1,2,3,abc=\"hello\")",
+			"output": [
+				{
+					"stdout": "{'y': 2, 'x': 1, 'stuff': [1, 2], 'abc': 'hello', 'z': 3}"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "6"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "0e7a8ecd-556f-44bf-838b-5c7f221de997",
+			"input": "%md\n# Functions and Scope\n\n- The way scoping of variables works in Python can be confusing  when you start nesting functions.  \n- It's *different* than \"JavaScript, Perl, Ruby, Scheme, Smalltalk, C with GNU extensions, and C# 2.0.\"  \n- Python scoping is the way it is mainly because of how C used to be long ago (where there were no nested functions).",
+			"output": [
+				{
+					"html": "<h1>Functions and Scope</h1>\n\n<ul>\n<li>The way scoping of variables works in Python can be confusing  when you start nesting functions.  </li>\n<li>It's <em>different</em> than \"JavaScript, Perl, Ruby, Scheme, Smalltalk, C with GNU extensions, and C# 2.0.\"  </li>\n<li>Python scoping is the way it is mainly because of how C used to be long ago (where there were no nested functions).</li>\n</ul>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "dd119b3e-a748-43de-93c0-be8fee776c68",
+			"input": "a = 5\ndef f(n):\n    return a+n\nprint f(10), a",
+			"output": [
+				{
+					"stdout": "15"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "5"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "0b2f94e3-889c-49a9-b55b-fe1999d20507",
+			"input": "a = 5\ndef f(n):\n    a = n       # makes a new local variable called a that has nothing to do with the a above.\n    return a+n\nprint f(10), a",
+			"output": [
+				{
+					"stdout": "20"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "5"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "de22f17d-c7f6-48dc-bcac-f4c0d108701d",
+			"input": "a = 5\ndef f(n):\n    global a    # this a is the a above.\n    a = n\n    return a+n\nprint f(10), a",
+			"output": [
+				{
+					"stdout": "20"
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "10"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "54106878-a335-482a-9ba8-399f5f002ee3",
+			"input": "a = 5\ndef f(n):\n    a = 7    # not the a above (this is local)\n    def g(n):\n        global a    # which a is this?   it's the global one.  There's just no way to get the a one level up.  Deal with it.\n        a = n\n        return a+n\n    g(n)\n    print \"f's a = \", a\nf(10)\nprint \"global a = \", a",
+			"output": [
+				{
+					"stdout": "f's a = "
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "7"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "global a = "
+				},
+				{
+					"stdout": " "
+				},
+				{
+					"stdout": "10"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "86e38b95-f465-4872-8d86-c00e7fcd686c",
+			"input": "%md\nSee [PEP 3104](http://www.python.org/dev/peps/pep-3104/) for more about scope.",
+			"output": [
+				{
+					"html": "<p>See <a href=\"http://www.python.org/dev/peps/pep-3104/\">PEP 3104</a> for more about scope.</p>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "f9f1e0b7-27ce-4355-9e40-82ca90ddd82d",
+			"input": "%md\n# Variable number of arguments: *args, **kwds\n\nThis is the main tricky thing with functions in Python.",
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "111d3381-44c2-4ffc-ba56-7e67d8fa5912",
+			"input": "md(\"\"\"\n\n# Variable number of arguments: *args and **kwds\n\n* Python is very dynamic language, so it is useful to be able to create functions that can take any number of arguments\n* ... and also it is useful to call functions with any numbers of positional and keyword arguments.\n\nPython has a fairly straightforward way to do this.  When this function is called all the positional arguments after x,y get assigned to the tuple \"args\", and all keywoard arguments get put in the dictionary \"kwds\". \n\n    def f(x, y, *args, **kwds):\n        ...\n        \nSimilarly, for this one, the keywoard arguments after foo get put in \"kwds\".\n        \n    def f(x, y, foo='bar', **kwds):\n        ...\n        \nIf args is a tuple and kwds a dictionary, and you write\n\n    f(1, 7, *args, **kwds)\n    \nthen f will get called with positional inputs 1,7, each of the entries in args as additional position inputs, then the entries in kwds as keyword arguments.\n\"\"\")    ",
+			"output": [
+				{
+					"html": "<h1>Variable number of arguments: <em>args and *</em>kwds</h1>\n\n<ul>\n<li>Python is very dynamic language, so it is useful to be able to create functions that can take any number of arguments</li>\n<li>... and also it is useful to call functions with any numbers of positional and keyword arguments.</li>\n</ul>\n\n<p>Python has a fairly straightforward way to do this.  When this function is called all the positional arguments after x,y get assigned to the tuple \"args\", and all keywoard arguments get put in the dictionary \"kwds\". </p>\n\n<pre><code>def f(x, y, *args, **kwds):\n    ...\n</code></pre>\n\n<p>Similarly, for this one, the keywoard arguments after foo get put in \"kwds\".</p>\n\n<pre><code>def f(x, y, foo='bar', **kwds):\n    ...\n</code></pre>\n\n<p>If args is a tuple and kwds a dictionary, and you write</p>\n\n<pre><code>f(1, 7, *args, **kwds)\n</code></pre>\n\n<p>then f will get called with positional inputs 1,7, each of the entries in args as additional position inputs, then the entries in kwds as keyword arguments.</p>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "f9a535e5-fa5d-4103-ab87-1fd81e157f5d",
+			"input": "def f(x, y, *args, **kwds):\n    print locals()",
+			"output": [
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "a71ed27f-8dbf-4e02-85af-9b9b204cda1e",
+			"input": "f(2,3, 10, abc='123', xxx=2)",
+			"output": [
+				{
+					"stdout": "{'y': 3, 'x': 2, 'args': (10,), 'kwds': {'xxx': 2, 'abc': '123'}}"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "2edd333d-215d-408b-8fa4-07f0e1a3e4fd",
+			"input": "args = (1,2);  kwds={'stuff':123}\nf(*args, **kwds)",
+			"output": [
+				{
+					"stdout": "{'y': 2, 'x': 1, 'args': (), 'kwds': {'stuff': 123}}"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "9babb345-8be5-4b9f-987f-d80909889b48",
+			"input": "%md\n\n## DANGER: Keywords are strings! the must be valid identifiers\n\nAn potentially annoying limitation is that the kwds must be strings and must be valid identifiers.  This comes up in Sage where we use keyword arguments for substitution.",
+			"output": [
+				{
+					"html": "<h2>DANGER: Keywords are strings! the must be valid identifiers</h2>\n\n<p>An potentially annoying limitation is that the kwds must be strings and must be valid identifiers.  This comes up in Sage where we use keyword arguments for substitution.</p>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "f2fa2ec9-62d2-45b4-82b3-b340c28f4679",
+			"input": "R.<x,y> = PolynomialRing(GF(7));  R",
+			"output": [
+				{
+					"stdout": "Multivariate Polynomial Ring in x, y over Finite Field of size 7"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "2479fee8-d200-402f-8010-3e046288f61d",
+			"input": "f = (x+y)^5; show(f)",
+			"output": [
+				{
+					"tex": {
+						"tex": "x^{5} + 5 x^{4} y + 3 x^{3} y^{2} + 3 x^{2} y^{3} + 5 x y^{4} + y^{5}",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "f4afc31a-bab8-4ff4-9f9b-efaeed0010cf",
+			"input": "f(x=3, y=5)",
+			"output": [
+				{
+					"stdout": "1"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "e344f9a4-2d01-438f-a86a-d1e773774398",
+			"input": "R = PolynomialRing(GF(7), 'x,x'); R",
+			"output": [
+				{
+					"stdout": "Multivariate Polynomial Ring in x, x over Finite Field of size 7"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "9ccfe9be-de2a-46b3-b189-c8497e8ea589",
+			"input": "f = R.0 + 2*R.1; f",
+			"output": [
+				{
+					"stdout": "x + 2*x"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "b1288017-f2e1-46c1-a318-4c59b885687c",
+			"input": "x = R.0; x",
+			"output": [
+				{
+					"stdout": "x"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "cf17eb50-0e86-4e83-b227-f7efeb9dfb09",
+			"input": "f(x=3)  # which x?  \"writing x=3\" doesn't in any way involve the x we just defined in the previous line!",
+			"output": [
+				{
+					"stdout": "x - 1"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "b8e66378-62f7-4143-97d3-c17156e2a004",
+			"input": "f.subs({R.1:3})   # the second x, evidently....",
+			"output": [
+				{
+					"stdout": "x - 1"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "8110d96b-bad2-4a0a-8806-dfcb1fa0a67f",
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "3cb3dc2c-f4bf-4a0d-9e05-e7c1b0d1b031",
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "6ad7db09-221a-4058-b00b-13cbab11c69f",
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "59d79a61-b9b0-4545-8246-5e66930207a7",
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "69d5c0b0-bef1-445d-b74e-2754e7499269",
+			"hide": [
+				"note"
+			]
+		}
+	]
+}
