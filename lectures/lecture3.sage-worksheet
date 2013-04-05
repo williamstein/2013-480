@@ -56,7 +56,7 @@
 			"input": "b = 17\n\nif b % 2 == 0:\n    a = 2\n    v = [1,2,a]  # any code you want\n    print \"ONE\"\nelif 2==3:\n    print \"TWO\"\nelse:\n    print \"THREE\"",
 			"output": [
 				{
-					"stdout": "THREE"
+					"stdout": "TWO"
 				},
 				{
 					"stdout": "\n"
@@ -1030,6 +1030,39 @@
 			]
 		},
 		{
+			"id": "5903add5-86e6-4acf-9d67-41dd55b35ee0",
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "f077c4ce-6771-4275-9e8a-85e530e090c2",
+			"input": "%md\n# Docstrings\n### Functions have optional documentation given by placing a string right after the \"def\" line.\n- Usually docstrings are more than one line, so we use triple quotes.\n- Make sure to put r\"\"\" at the beginning if you are going to use latex!\n- The format is technically arbitrary, but there are conventions.",
+			"output": [
+				{
+					"html": "<h1>Docstrings</h1>\n\n<h3>Functions have optional documentation given by placing a string right after the \"def\" line.</h3>\n\n<ul>\n<li>Usually docstrings are more than one line, so we use triple quotes.</li>\n<li>Make sure to put r\"\"\" at the beginning if you are going to use latex!</li>\n<li>The format is technically arbitrary, but there are conventions.</li>\n</ul>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "98376bd0-16ba-476e-aacf-e993099be57a",
+			"input": "def f(a,b,c, really=True):\n    r\"\"\"\n    This function takes three things, a,b and c, and returns the sum $\\sum a_i = a^2 + b^2 + c^2$ of their squares.\n\n    AUTHOR: William Stein\n    \"\"\"\n    return a^2+b^2+c^2",
+			"output": [
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
 			"id": "8110d96b-bad2-4a0a-8806-dfcb1fa0a67f",
 			"hide": [
 				"note"
@@ -1037,24 +1070,69 @@
 		},
 		{
 			"id": "3cb3dc2c-f4bf-4a0d-9e05-e7c1b0d1b031",
+			"input": "%md\n# Introspection -- finding out about a function from within Python\n\nIt is possible to get information about a function from within Python.",
+			"output": [
+				{
+					"html": "<h1>Introspection -- finding out about a function from within Python</h1>\n\n<p>It is possible to get information about a function from within Python.</p>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
 			"hide": [
 				"note"
 			]
 		},
 		{
 			"id": "6ad7db09-221a-4058-b00b-13cbab11c69f",
+			"input": "f.__doc__",
+			"output": [
+				{
+					"stdout": "'\\n    This function takes three things, a,b and c, and returns the sum $\\\\sum a_i = a^2 + b^2 + c^2$ of their squares.\\n\\n    AUTHOR: William Stein\\n    '"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
 			"hide": [
 				"note"
 			]
 		},
 		{
 			"id": "59d79a61-b9b0-4545-8246-5e66930207a7",
+			"input": "import inspect",
+			"output": [
+				{
+					"stdout": ""
+				}
+			],
 			"hide": [
 				"note"
 			]
 		},
 		{
 			"id": "69d5c0b0-bef1-445d-b74e-2754e7499269",
+			"input": "inspect.getargspec(f)",
+			"output": [
+				{
+					"stdout": "ArgSpec(args=['a', 'b', 'c', 'really'], varargs=None, keywords=None, defaults=(True,))"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "0a8bda13-07c8-4569-8fad-04b8bfd63f80",
 			"hide": [
 				"note"
 			]
