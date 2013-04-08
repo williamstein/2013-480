@@ -1280,9 +1280,6 @@
 				{
 					"stdout": ""
 				}
-			],
-			"hide": [
-				"editor"
 			]
 		},
 		{
@@ -1334,9 +1331,6 @@
 				{
 					"stdout": ""
 				}
-			],
-			"hide": [
-				"editor"
 			]
 		},
 		{
@@ -1419,10 +1413,22 @@
 			"input": "x = R.0; x",
 			"output": [
 				{
-					"stdout": "x"
+					"stderr": "Error in lines 1-1\n"
 				},
 				{
-					"stdout": "\n"
+					"stderr": "Traceback (most recent call last):\n"
+				},
+				{
+					"stderr": "  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"
+				},
+				{
+					"stderr": "    exec compile(block, '', 'single') in namespace, locals\n"
+				},
+				{
+					"stderr": "  File \"\", line 1, in <module>\n"
+				},
+				{
+					"stderr": "AttributeError: type object 'R' has no attribute 'gen'\n"
 				},
 				{
 					"stdout": ""
