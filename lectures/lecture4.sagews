@@ -16,7 +16,7 @@
 
 
 
-︡1b0d1002-144e-4da2-9583-e1c43193a320︡{"done":false,"event":"output"}︡{"html":"<h1>Today's Goals:</h1>\n\n<h2>1. More about Python Functions</h2>\n\n<h2>2. Start Python Classes -- defining your own type of objects</h2>\n\n<ul>\n<li><p>Coming up: modules (putting your code in files); packing your code up to distribute.</p></li>\n<li><p>After that: <strong>Cython</strong></p></li>\n</ul>\n\n<p>(Remind me to start the <strong>screencast</strong>!)</p>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+︡ceb48e82-a7f9-40d1-a8d8-a69035fa84ce︡{"done":false,"event":"output"}︡{"html":"<h1>Today's Goals:</h1>\n\n<h2>1. More about Python Functions</h2>\n\n<h2>2. Start Python Classes -- defining your own type of objects</h2>\n\n<ul>\n<li><p>Coming up: exception handling (try/except/finally); modules (putting your code in files); packing your code up to distribute.</p></li>\n<li><p>After that: <strong>Cython</strong></p></li>\n</ul>\n\n<p>(Remind me to start the <strong>screencast</strong>!)</p>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠5910d639-455d-4cdc-a6f5-a1e82a946d11r︠
 
 
@@ -33,14 +33,17 @@ md("""
 * ... and also it is useful to call functions with any numbers of positional and keyword arguments.
 
 Python has a fairly straightforward way to do this.  When this function is called all the positional arguments after x,y get assigned to the tuple "args", and all keywoard arguments get put in the dictionary "kwds".
+<pre>
     def f(x, y, *args, **kwds):
-
+</pre>
 Similarly, for this one, the keywoard arguments after foo get put in "kwds".
+<pre>
     def f(x, y, foo='bar', **kwds):
-
+</pre>
 If args is a tuple and kwds a dictionary, and you write
+<pre>
     f(1, 7, *args, **kwds)
-
+</pre>
 then f will get called with positional inputs 1,7, each of the entries in args as additional position inputs, then the entries in kwds as keyword arguments.
 """)
 
@@ -53,19 +56,25 @@ then f will get called with positional inputs 1,7, each of the entries in args a
 
 
 
-︡f10c2f84-735d-4a27-9055-c4623da1b59b︡{"done":false,"event":"output"}︡{"html":"<h1>Variable number of arguments: <em>args and *</em>kwds</h1>\n\n<ul>\n<li>Python is very dynamic language, so it is useful to be able to create functions that can take any number of arguments</li>\n<li>... and also it is useful to call functions with any numbers of positional and keyword arguments.</li>\n</ul>\n\n<p>Python has a fairly straightforward way to do this.  When this function is called all the positional arguments after x,y get assigned to the tuple \"args\", and all keywoard arguments get put in the dictionary \"kwds\".\n    def f(x, y, <em>args, *</em>kwds):</p>\n\n<p>Similarly, for this one, the keywoard arguments after foo get put in \"kwds\".\n    def f(x, y, foo='bar', **kwds):</p>\n\n<p>If args is a tuple and kwds a dictionary, and you write\n    f(1, 7, <em>args, *</em>kwds)    </p>\n\n<p>then f will get called with positional inputs 1,7, each of the entries in args as additional position inputs, then the entries in kwds as keyword arguments.</p>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+︡c3dc5a62-7d4c-4a02-b1f7-dd2a14a893c6︡{"done":false,"event":"output"}︡{"html":"<h1>Variable number of arguments: <em>args and *</em>kwds</h1>\n\n<ul>\n<li>Python is very dynamic language, so it is useful to be able to create functions that can take any number of arguments</li>\n<li>... and also it is useful to call functions with any numbers of positional and keyword arguments.</li>\n</ul>\n\n<p>Python has a fairly straightforward way to do this.  When this function is called all the positional arguments after x,y get assigned to the tuple \"args\", and all keywoard arguments get put in the dictionary \"kwds\".</p>\n\n<pre>\n    def f(x, y, *args, **kwds):\n</pre>\n\n<p>Similarly, for this one, the keywoard arguments after foo get put in \"kwds\".</p>\n\n<pre>\n    def f(x, y, foo='bar', **kwds):\n</pre>\n\n<p>If args is a tuple and kwds a dictionary, and you write</p>\n\n<pre>\n    f(1, 7, *args, **kwds)\n</pre>\n\n<p>then f will get called with positional inputs 1,7, each of the entries in args as additional position inputs, then the entries in kwds as keyword arguments.</p>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠6b7fd8d4-f32f-4826-81a9-533b8564b80dr︠def f(x, y, *args, **kwds):
     print locals()
 
+
 f(2,3, 5, abc=12)
-︡abb9f59e-8090-41d9-bc0f-d9f10d7f6f51︡{"done":false,"event":"output"}︡{"stdout":"{'y': 3, 'x': 2, 'args': (5,), 'kwds': {'abc': 12}}","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+
+tuple(None)
+'hi'
+︡4578f2bf-c746-42d8-b618-61cc0bc3f398︡{"done":false,"event":"output"}︡{"stdout":"{'y': 3, 'x': 2, 'args': (5,), 'kwds': {'abc': 12}}","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"done":false,"event":"output","stderr":"Error in lines 4-4\n"}︡{"done":false,"event":"output","stderr":"Traceback (most recent call last):\n"}︡{"done":false,"event":"output","stderr":"  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"}︡{"done":false,"event":"output","stderr":"    exec compile(block, '', 'single') in namespace, locals\n"}︡{"done":false,"event":"output","stderr":"  File \"\", line 1, in <module>\n"}︡{"done":false,"event":"output","stderr":"TypeError: 'NoneType' object is not iterable\n"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠8702e82d-6525-4f37-8d02-04d6e3614afer︠
 f('hello', 'y', a=5, bc=17)
 ︡64785f46-c745-40b9-a4d0-ac80c18573bb︡{"done":false,"event":"output"}︡{"stdout":"{'y': 'y', 'x': 'hello', 'args': (), 'kwds': {'a': 5, 'bc': 17}}","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+
 ︠ff36e3fd-748e-41e2-949e-0be1eab62680r︠
 args = (1,2);  kwds={'stuff':123}
 f(*args, **kwds)
-︡8050f3ad-78a1-49f0-bb72-64b6c431982e︡{"done":false,"event":"output"}︡{"stdout":"{'y': 2, 'x': 1, 'args': (), 'kwds': {'stuff': 123}}","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+f(1,2, stuff=123)
+︡6db941ca-aa59-4129-b301-0240f244d809︡{"done":false,"event":"output"}︡{"stdout":"{'y': 2, 'x': 1, 'args': (), 'kwds': {'stuff': 123}}","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"{'y': 2, 'x': 1, 'args': (), 'kwds': {'stuff': 123}}","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠46efc1b6-436d-496c-a9fd-d5fdce0fe50cr︠
 %md
 
@@ -79,21 +88,24 @@ A potentially annoying limitation is that the kwds must be strings and must be v
 ︠59ac4c7a-ae5f-44be-8957-88d26c8145dar︠
 # The R.<...> notation is not valid Python -- it is Sage specific.  It defines x y as generators of the ring.
 
+preparse('k.<a> = GF(7^3); k')
+
 R.<x,y> = PolynomialRing(GF(7));  R
-︡c1cc2fe5-0f83-4634-ae50-6db3f9acc8ae︡{"done":false,"event":"output"}︡{"stdout":"Multivariate Polynomial Ring in x, y over Finite Field of size 7","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︡430345d1-3d08-44e1-a743-533634c2ddb2︡{"done":false,"event":"output"}︡{"stdout":"\"k = GF(Integer(7)**Integer(3), names=('a',)); (a,) = k._first_ngens(1); k\"","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"Multivariate Polynomial Ring in x, y over Finite Field of size 7","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠f739fc52-7903-4357-aaf5-6f21f62dd10ar︠
-f = (x+y)^5; show(f)
-︡cfde5965-a045-4f30-912f-95847611d64a︡{"done":false,"event":"output"}︡{"tex":{"tex":"x^{5} + 5 x^{4} y + 3 x^{3} y^{2} + 3 x^{2} y^{3} + 5 x y^{4} + y^{5}","display":true},"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+f = (x+y)^7; show(f)
+︡596b4bae-1c1e-48bd-9f24-37b7f5b242ce︡{"done":false,"event":"output"}︡{"tex":{"tex":"x^{7} + y^{7}","display":true},"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠59547149-01f4-47ef-8611-27af5325d06fr︠
 f(x=3, y=5)
 ︡44a81558-0d56-454e-94cb-e33afa95c40e︡{"done":false,"event":"output"}︡{"stdout":"1","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠e039b955-93a1-4d24-b9a3-4a227e0f1dcdr︠
 R = PolynomialRing(GF(7), 'x,x'); R
-︡8b914bf7-90db-4864-b76d-ab1d121eb49c︡{"done":false,"event":"output"}︡{"stdout":"Multivariate Polynomial Ring in x, x over Finite Field of size 7","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︡d393d2f9-6142-4227-9fb2-d650bb4d2774︡{"done":false,"event":"output"}︡{"stdout":"Multivariate Polynomial Ring in x, x over Finite Field of size 7","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠884a4110-dce2-4f55-8e6b-9dd0ef985977r︠
+preparse('R.0')
 f = R.0 + 2*R.1; f
-︡3c80e249-debb-4627-ac8a-7339c84508f9︡{"done":false,"event":"output"}︡{"stdout":"x + 2*x","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 
+︡415fdbf8-1980-4677-a45e-81182ba808e1︡{"done":false,"event":"output"}︡{"stdout":"'R.gen(0)'","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"x + 2*x","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠fe4eaa94-b2ab-4753-bca4-ccbe267d79f6r︠x = R.0; x
 ︡f7ccc76c-a5a1-4fbb-8666-1fdea613867a︡{"done":false,"event":"output"}︡{"stdout":"x","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠4c7724bf-bea6-44a6-85d2-69d8c6709422r︠
@@ -127,14 +139,26 @@ f.subs({R.1:3})   # the second x, evidently....
     r"""
     This function takes three things, a,b and c, and returns the sum $\sum a_i = a^2 + b^2 + c^2$ of their squares.
 
+    EXAMPLES::
+
+       sage: 2+2       # random
+       4
+
     AUTHOR: William Stein
     """
+    # this is a comment
     return a^2+b^2+c^2
 
-︡27bc201b-9abc-4668-bdb8-60fe1250ec7e︡{"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+"jasd flkasj dflasdfk foo's sjdlfjsd"
+'jdfljdslfjsdjf " lsdkfjsdlfj'
+"kljsdflkjsdfsfdj \" lksjdflkjsd"
+r"ladjfljsdfljsdfjk"
+
+︡e65520b0-3a92-43f3-beec-555995d44a84︡{"done":false,"event":"output"}︡{"stdout":"\"jasd flkasj dflasdfk foo's sjdlfjsd\"","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"'jdfljdslfjsdjf \" lsdkfjsdlfj'","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"'kljsdflkjsdfsfdj \" lksjdflkjsd'","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"'ladjfljsdfljsdfjk'","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠4d844e4e-c2d0-4899-92c4-c17ba52b7cd4r︠# The docstring is something we can access (or even change!) at runtime.
+# "introspection"
 print f.__doc__
-︡fef3d284-bf4e-481c-832c-3e223931ef7f︡{"done":false,"event":"output"}︡{"stdout":"\n    This function takes three things, a,b and c, and returns the sum $\\sum a_i = a^2 + b^2 + c^2$ of their squares.\n\n    AUTHOR: William Stein\n    ","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︡2f0ff1c5-4078-49ec-9c19-12c2a39e8db9︡{"done":false,"event":"output"}︡{"stdout":"\n    This function takes three things, a,b and c, and returns the sum $\\sum a_i = a^2 + b^2 + c^2$ of their squares.\n\n    EXAMPLES::\n\n       sage: 2+2\n       4\n\n    AUTHOR: William Stein\n    ","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠aeba8ee5-f095-4180-b3cb-fb60449ff287r︠f.__doc__ += ' (April 8, 2013)'
 print f.__doc__
 
@@ -188,23 +212,35 @@ inspect.getargspec(f)
 
 ︡b67a3040-8082-475b-969a-79da5fc164f7︡{"done":false,"event":"output"}︡{"html":"<h1>Python Classes -- Python is object-oriented from the ground up!</h1>\n\n<ul>\n<li>multiple inheritence</li>\n<li>operator overloading</li>\n</ul>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠5c173d58-ae94-4ef3-b236-9d9e283a43bdr︠# Here's how to define a new class:
-class MathList(list):  # comma separted list of classes it derives from in parens
-     def __init__(self, x):
-         """This function is called when you create the object."""
-         list.__init__(self, x)
+class MathList(list):
+     # comma separted list of classes it derives from in parens
+     #class_field0 = "taylor"
+     def __init__(this, x):
+         """when you create the object."""
+         list.__init__(this, x)
+         this.class_field = "taylor"
      def __repr__(self):
          return "<" + list.__repr__(self)[1:-1] + ">"
      def __add__(self, right):
          """Addition is component-wise."""
-         return MathList([self[i] + right[i] for i in range(len(self))])
+         return MathList([self[i] + right[i] for
+                          i in range(len(self))])
+     def __mul__(self, right):
+         return MathList(list(self) + list(right))
+
      # There are dozens of other dunder methods,
      #    [underscore][underscore]mul[underscore][underscore]
      # for overloading operators....
-︡a191736e-68ac-48a0-9007-ff6508961f7a︡{"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︡1b5a30ec-f1ca-4da5-8c86-8cb68d8e2256︡{"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠ba478c16-0610-4b16-893d-eac2149be332r︠# There is no "new" keyword like in some languages
-v = MathList([1,2,3]); v
-︡6cdb7aee-f431-4685-a5ce-49025a0b9211︡{"done":false,"event":"output"}︡{"stdout":"<1, 2, 3>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
-︠e638b43d-7217-436e-bb7e-7c067edf3d89r︠w = MathList([3,e,pi]); w
+v = MathList([1,2,3]);
+v.class_field = "william"
+
+v.class_field
+︡b8820705-7711-4b41-b6c7-2be02510e7e8︡{"done":false,"event":"output"}︡{"stdout":"'william'","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︠e638b43d-7217-436e-bb7e-7c067edf3d89r︠# properties solve the getter
+
+w = MathList([3,e,pi]); w
 ︡0bc5a36a-2026-4c22-b686-3c4716696022︡{"done":false,"event":"output"}︡{"stdout":"<3, e, pi>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠2d49cbb7-f33e-4e7c-a0a9-44339d151f23r︠v + w
 ︡91514805-04c9-4b5c-8172-e170245b50b8︡{"done":false,"event":"output"}︡{"stdout":"<4, e + 2, pi + 3>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
