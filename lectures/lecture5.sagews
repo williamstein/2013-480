@@ -169,10 +169,10 @@ I remember David Harveyfinding it after debugging why computing $\alpha f(x)$, f
 ︡694de999-1ebc-4756-a62f-a23d9c8eb7eb︡{"done":false,"event":"output"}︡{"html":"<h3>This mistake was all over Sage in 2006...</h3>\n\n<p>I remember David Harvey finding it after debugging why computing $\u0007lpha f(x)$, for $\u0007lpha$ a scalar and $f(x)$ a polynomial, was taking a huge amount of time.  It turned out that in the internal arithmetic code there was a try/except that determined which <code>__mul__</code> to use, and the runtime was dominated by computing the string representation of $f(x)$!</p>\n\n<h1>DOH.</h1>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠d051cda1-bf60-4e41-bc1e-ad46ecf79fd6r︠
 %md
-### Next, we will start Cython.   Brush up on your basic C programming, since it is relevant. 
+### Next, we will start Cython.   Brush up on your basic C programming, since it is relevant.
 ︡6b5a5831-ff7c-41cf-991f-0d030310db3a︡{"done":false,"event":"output"}︡{"html":"<h3>Next, we will start Cython.   Brush up on your basic C programming, since it is relevant.</h3>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠c34b8c3d-f411-4207-8450-5620784222c1︠
- 
+
 
 
 
