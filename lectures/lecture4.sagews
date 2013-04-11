@@ -214,13 +214,14 @@ inspect.getargspec(f)
 ︠5c173d58-ae94-4ef3-b236-9d9e283a43bdr︠# Here's how to define a new class:
 class MathList(list):
      # comma separted list of classes it derives from in parens
-     #class_field0 = "taylor"
      def __init__(this, x):
          """when you create the object."""
          list.__init__(this, x)
          this.class_field = "taylor"
+
      def __repr__(self):
          return "<" + list.__repr__(self)[1:-1] + ">"
+
      def __add__(self, right):
          """Addition is component-wise."""
          return MathList([self[i] + right[i] for
@@ -231,33 +232,73 @@ class MathList(list):
      # There are dozens of other dunder methods,
      #    [underscore][underscore]mul[underscore][underscore]
      # for overloading operators....
-︡1b5a30ec-f1ca-4da5-8c86-8cb68d8e2256︡{"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+
+MathList
+︡8e1b6513-25b8-484f-9c53-b02a70fbb2a9︡{"done":false,"event":"output"}︡{"stdout":"<class 'MathList'>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠ba478c16-0610-4b16-893d-eac2149be332r︠# There is no "new" keyword like in some languages
 v = MathList([1,2,3]);
-v.class_field = "william"
-
-v.class_field
-︡b8820705-7711-4b41-b6c7-2be02510e7e8︡{"done":false,"event":"output"}︡{"stdout":"'william'","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+w = MathList([3,e,pi])
+v+w
+v*w
+︡18b54e79-a340-4213-92ba-88e4785d0712︡{"done":false,"event":"output"}︡{"stdout":"<4, e + 2, pi + 3>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"<1, 2, 3, 3, e, pi>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠e638b43d-7217-436e-bb7e-7c067edf3d89r︠# properties solve the getter
 
 w = MathList([3,e,pi]); w
 ︡0bc5a36a-2026-4c22-b686-3c4716696022︡{"done":false,"event":"output"}︡{"stdout":"<3, e, pi>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠2d49cbb7-f33e-4e7c-a0a9-44339d151f23r︠v + w
 ︡91514805-04c9-4b5c-8172-e170245b50b8︡{"done":false,"event":"output"}︡{"stdout":"<4, e + 2, pi + 3>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︠2e1eecb2-3508-4c36-9aa0-e1d9e408f36fr︠
+class C(object):
+    def __init__(self):
+        self._x = 2/3
+
+    def getx(self):
+        return self._x
+    def setx(self, value):
+        self._x = QQ(value)
+    def delx(self):
+        del self._x
+    x = property(getx, setx, delx, "I'm the 'x' property.")
+
+my_thing = C()
+my_thing.x
+
+︡3a9bddc7-353c-49f4-950d-f0e97e547e58︡{"done":false,"event":"output"}︡{"stdout":"2/3","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︠a7fdf5bd-0fea-4a89-ac7d-ad2551d6cc4ar︠
+my_thing.x = 5
+print my_thing.x
+type(my_thing.x)
+︡9377b8d8-e7b4-43e8-b3c6-3c03b132968d︡{"done":false,"event":"output"}︡{"stdout":"5","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"<type 'sage.rings.rational.Rational'>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︠39305f47-ceda-458d-b1d8-a01ec49bf283r︠
+a = random_matrix(ZZ,100); a
+︡a9780140-cce8-448f-982a-24dae618f032︡{"done":false,"event":"output"}︡{"stdout":"100 x 100 dense matrix over Integer Ring (type 'print a.str()' to see all of the entries)","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︠c1914bfc-8488-4840-8ef9-256ab4dbe3c7r︠
+a[0]
+︡fd909d93-b8b4-48eb-afe2-ac67c07df2c2︡{"done":false,"event":"output"}︡{"stdout":"(-1, -1, -5, 0, 11, 0, -2, -3, 0, 2, -1, -2, 1, -1, -7, 0, -5, 0, 1, 3, 0, 4, -3, 0, 4, 4, 0, -2, -2, -1, 0, -1, -1, -2, 0, -6, 0, 1, 0, 4, 0, 3, 0, 1, 0, 1, 0, -1, -1, 0, 8, -1, -1, -2, -1, 0, -2, 3, -1, 0, 1, -1, -1, 0, -1, 0, 1, -1, 2, -1, -1, 1, -1, -62, -1, -1, -1, -1, -1, 1, 0, -2, 1, -1, 1, -1, -1, 1, 3, 0, 1, 44, -2, 0, 1, 0, -1, -2, -2, 4)","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︠1f679ebc-7641-41e1-83e6-78e402429b9d︠
+
+︠79efd6ac-9daf-43fc-a78b-4b37d3180200r︠
+%time
+a.det()
+︡d4a2e626-c6eb-40fe-bd7e-9ab9ebf6d1f5︡{"done":false,"event":"output"}︡{"stdout":"-319510381158877042598115801138773891772698297070856551095263875747612193774897938240291846661423178159441418990832608348719912521406072066984327026255694714580799306123069928130203781528139641303852","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"CPU time: 0.21 s, Wall time: 0.16 s","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︠4a7d1c03-2082-44cf-bff7-e9d72217cf14︠
+a.rank
 ︠9c2de0fd-8c78-4eb5-864e-9a4e685a0390r︠class Summable:
     def sum(self):
         s = 0
         for i in self:
-            s += 0
+            s += i
         return s
 
 class MySummableList(MathList, Summable):  # Multiple Inheritence
-    pass
+    pass   # <--- nothing.
 
-v = MySummableList([1..100]); v
-︡65b4f34e-87d0-4cd4-b56d-243b3c02ecf9︡{"done":false,"event":"output"}︡{"stdout":"<1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+# "it is so annoying to put this here."
+
+v = MySummableList([1..10]); v
+︡855f9649-b249-42b9-81d1-261df81042e1︡{"done":false,"event":"output"}︡{"stdout":"<1, 2, 3, 4, 5, 6, 7, 8, 9, 10>","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠551b7564-356c-42c5-b62d-cc77cc13aab5r︠v.sum()
-︡8f2542ff-50f3-4795-9089-db23d25c48a0︡{"done":false,"event":"output"}︡{"stdout":"5050","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︡106b05cb-a16c-4a7b-8cbe-eb55122e78f3︡{"done":false,"event":"output"}︡{"stdout":"55","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠e3caefb8-bfb3-42d7-9985-a021450ccfdcr︠
 
 
