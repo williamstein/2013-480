@@ -1,4 +1,7 @@
-
+︠093af95a-5e21-4fed-91c8-a048668ef973r︠
+# Note -- Jason Grout: "You can make an empty tuple with ()"
+()
+︡76467bc4-3d2e-4458-9fcb-69e5ebf61666︡{}︡{"stdout":"()"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠64eecbb1-3c1e-4360-8f99-5d5d3b63d1dfr︠
 %md
 # Lecture 6 (Math 480): Mainly Cython today
@@ -8,7 +11,7 @@
 
 
 
-
+Note -- Jason Grout: "You can make an empty tuple with ()"
 
 ︡056a7a6e-9f4f-4e3b-a89a-f255062ba081︡{"done":false,"event":"output"}︡{"html":"<h1>Lecture 6 (Math 480):</h1>\n\n<h2>Mainly Cython today</h2>\n\n<h3>William Stein</h3>\n\n<h3>Reminder: start screen recording (I forgot last time)!!!!</h3>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠a9721715-b930-4fc0-8e73-afbc0c9e492br︠
