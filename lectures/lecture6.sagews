@@ -18,7 +18,7 @@ Note -- Jason Grout: "You can make an empty tuple with ()"
 md("""
 # Tours of some ways to use Sage
 
-1. Quick tour/tutorial about [sagenb](http://sagenb.org) (and [480 sagenb](http://480.sagenb.org/))
+1. Quick tour/tutorial about [sagenb](http://sagenb.org) (and [480 sagenb](http://480.sagenb.org/)) -- this doesn't work well. 
 
 1. [sagecell](https://sagecell.sagemath.org/) (and see the embedded examples here: [beezer](http://buzzard.ups.edu/))
 
