@@ -18,7 +18,7 @@ Note -- Jason Grout: "You can make an empty tuple with ()"
 md("""
 # Tours of some ways to use Sage
 
-1. Quick tour/tutorial about [sagenb](http://sagenb.org) (and [480 sagenb](http://480.sagenb.org/)) -- this doesn't work well. 
+1. Quick tour/tutorial about [sagenb](http://sagenb.org) (and [480 sagenb](http://480.sagenb.org/)) -- this doesn't work well.
 
 1. [sagecell](https://sagecell.sagemath.org/) (and see the embedded examples here: [beezer](http://buzzard.ups.edu/))
 
@@ -30,6 +30,15 @@ md("""
 
 
 ︡6a0e7967-fbcd-4e0c-9e58-af0cf8cccaee︡{"done":false,"event":"output"}︡{"html":"<h1>Tours of some ways to use Sage</h1>\n\n<ol>\n<li><p>Quick tour/tutorial about <a href=\"http://sagenb.org\">sagenb</a> (and <a href=\"http://480.sagenb.org/\">480 sagenb</a>)</p></li>\n<li><p><a href=\"https://sagecell.sagemath.org/\">sagecell</a> (and see the embedded examples here: <a href=\"http://buzzard.ups.edu/\">beezer</a>)</p></li>\n<li><p><a href=\"https://cloud.sagemath.org\">cloud.sagemath.org</a></p></li>\n</ol>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+︠d05cde98-8f28-436a-9fc1-e845c5cc673er︠
+%cython
+
+def f(int n):
+    return n*n
+︡a29dce98-1bd1-4f1a-b38a-263e32cf4e96︡{}︡{"file":{"show":false,"uuid":"3f993a7d-aac0-4eb1-91fb-e775e299c9c5","filename":"/home/wstein/.sage/temp/u/29023/spyx/_home_wstein__sage_temp_u_29023_dir_Z02kiv_a_pyx/_home_wstein__sage_temp_u_29023_dir_Z02kiv_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/u/29023/spyx/_home_wstein__sage_temp_u_29023_dir_Z02kiv_a_pyx/_home_wstein__sage_temp_u_29023_dir_Z02kiv_a_pyx_0.html?uuid=3f993a7d-aac0-4eb1-91fb-e775e299c9c5' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
+︠f0d2f2cf-ab5a-4285-bf62-bc2fe259bdb7r︠
+f(10)
+︡ff296049-c9d8-4329-8773-b5adaa912457︡{}︡{"stdout":"100"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠d9e995d9-6c95-46b0-a45e-d9230ef1ca4cr︠
 
 md("""
