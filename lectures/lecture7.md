@@ -1,0 +1,1 @@
+Lecture 7 is just the second part of lecture 6, since I spent a lot of time on other things and the tour during Lecture 6.
