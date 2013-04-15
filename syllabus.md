@@ -2,7 +2,7 @@
 
 Description: Math 480 is a course about the open source mathematical software Sage.
 
-Instructor: William Stein, Professor of Mathematics, Office Padelford 423, Office Hours: 12:00-1:30 TUESDAYS, Webpage: [wstein.org](http://wstein.org)
+Instructor: William Stein, Professor of Mathematics, Office Padelford 423, Office Hours: 12:30-2:00 TUESDAYS, Webpage: [wstein.org](http://wstein.org)
 
 Prerequisite: Math 126 (Calculus) and a Programming Language
 
