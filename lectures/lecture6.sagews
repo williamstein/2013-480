@@ -1,7 +1,7 @@
 ︠093af95a-5e21-4fed-91c8-a048668ef973r︠
 # Note -- Jason Grout: "You can make an empty tuple with ()"
 ()
-︡76467bc4-3d2e-4458-9fcb-69e5ebf61666︡{}︡{"stdout":"()"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︡d8149447-8228-43f7-94c5-8272988583c7︡{}︡{"stdout":"()"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠64eecbb1-3c1e-4360-8f99-5d5d3b63d1dfr︠
 %md
 # Lecture 6 (Math 480): Mainly Cython today
@@ -30,12 +30,19 @@ md("""
 
 
 ︡6a0e7967-fbcd-4e0c-9e58-af0cf8cccaee︡{"done":false,"event":"output"}︡{"html":"<h1>Tours of some ways to use Sage</h1>\n\n<ol>\n<li><p>Quick tour/tutorial about <a href=\"http://sagenb.org\">sagenb</a> (and <a href=\"http://480.sagenb.org/\">480 sagenb</a>)</p></li>\n<li><p><a href=\"https://sagecell.sagemath.org/\">sagecell</a> (and see the embedded examples here: <a href=\"http://buzzard.ups.edu/\">beezer</a>)</p></li>\n<li><p><a href=\"https://cloud.sagemath.org\">cloud.sagemath.org</a></p></li>\n</ol>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+︠04b02789-5792-469e-ab96-1f4da57b8da7r︠
+%md
+
+
+
+# Lecture 7 (2013-04-15) starts here
+︡dc832d87-2319-46ef-beb8-8241d8b78c9d︡{}︡{"html":"<h1>Lecture 7 (2013-04-15) starts here</h1>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
 ︠d05cde98-8f28-436a-9fc1-e845c5cc673er︠
 %cython
 
 def f(int n):
     return n*n
-︡a29dce98-1bd1-4f1a-b38a-263e32cf4e96︡{}︡{"file":{"show":false,"uuid":"3f993a7d-aac0-4eb1-91fb-e775e299c9c5","filename":"/home/wstein/.sage/temp/u/29023/spyx/_home_wstein__sage_temp_u_29023_dir_Z02kiv_a_pyx/_home_wstein__sage_temp_u_29023_dir_Z02kiv_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/u/29023/spyx/_home_wstein__sage_temp_u_29023_dir_Z02kiv_a_pyx/_home_wstein__sage_temp_u_29023_dir_Z02kiv_a_pyx_0.html?uuid=3f993a7d-aac0-4eb1-91fb-e775e299c9c5' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
+︡caacf63f-165e-42c9-84d2-6fc00fd604b6︡{}︡{"file":{"show":false,"uuid":"e7642f23-4ec6-42fd-85b3-1898d48b9e30","filename":"/home/wstein/.sage/temp/localhost/12052/spyx/_home_wstein__sage_temp_localhost_12052_dir_0oQ6au_a_pyx/_home_wstein__sage_temp_localhost_12052_dir_0oQ6au_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/localhost/12052/spyx/_home_wstein__sage_temp_localhost_12052_dir_0oQ6au_a_pyx/_home_wstein__sage_temp_localhost_12052_dir_0oQ6au_a_pyx_0.html?uuid=e7642f23-4ec6-42fd-85b3-1898d48b9e30' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
 ︠f0d2f2cf-ab5a-4285-bf62-bc2fe259bdb7r︠
 f(10)
 ︡ff296049-c9d8-4329-8773-b5adaa912457︡{}︡{"stdout":"100"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
