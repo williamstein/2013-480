@@ -144,10 +144,20 @@ def f1(n):
     return s
 
 f1(5050)
-︡58941052-7591-4053-98ec-f5de8a0b19cb︡{}︡{"stdout":"12748725"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︡0e60fc0e-8e61-4be9-8dfe-91468d417226︡{}︡{"stdout":"12748725"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠1c7b9f0a-1988-4d3a-bdd8-05c49fd3a1edr︠
+t = walltime()
+sleep(1.5)
+walltime(t)
+︡33967d4f-ea22-47df-9052-85e7bfed024e︡{}︡{"stdout":"1.5023751258850098"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠6920628a-2014-4c1d-b58f-eee15f5ff7c3r︠
+t = cputime()
+sleep(1.5)
+cputime(t)
+︡a5f2d9cd-d755-4fad-8f50-e4524ce03c40︡{}︡{"stdout":"0.0009999999999998899"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠7bfc1294-37dc-4c8e-9c59-53381aef7355r︠
-%timeit f1(5050)
-︡463f82bf-623d-4698-a57c-4692dfff969e︡{}︡{"stdout":"25 loops, best of 3: 12.5 ms per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+%timeit(number=30) f1(5050)
+︡bdac5046-a5e0-430f-832a-233fec2283b0︡{}︡{"stdout":"30 loops, best of 3: 9.59 ms per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠1efc3ce9-5801-47a4-aacd-191a8f1bfa0er︠
 # Same thing, in Cython
 %cython
@@ -159,14 +169,14 @@ def f2(n):
     return s
 
 print f2(5050)
-︡bd799821-ae6b-4c1d-984f-2cc8033b77cd︡{}︡{"stdout":"12748725"}︡{"stdout":"\n"}︡{"file":{"show":false,"uuid":"6b227a31-b623-4785-8438-90a120e5fc56","filename":"/home/wstein/.sage/temp/u/6179/spyx/_home_wstein__sage_temp_u_6179_dir_VXz2eZ_a_pyx/_home_wstein__sage_temp_u_6179_dir_VXz2eZ_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/u/6179/spyx/_home_wstein__sage_temp_u_6179_dir_VXz2eZ_a_pyx/_home_wstein__sage_temp_u_6179_dir_VXz2eZ_a_pyx_0.html?uuid=6b227a31-b623-4785-8438-90a120e5fc56' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
+︡c8306588-61e9-408a-ad22-26060c7638d2︡{}︡{"stdout":"12748725"}︡{"stdout":"\n"}︡{"file":{"show":false,"uuid":"3d16218f-20d7-4850-a8cb-f52aa5526525","filename":"/home/wstein/.sage/temp/localhost/3668/spyx/_home_wstein__sage_temp_localhost_3668_dir_bfEitg_a_pyx/_home_wstein__sage_temp_localhost_3668_dir_bfEitg_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/localhost/3668/spyx/_home_wstein__sage_temp_localhost_3668_dir_bfEitg_a_pyx/_home_wstein__sage_temp_localhost_3668_dir_bfEitg_a_pyx_0.html?uuid=3d16218f-20d7-4850-a8cb-f52aa5526525' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
 ︠3e7d0c3a-c363-4484-be66-a7120979684ar︠
 %timeit f2(5050)
-︡2d7241af-790d-41b4-9d20-308e7fc66ad6︡{"done":false,"event":"output"}︡{"stdout":"625 loops, best of 3: 167 µs per loop","done":false,"event":"output"}︡{"stdout":"\n","done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︡25398270-88b3-4db2-b217-e9aaa42b974b︡{}︡{"stdout":"625 loops, best of 3: 180 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠c1d43c00-566f-40de-b981-2c077ed25cd5r︠
 # It's 74 times faster
-12.5/.167
-︡92c539d0-dfbc-4ec5-b2a2-496b14366042︡{}︡{"stdout":"74.8502994011976"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+9.6/.180
+︡4c738d99-54c8-4877-b1d6-38eb48c4e3b6︡{}︡{"stdout":"53.3333333333333"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠69b450cc-fa43-4e99-b06a-2a4c188487cbr︠
 # Why?
 # The Sage preparser---which makes all integers use MPIR---slows
@@ -182,7 +192,7 @@ def f3(n):
 
 f3(5050)
 %timeit f3(5050)
-︡0811a98f-8f08-4b2f-ace7-6163942b31b3︡{}︡{"stdout":"12748725"}︡{"stdout":"\n"}︡{"stdout":"625 loops, best of 3: 331 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︡f7f8795c-67ce-4f1e-bd30-89cb669ae0b9︡{}︡{"stdout":"12748725"}︡{"stdout":"\n"}︡{"stdout":"625 loops, best of 3: 469 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠d87a33af-9c1d-4ab3-9a0d-edff829338d4r︠
 # So really, here, Cython is only giving a speedup of a factor
 # of 2.   This is typical if you don't do any extra work.
@@ -192,23 +202,21 @@ f3(5050)
 # Cython let's us declare data types, like in the C language (or in Java).
 # ENTER: True speed & terrifying danger!
 %cython
-def f4(int n):
-    cdef int i, s = 0
+def f4(long n):
+    cdef long i, s = 0
     for i in range(n):
         s += i
     return s
 
 print f4(5050)
 
-︡ab75bcbf-e796-4d80-85d0-d6bcb889cf61︡{}︡{"stdout":"12748725"}︡{"stdout":"\n"}︡{"file":{"show":false,"uuid":"ef868710-03dc-42d6-b152-a9c2ae23837f","filename":"/home/wstein/.sage/temp/u/6179/spyx/_home_wstein__sage_temp_u_6179_dir_fUdcev_a_pyx/_home_wstein__sage_temp_u_6179_dir_fUdcev_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/u/6179/spyx/_home_wstein__sage_temp_u_6179_dir_fUdcev_a_pyx/_home_wstein__sage_temp_u_6179_dir_fUdcev_a_pyx_0.html?uuid=ef868710-03dc-42d6-b152-a9c2ae23837f' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
+︡97732df4-fe0c-407e-9fc2-42d3889452e1︡{}︡{"stdout":"12748725"}︡{"stdout":"\n"}︡{"file":{"show":false,"uuid":"ac521c2c-f68b-4c64-9319-1fed86f3c2ee","filename":"/home/wstein/.sage/temp/localhost/3668/spyx/_home_wstein__sage_temp_localhost_3668_dir_X70cSz_a_pyx/_home_wstein__sage_temp_localhost_3668_dir_X70cSz_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/localhost/3668/spyx/_home_wstein__sage_temp_localhost_3668_dir_X70cSz_a_pyx/_home_wstein__sage_temp_localhost_3668_dir_X70cSz_a_pyx_0.html?uuid=ac521c2c-f68b-4c64-9319-1fed86f3c2ee' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
 ︠d826cd0b-1237-4255-b656-49ffd0348e04r︠
 %timeit f4(5050)
-︡eebc2206-4e3c-4ec0-8b9d-be3706db0652︡{}︡{"stdout":"625 loops, best of 3: 3.41 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︡13d78315-dd70-4edd-a3a5-b2e1daf3fd9d︡{}︡{"stdout":"625 loops, best of 3: 5.47 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠8adb0cb6-47ea-494e-95de-b97efc9bd48ar︠
-print "Compared with original Sage implementation: ", 12.5 / .00341
-print "Compared with using Python ints", 331/3.41
-print "Compared with Cython with no type declarations", 167/3.41
-︡726d6e6c-a54b-47f6-a836-bf2380197e14︡{}︡{"stdout":"Compared with original Sage implementation: "}︡{"stdout":" "}︡{"stdout":"3665.68914956012"}︡{"stdout":"\n"}︡{"stdout":"Compared with using Python ints"}︡{"stdout":" "}︡{"stdout":"97.0674486803519"}︡{"stdout":"\n"}︡{"stdout":"Compared with Cython with no type declarations"}︡{"stdout":" "}︡{"stdout":"48.9736070381232"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+print "Compared with original Sage implementation: ", 9.6 / 0.00543
+︡cb7c99e0-f2d2-41cd-a317-917a79a1bc52︡{}︡{"stdout":"Compared with original Sage implementation: "}︡{"stdout":" "}︡{"stdout":"1767.95580110497"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠f00402d0-1dbf-40c4-9757-31f04bdf0c97r︠
 # A slightly bigger test to make sure that the C compiler is not optimizing
 # out the loop (it will on some systems).
@@ -216,11 +224,33 @@ print "Compared with Cython with no type declarations", 167/3.41
 %timeit f2(50500)
 %timeit f3(50500)
 %timeit f4(50500)
-︡ca02c03f-019b-411f-835d-a63c8b0fc0b9︡{}︡{"stdout":"5 loops, best of 3: 127 ms per loop"}︡{"stdout":"\n"}︡{"stdout":"125 loops, best of 3: 1.67 ms per loop"}︡{"stdout":"\n"}︡{"stdout":"125 loops, best of 3: 3.4 ms per loop"}︡{"stdout":"\n"}︡{"stdout":"625 loops, best of 3: 35.7 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︡55ed933f-f4ee-41d5-9c7c-541009db8716︡{}︡{"stdout":"5 loops, best of 3: 142 ms per loop"}︡{"stdout":"\n"}︡{"stdout":"125 loops, best of 3: 2.54 ms per loop"}︡{"stdout":"\n"}︡{"stdout":"125 loops, best of 3: 4.91 ms per loop"}︡{"stdout":"\n"}︡{"stdout":"625 loops, best of 3: 52.8 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠2a13b61a-f3f5-4648-ae35-ba0e37cd7d2cr︠
 # WHAT?    -- silent integer overflow.  Explain.
 f4(10000000)
-︡85760c40-1d84-4b40-9bae-f74134563378︡{}︡{"stdout":"-2014260032"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︡32875955-3d1d-4c62-89d7-5bc614299dd4︡{}︡{"stdout":"49999995000000"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠87213e19-c458-4428-b368-3c46e3acb791r︠
+f3(10000000)
+︡a56217fb-4b86-4834-b6b0-7f46bfcbdb92︡{}︡{"stdout":"49999995000000"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠96305b3e-5fa0-4f56-9708-1264651c465er︠
+%cython
+def f5(long n):
+    return (n*(n+1))/2
+︡da251265-4e22-4435-af5e-3199d2eb49f3︡{}︡{"file":{"show":false,"uuid":"5b50d5dc-3f70-4df0-92b0-f93abbcd503d","filename":"/home/wstein/.sage/temp/localhost/3668/spyx/_home_wstein__sage_temp_localhost_3668_dir_IG05ma_a_pyx/_home_wstein__sage_temp_localhost_3668_dir_IG05ma_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/localhost/3668/spyx/_home_wstein__sage_temp_localhost_3668_dir_IG05ma_a_pyx/_home_wstein__sage_temp_localhost_3668_dir_IG05ma_a_pyx_0.html?uuid=5b50d5dc-3f70-4df0-92b0-f93abbcd503d' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
+︠05912721-2bf5-47c5-916c-339cf47b3e27r︠
+%timeit f4(50500)
+%timeit f5(50500)
+︡5c16163f-d71d-47e0-938f-8cc378e539f0︡{}︡{"stdout":"625 loops, best of 3: 53.4 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"625 loops, best of 3: 541 ns per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠cf8432ee-d977-46b1-baab-3c2fe030d639r︠
+142 / .0005
+︡0261ea9c-fcac-4de0-8433-0efac771b8b6︡{}︡{"stdout":"284000.000000000"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠c8d337ff-4212-4cd1-86b7-a99e4be8b5bfr︠
+def f6(n):
+    return (n*(n+1))/2
+︡489d3d9c-4b3a-4c48-916d-3808d107d9d6︡{}︡{"stdout":"","done":true}︡
+︠7297fd7b-cbaf-4999-b1b1-0c193b7c73a0r︠
+%timeit f6(50500)
+︡7e77a91c-2df5-4857-abd3-56060516b7d7︡{}︡{"stdout":"625 loops, best of 3: 2.29 µs per loop"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠8656cca7-aed5-4499-b97c-0626c995eabe︠
 %md
 
