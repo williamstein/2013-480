@@ -37,15 +37,53 @@ md("""
 
 # Lecture 7 (2013-04-15) starts here
 ︡dc832d87-2319-46ef-beb8-8241d8b78c9d︡{}︡{"html":"<h1>Lecture 7 (2013-04-15) starts here</h1>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
+︠80ed9bfa-d726-4f36-9845-b2676818764er︠
+type(3)
+︡e02f30b2-944f-4a51-864f-1408142b4f84︡{}︡{"stdout":"<type 'sage.rings.integer.Integer'>"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠ffa55359-61e5-4c67-b8ef-543b328e4113r︠
+def f(n):
+    if not isinstance(n, (int,long, Integer)):    # $$ not free $$
+        #raise TypeError("n (=%s) must be an int"%n)
+        raise TypeError("n must be an int")
+    return n*n
+︡f735e621-3973-4107-8beb-dcef7598f5a8︡{}︡{"stdout":"","done":true}︡
+︠6da79a6f-daae-45de-961f-9919ad3a4e8ar︠
+f(10)
+︡d44fbe11-fe82-48fb-aaaf-174d1a5e9749︡{}︡{"stdout":"100"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠d155310d-436b-4144-9771-250141d6bddbr︠
+f('20')
+︡47d4a3e5-ff5d-4d8a-8954-484fe7d2b94e︡{}︡{"stderr":"Error in lines 1-1\n"}︡{"stderr":"Traceback (most recent call last):\n"}︡{"stderr":"  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"}︡{"stderr":"    exec compile(block, '', 'single') in namespace, locals\n"}︡{"stderr":"  File \"\", line 1, in <module>\n"}︡{"stderr":"  File \"\", line 3, in f\n"}︡{"stderr":"TypeError: n (=20) must be an int\n"}︡{"stdout":"","done":true}︡
+︠871d2765-8178-4909-b000-e6da4ef18e88r︠
+def f(int n):
+    return n*n
+︡d17e1865-9a78-4bf8-821d-941afdb722e7︡{}︡{"stderr":"Error in lines 1-2\n"}︡{"stderr":"Traceback (most recent call last):\n"}︡{"stderr":"  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"}︡{"stderr":"    exec compile(block, '', 'single') in namespace, locals\n"}︡{"stderr":"  File \"<string>\", line 1\n"}︡{"stderr":"    def f(int n):\n"}︡{"stderr":"              ^\n"}︡{"stderr":"SyntaxError: invalid syntax\n"}︡{"stdout":"","done":true}︡
 ︠d05cde98-8f28-436a-9fc1-e845c5cc673er︠
 %cython
 
-def f(int n):
+def f(unsigned int n):
     return n*n
-︡caacf63f-165e-42c9-84d2-6fc00fd604b6︡{}︡{"file":{"show":false,"uuid":"e7642f23-4ec6-42fd-85b3-1898d48b9e30","filename":"/home/wstein/.sage/temp/localhost/12052/spyx/_home_wstein__sage_temp_localhost_12052_dir_0oQ6au_a_pyx/_home_wstein__sage_temp_localhost_12052_dir_0oQ6au_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/localhost/12052/spyx/_home_wstein__sage_temp_localhost_12052_dir_0oQ6au_a_pyx/_home_wstein__sage_temp_localhost_12052_dir_0oQ6au_a_pyx_0.html?uuid=e7642f23-4ec6-42fd-85b3-1898d48b9e30' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
+
+︡2a3d0fd2-5ed0-438b-8819-436fe9dd16b2︡{}︡{"file":{"show":false,"uuid":"b3694cd1-1b3b-414a-8376-10fc61f15c8d","filename":"/home/wstein/.sage/temp/localhost/13551/spyx/_home_wstein__sage_temp_localhost_13551_dir_5fMX1U_a_pyx/_home_wstein__sage_temp_localhost_13551_dir_5fMX1U_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/localhost/13551/spyx/_home_wstein__sage_temp_localhost_13551_dir_5fMX1U_a_pyx/_home_wstein__sage_temp_localhost_13551_dir_5fMX1U_a_pyx_0.html?uuid=b3694cd1-1b3b-414a-8376-10fc61f15c8d' target='_new' class='btn btn-small '>Show auto-generated code >> </a>"}︡{"stdout":"","done":true}︡
 ︠f0d2f2cf-ab5a-4285-bf62-bc2fe259bdb7r︠
-f(10)
-︡ff296049-c9d8-4329-8773-b5adaa912457︡{}︡{"stdout":"100"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+f(39808290)
+︡21740bc5-652c-4b0e-9c31-762c50872974︡{}︡{"stdout":"3049388164L"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠6a2b68c5-6f28-4f2f-8869-92ec357f8c92r︠
+(39808290*39808290)%(2^32)
+︡18c92e18-32e4-4509-9b3a-a7950627cc77︡{}︡{"stdout":"3049388164"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠6de9fb92-b4c8-411d-8eaf-74e3b703d330r︠
+%md
+
+# Show command line standalone Python version:
+
+[http://docs.cython.org/src/quickstart/build.html](http://docs.cython.org/src/quickstart/build.html)
+︡7956ce7d-fbe6-4877-b3ad-07c1190f2c0f︡{}︡{"html":"<h1>Show command line standalone Python version:</h1>\n\n<p><a href=\"http://docs.cython.org/src/quickstart/build.html\">http://docs.cython.org/src/quickstart/build.html</a></p>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
+︠038aa6eb-c2b2-44d9-b580-4ef0e357d29ar︠
+
+
+
+︡c9c3e3f5-2595-426a-b3a2-865f01470b18︡{"done":true}︡
+︠70c6f581-d95a-44a6-8741-50f64877f30d︠
+
 ︠d9e995d9-6c95-46b0-a45e-d9230ef1ca4cr︠
 
 md("""
