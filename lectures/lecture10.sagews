@@ -188,10 +188,16 @@ a0.parent()
 ︡38808455-622d-4ab8-86c6-a70e0e42bed4︡{"stdout":"Full MatrixSpace of 2 by 2 dense matrices over Finite Field of size 37"}︡{"stdout":"\n"}︡
 ︠ff9b4f2d-160d-4064-a8b7-d9249ca1d737︠
 a0.  # tab -- there is a lot that is supported
-︠c810ce5b-ba1e-4dc3-8249-913c687bab01︠
+
+
+
+
+︠c810ce5b-ba1e-4dc3-8249-913c687bab01i︠
 
 %md
 # Next -- look at some of Sage's source code that uses Cython (there is a *lot*)
+
+#### Let's browser at (https://github.com/sagemath/sage/)[https://github.com/sagemath/sage/] since it is a lot nicer than some options...
 
 - `module_list.py`
 
@@ -204,7 +210,7 @@ a0.  # tab -- there is a lot that is supported
 - Hidden Markov Models
 
 
-︡011eb1cb-f1f2-4bc5-9fa0-faeaef3e17df︡{"html":"<h1>Next &#8211; look at some of Sage&#8217;s source code that uses Cython (there is a <em>lot</em>)</h1>\n\n<ul>\n<li><p><code>module_list.py</code></p></li>\n<li><p><code>fast_arith.pyx</code></p></li>\n<li><p>TimeSeries: <code>double*</code></p></li>\n<li><p>Matrices</p></li>\n<li><p>Hidden Markov Models</p></li>\n</ul>\n"}︡
+︡6ba2db98-16c8-4fcb-9ad9-4eb7130d6bcb︡{"html":"<h1>Next &#8211; look at some of Sage&#8217;s source code that uses Cython (there is a <em>lot</em>)</h1>\n\n<h4>Let&#8217;s browser at (https://github.com/sagemath/sage/)[https://github.com/sagemath/sage/] since it is a lot nicer than some options&#8230;</h4>\n\n<ul>\n<li><p><code>module_list.py</code></p></li>\n<li><p><code>fast_arith.pyx</code></p></li>\n<li><p>TimeSeries: <code>double*</code></p></li>\n<li><p>Matrices</p></li>\n<li><p>Hidden Markov Models</p></li>\n</ul>\n"}︡
 ︠ca004d33-78bf-477f-83b4-bfbe680cc6ec︠
 
 
