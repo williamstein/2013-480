@@ -308,8 +308,8 @@ def var3(numpy.ndarray[DTYPE_t, ndim=1] a):
         t = a[i] - mean
         s += t*t
     return s/n
-︡32963155-9b86-4dc6-83a0-9110bff12981︡{}︡{"file":{"show":false,"uuid":"4c3b236f-b5a9-41ae-afd2-b9f9f4c2a03a","filename":"/home/wstein/.sage/temp/localhost/11599/spyx/_home_wstein__sage_temp_localhost_11599_dir_HRBmp7_a_pyx/_home_wstein__sage_temp_localhost_11599_dir_HRBmp7_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/localhost/11599/spyx/_home_wstein__sage_temp_localhost_11599_dir_HRBmp7_a_pyx/_home_wstein__sage_temp_localhost_11599_dir_HRBmp7_a_pyx_0.html?uuid=4c3b236f-b5a9-41ae-afd2-b9f9f4c2a03a' target='_new' class='btn btn-small '>Show auto-generated code &nbsp;<i class='icon-external-link'></i></a>"}︡
 
+︡63399e15-c330-4a2e-96be-28c33ba362e0︡{"file":{"show":false,"uuid":"2080f51f-d1df-4976-b4c1-70d399553826","filename":"/home/wstein/.sage/temp/localhost/9239/spyx/_home_wstein__sage_temp_localhost_9239_dir_ld1GK7_a_pyx/_home_wstein__sage_temp_localhost_9239_dir_ld1GK7_a_pyx_0.html"}}︡{"html":"<a href='/blobs//home/wstein/.sage/temp/localhost/9239/spyx/_home_wstein__sage_temp_localhost_9239_dir_ld1GK7_a_pyx/_home_wstein__sage_temp_localhost_9239_dir_ld1GK7_a_pyx_0.html?uuid=2080f51f-d1df-4976-b4c1-70d399553826' target='_new' class='btn btn-small '>Show auto-generated code &nbsp;<i class='icon-external-link'></i></a>"}︡
 ︠080793b0-fb91-409b-b15d-f58a2f82a785︠
 var3(a)
 %timeit var3(a)
