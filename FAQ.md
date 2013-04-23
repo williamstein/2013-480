@@ -2,7 +2,7 @@
 
 ### %timeit doesn't work.  What the heck?
 
-In (SageCloud)[https://cloud.sagemath.org], I've improved the timeit command so you can use it in a whole cell (by writing "%timeit" at the top) or at the beginning of a line.  The old sage notebook (*.sagenb.org) doesn't have this new feature.  For that, do, e.g., 
+In [SageCloud](https://cloud.sagemath.org), I've improved the timeit command so you can use it in a whole cell (by writing "%timeit" at the top) or at the beginning of a line.  The old sage notebook (*.sagenb.org) doesn't have this new feature.  For that, do, e.g., 
 
     timeit("2+2")
 
