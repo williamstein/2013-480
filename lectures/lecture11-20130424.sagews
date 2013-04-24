@@ -1,3 +1,16 @@
+︠412a20ba-7eb1-4c65-8876-59b66f55ebf5i︠
+%md
+## Goals
+- Start Google+ Hangout
+- Questions
+- Reminder hw3 is due tonight at midnight.
+- [New homework assignment](https://docs.google.com/forms/d/1ZkZKixNbIJwC6uZAbmisOWmqDLoDS5BEz_HO4VGk39k/viewform)
+- Remarks about [https://cloud.sagemath.org](https://cloud.sagemath.org):
+   - I upped the disk space by 128GB
+   - I'm planning on redeploy the entire thing on a multi-site cluster Thursday; some small downtime, followed by improved reliability and many new features.
+- New topic: **Computational elementary number theory**
+
+︡3cf54a0e-854e-435c-a430-4c4b4a0714b0︡{"html":"<h2>Goals</h2>\n\n<ul>\n<li>Start Google+ Hangout</li>\n<li>Questions</li>\n<li>Reminder hw3 is due tonight at midnight.</li>\n<li><a href=\"https://docs.google.com/forms/d/1ZkZKixNbIJwC6uZAbmisOWmqDLoDS5BEz_HO4VGk39k/viewform\">New homework assignment</a></li>\n<li>Remarks about <a href=\"https://cloud.sagemath.org\">https://cloud.sagemath.org</a>:\n<ul>\n<li>I upped the disk space by 128GB</li>\n<li>I&#8217;m planning on redeploy the entire thing on a multi-site cluster Thursday; some small downtime, followed by improved reliability and many new features.</li>\n</ul></li>\n<li>New topic: <strong>Computational elementary number theory</strong></li>\n</ul>\n"}︡
 ︠ee12ff98-828a-460c-a938-38ebf5279705i︠
 %md
 # Lecture 11: Computational Number Theory Using Sage (part 1)
