@@ -1,5 +1,10 @@
 # FAQ: Questions about the course
 
+### My README.md looks like crap when I view it after saving.
+
+A .md file is a so-called "markdown" file.  It's a special format of file, like HTML.  Learn all about Markdown at [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax).
+
+
 ### Cython doesn't work!?
 
 Send me a question that has code or a link to code or something precise.  Just telling me that nothing works without telling me what you're running and where isn't so useful.
