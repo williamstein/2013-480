@@ -1,10 +1,50 @@
 # FAQ: Questions about the course
 
+### I want to cimport numpy.matrix in Cython but it doesn't work.  Why?
+
+Running this in sage notebook gives an error, why is that?
+
+    %cython
+    cimport numpy as np
+    def mult(np.matrix a,  np.matrix b):
+        return a*b
+
+What are you trying to do?  Just don't declare any types and the above would compile.  There is no fast c "matrix" type supported by Cython.   Anyway, this works:
+
+    %cython
+    def mult(a,b):
+        return a*b
+
+Then in another cell:
+
+    import numpy as np
+    a = np.matrix([[1,2], [3,4]])
+    mult(a,a)
+
+Of course, using Cython above provides no speed up.
+
+The main reason to declare any types in the context of numpy is for fast access to the underlying *array*.  This was the example I gave in class of this:
+
+    %cython
+
+    cimport numpy as numpy
+    ctypedef numpy.float64_t DTYPE_t
+
+    def var3(numpy.ndarray[DTYPE_t, ndim=1] a):
+        cdef double mean = a.mean()
+        cdef int n = len(a)
+        cdef int i
+        cdef double s = 0, t
+        for i in range(n):
+            t = a[i] - mean
+            s += t*t
+        return s/n
+
 ### It just doesn't work!?
 
 Send me a question that has code or a link to code or something precise.  Just telling me that nothing works without telling me what you're running and where isn't so useful.
 
-### I'm finishing up the homework, and I'm am looking to compile and run it on your website. 
+### I'm finishing up the homework, and I'm am looking to compile and run it on your website.
 
 What exactly do you mean by "on your website"?
 
