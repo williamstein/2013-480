@@ -2,7 +2,7 @@
 
 ### My README.md looks like crap when I view it after saving.
 
-A .md file is a so-called "markdown" file.  It's a special format of file, like HTML.  Learn all about Markdown at [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax).
+A file that ends in ".md" is a "markdown" file.  It's a special format of file, like HTML.  Learn all about Markdown at [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax).
 
 
 ### Cython doesn't work!?
