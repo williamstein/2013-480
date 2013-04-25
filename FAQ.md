@@ -1,5 +1,9 @@
 # FAQ: Questions about the course
 
+### It just doesn't work!?
+
+Send me a question that has code or a link to code or something precise.  Just telling me that nothing works without telling me what you're running and where isn't so useful.
+
 ### I'm finishing up the homework, and I'm am looking to compile and run it on your website. 
 
 What exactly do you mean by "on your website"?
