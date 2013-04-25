@@ -12,4 +12,5 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 7](http://youtu.be/3svy8u7CnP4)
 - [Lecture 8](http://youtu.be/CemPlyWxBc4)
 - [Lecture 9](http://youtu.be/cHxQ8__e1Mo)
-- [Lecture 10](http://youtu.be/FvZ4iPqewf0)
+- [Lecture 10 (April 22, 2013)](http://youtu.be/FvZ4iPqewf0)
+- [Lecture 11 (April 24, 2013)](http://youtu.be/x_8YtOfKA0Q)
