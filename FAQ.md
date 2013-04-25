@@ -4,6 +4,15 @@
 
 Send me a question that has code or a link to code or something precise.  Just telling me that nothing works without telling me what you're running and where isn't so useful.
 
+### I want to use a Sage function like "timeit" or "factor" in Cython, but it doesn't work!?
+
+When using %cython, nothing from the Sage library is imported by default.  You have to explicitly put a line like this in your file
+
+    %cython
+    from sage.all import timeit, factor   # import stuff from sage library
+
+
+
 ### I want to cimport numpy.matrix in Cython but it doesn't work.  Why?
 
 Running this in sage notebook gives an error, why is that?
