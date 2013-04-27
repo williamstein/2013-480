@@ -6,7 +6,7 @@
 
 **Reminder: turn on google+ hangout**
 
-︡cd5c65af-9020-459d-a428-5fb8969043f8︡{"html":"<h1>Lecture 12: Prime Numbers</h1>\n\n<p>(Monday: continued fractions; Wednesday: rational reconstruction)</p>\n\n<p><strong>Reminder: turn on google+ hangout</strong></p>\n"}︡
+︡8ae0c405-373d-48a1-8ba7-750b3524c024︡{"html":"<h1>Lecture 12: Prime Numbers</h1>\n\n<p>(Monday: continued fractions; Wednesday: rational reconstruction)</p>\n\n<p><strong>Reminder: turn on google+ hangout</strong></p>\n"}︡
 ︠0b2ee2eb-85b3-40e1-8ed5-1dafbf61db6di︠
 %hide
 %html
@@ -26,7 +26,81 @@
 ︠dbc8bf22-675f-454e-bda5-789402a7e474︠
 n = 2013   # make up a number
 Mod(2,n)^(n-1)   # if != 1, then number can't be prime!
-︡126ac006-fe55-424d-99fc-7232a2794e79︡{"stdout":"301"}︡{"stdout":"\n"}︡
+︡25ff6a26-d1a4-4079-8005-c292d948f326︡{"stdout":"301"}︡{"stdout":"\n"}︡
+︠6fb45c8d-09b4-4959-a224-bc1dc31c3b75︠
+n = 2011   # make up a number
+Mod(2,n)^(n-1)
+︡019779a6-758c-4c32-b23d-70dc71e4ad2b︡{"stdout":"1"}︡{"stdout":"\n"}︡
+︠72594263-8ebe-4c3a-8a43-b5cf516c378f︠
+n = 92138409238409283409823094823487231092348092834098240398203498204380298409284309287409820498203840283427340723498234098209482098402840982304982084029735078729458739857398475938759837598734597395739875983751
+Mod(2,n)^(n-1)
+︡ae8a777e-dda4-4554-baa4-e7ec42bd6c02︡{"stdout":"19104676238632177074540820054395225807188765067750418765299920386734811855305975230447643586105824803741290995667853649911520958239618521515324990097863034782792178032718020769995056843008482872123529144012"}︡{"stdout":"\n"}︡
+︠775884bf-0e66-432e-bcb6-3eb6138e0cfc︠
+n = 561
+Mod(7,n)^(n-1)
+︡f46ee06b-af0a-4dcc-8fa3-9eac5d3ed2e0︡{"stdout":"1"}︡{"stdout":"\n"}︡
+︠18080af0-cef4-4a55-a96a-d4553dc23e57︠
+factor(561)
+︡03b75259-55ae-4248-a320-1435861d8bd9︡{"stdout":"3 * 11 * 17"}︡{"stdout":"\n"}︡
+︠a403056f-202b-47fc-84d8-1cccb50c87c2︠
+b = 5 % 561
+b
+type(b)
+b^560
+︡c76c9e32-0633-4d72-b6c3-23d42f57ebc1︡{"stdout":"5"}︡{"stdout":"\n"}︡{"stdout":"<type 'sage.rings.integer.Integer'>"}︡{"stdout":"\n"}︡{"stdout":"26497349136889904540094297102338792048842007654486987513108141219242520439074860067791572114971742036578602619754846974776586165828097217415710548598866881389857257972830884460418602352641085186282930956611863545779123602346020430502561590994770393842463689179799325100849238120078569482437571071384615890476399106484347385593451533443878647794446899201015188651808784925378859043121337890625"}︡{"stdout":"\n"}︡
+︠58db1bd0-b862-4d7d-905c-67893b11b067︠
+
+︠a000b38b-4528-41ea-acc2-989a6f00d744︠
+b = Mod(5, 561)
+b
+type(b)
+b^560
+parent(b)
+︡667d4588-3a8e-47c1-b057-ce041824433c︡{"stdout":"5"}︡{"stdout":"\n"}︡{"stdout":"<type 'sage.rings.finite_rings.integer_mod.IntegerMod_int'>"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"Ring of integers modulo 561"}︡{"stdout":"\n"}︡
+︠8b57a75f-c43f-4a48-b928-deb1dc9403e0︠
+b.modulus()
+︡2180cd20-a7b8-4579-aedf-dcd1d8c481de︡{"stdout":"561"}︡{"stdout":"\n"}︡
+︠6570be9d-d4f0-49a8-be0e-38979cd1a7bf︠
+%gp
+Mod(593893,561)
+︡7d4f42d1-9d64-4806-9e62-26a8840ee565︡{"stdout":"Mod(355, 561)"}︡{"stdout":"\n"}︡
+︠0158f90f-fbad-4e35-a74d-762be41ae113︠
+%magma
+
+a := IntegerRing(561)!593893;
+a;
+Parent(a);
+︡dea458ee-4d75-4df3-886d-6c8cbacbddb8︡{"stdout":"\n355\nResidue class ring of integers modulo 561"}︡{"stdout":"\n"}︡
+︠d02194d9-63af-4b97-b9c7-af03f832e9f5︠
+for i in [2..11]:
+    print Mod(1,i)
+︡168c9765-c3c5-4d77-b9ff-b9bbc1dcca4d︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"1"}︡{"stdout":"\n"}︡
+︠9c0709c3-004d-41c5-8da4-b5bd1ef44f75︠
+a = Mod(3,5);
+︡4cf4445c-e1ec-4e1d-a89d-a615fcb67947︡
+︠2722039c-9119-4536-a1f1-92af007479c5︠
+Mod(1, 4) == 5
+︡994e967c-3d5c-4efe-a396-82f93412b189︡{"stdout":"True"}︡{"stdout":"\n"}︡
+︠859d9da1-57b6-4cf1-b60d-513114f1a200︠
+R.<x> = ZZ['x']
+f = 1/2 + x; f
+︡4580950b-7083-4e18-ba20-f4f743b84ae5︡{"stdout":"x + 1/2"}︡{"stdout":"\n"}︡
+︠176f5abf-9d09-4f86-9503-a6d159681c6c︠
+parent(f)
+︡3b4323ff-a13b-41f1-b495-a0902654d4f2︡{"stdout":"Univariate Polynomial Ring in x over Rational Field"}︡{"stdout":"\n"}︡
+︠91f25f11-3f71-48b5-8e3e-4fb7a4e1bfc3︠
+magma_free("""
+R<x> := PolynomialRing(IntegerRing());
+f := 1/2 + x;
+f;
+""")
+︡ea46acbc-e772-4af3-8e19-e19bf42deb34︡{"stdout":">> f := 1/2 + x;\n            ^\nRuntime error: Bad argument types\nArgument types given: FldRatElt, RngUPolElt[RngInt]\n>> f;\n   ^\nUser error: Identifier 'f' has not been declared or assigned"}︡{"stdout":"\n"}︡
+︠0170996e-cd4a-4c3a-aff1-7fa17c40b7ca︠
+%magma
+R<x> := PolynomialRing(IntegerRing());
+f := 1/2 + x;
+f;
+︡00c30e6d-e608-478b-8cc2-874ee3590abe︡{"stderr":"Error in lines 1-1\n"}︡{"stderr":"Traceback (most recent call last):\n"}︡{"stderr":"  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 409, in execute\n"}︡{"stderr":"    block = parsing.preparse_code(block)\n"}︡{"stderr":"  File \"\", line 1, in <module>\n"}︡{"stderr":"  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 438, in execute_with_code_decorators\n"}︡{"stderr":"    \n"}︡{"stderr":"  File \"/home/wstein/sage/sage-5.9.rc0/local/lib/python2.7/site-packages/sage/interfaces/magma.py\", line 539, in eval\n"}︡{"stderr":"    raise RuntimeError, \"Error evaluating Magma code.\\nIN:%s\\nOUT:%s\"%(x, ans)\n"}︡{"stderr":"RuntimeError: Error evaluating Magma code.\nIN:R<x> := PolynomialRing(IntegerRing());\nf := 1/2 + x;    \nf;\nOUT:\n\n>> f := 1/2 + x;    \n            ^\nRuntime error in '+': Bad argument types\nArgument types given: FldRatElt, RngUPolElt[RngInt]\n\nx + 1/2\n"}︡
 ︠ea0c4e76-b9e8-4305-8d65-7359fc8a3c3c︠
 # Pseudo-primes: sometimes this test is misleading
 # no matter what $a$ you try (see "Carmichael number"):
@@ -54,8 +128,9 @@ v
   - Philosophical discussion: there is some nonzero probability that a cosmic ray will change your RAM in a way that is not detected.  Running Miller-Rabin a bunch of times results is a smaller probability than that.
 
 ︡72a817c7-cd2f-48aa-be33-9c627deb529d︡{"html":"<h2>Miller-Rabin</h2>\n\n<ul>\n<li><p>The <a href=\"http://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test\">Miller-Rabin test</a> is a little more complicated.  </p></li>\n<li><p>Each time you run it and it says &#8220;$n$ is prime&#8221;, then the probability that $n$ is actually prime increases (a lot).</p></li>\n<li><p>I&#8217;ve included (hidden) code in this worksheet from <a href=\"http://www.uam.es/personal_pdi/ciencias/fchamizo/asignaturas/cripto1011/crypto1011.html\">http://www.uam.es/personal_pdi/ciencias/fchamizo/asignaturas/cripto1011/crypto1011.html</a> for Miller-Rabin.</p></li>\n<li><p>Philosophical discussion: there is some nonzero probability that a cosmic ray will change your RAM in a way that is not detected.  Running Miller-Rabin a bunch of times results is a smaller probability than that.</p></li>\n</ul>\n"}︡
-︠e1596049-46ec-41d9-8582-5b53244981c0i︠
+︠e1596049-46ec-41d9-8582-5b53244981c0ai︠
 %hide
+%auto
 
 print "double click to see Miller-Rabin code"
 
@@ -105,11 +180,17 @@ def miller_rabin2(n,secur):
             return 'Composite'
     return 'likely prime'
 
-︡c7323140-84ee-47fe-8787-115fb4f98993︡{"stdout":"double click to see Miller-Rabin code"}︡{"stdout":"\n"}︡
+︡a7a405cc-bc90-440c-8cbc-1d0151aa4f9d︡{"auto":true}︡{"stdout":"double click to see Miller-Rabin code"}︡{"stdout":"\n"}︡
 ︠5413c9da-2ec9-49d6-a1b8-978819fa382a︠
-miller_rabin(561,1)
-︡a35f7bbf-bb0b-463e-9865-4050ab7bf684︡{"stdout":"'Composite'"}︡{"stdout":"\n"}︡
-
+miller_rabin(561,10)
+︡1c931cab-0e96-4441-94bc-ea145950230e︡{"stdout":"'Composite'"}︡{"stdout":"\n"}︡
+︠767628d9-fa0f-4e25-8e12-2dc626dbfdba︠
+miller_rabin(next_probable_prime(10^20),10)
+︡68b304cb-5b3c-4c10-b6e0-ec828c0c85b0︡{"stdout":"'likely prime'"}︡{"stdout":"\n"}︡
+︠a30f6b1d-2d12-4cf5-80b3-efd8778a8daa︠
+p = next_probable_prime(10^20); p
+is_prime(p)
+︡77fca151-de3a-4e62-800c-2a493fc3f461︡{"stdout":"100000000000000000039"}︡{"stdout":"\n"}︡{"stdout":"True"}︡{"stdout":"\n"}︡
 ︠65080627-eb87-4e9d-ad7a-ee7a6e8ec63ai︠
 %md
 
@@ -124,25 +205,31 @@ miller_rabin(561,1)
 # This tests primality of numbers after $10^{250}$ until it finds one
 # that is very likely to be prime.  Being able to find large primes
 # like this quickly is useful in public-key cryptogrpahy.
-%time p = next_probable_prime(10^250)
+%time p = next_probable_prime(randint(10^249,10^250))
 p
-︡be6e80cd-1f83-4208-8635-13a2a9f203da︡{"stdout":"CPU time: 0.13 s, Wall time: 0.13 s"}︡{"stdout":"\n"}︡{"stdout":"10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001227"}︡{"stdout":"\n"}︡
+︡5fc71f61-7c75-4ea0-ad81-761c275a3311︡{"stdout":"CPU time: 0.34 s, Wall time: 0.34 s"}︡{"stdout":"\n"}︡{"stdout":"3254025717381609046332312900301878963276007880154842626578717977476195646906825098317779920942931567725541225212160145359044675343201502008673037688150799008394140415294520042838115809362224792382986581588515128477512839168733839398323730195591152371"}︡{"stdout":"\n"}︡
+︠9dabf2de-0c5a-41b1-be70-206bcfa07198︠
+
 ︠10cbe468-b481-45b9-bd38-4ce1be96b5a5︠
 # This proves that the $p$ we found above is in fact prime.
 %time p.is_prime()
-︡d1f310de-5bc8-4834-8a61-4d68737220c1︡{"stdout":"True"}︡{"stdout":"\n"}︡{"stdout":"CPU time: 2.49 s, Wall time: 2.47 s"}︡{"stdout":"\n"}︡
+︡94f55353-538c-4296-a11c-f08bf61db5e1︡{"stdout":"True"}︡{"stdout":"\n"}︡{"stdout":"CPU time: 2.30 s, Wall time: 2.27 s"}︡{"stdout":"\n"}︡
 ︠372b097d-5e01-445f-915c-91adf4ce43c5︠
 # A random 500-digit number is not likely to be prime
 n = randint(0,10^500); n
 %time is_pseudoprime(n)
-︡d1634488-c3a5-49b8-8496-3564afda3935︡{"stdout":"46438271916675676453209239825401095537189419969846031784902386464536184930479130347444899216698877005612030512107884515126491880970773047233289994125617950771412351301703505285642321152310230300757790378733113973082172799636264516692077035106954341129319642493415752614832729303159142520183953356624810568298736055264348552207289271988230337367679187248245105252583901368283563546802752344254965754432100597084686428091919201839979577522521569949048164802931996656936696604951846590538705826666478595L"}︡{"stdout":"\n"}︡{"stdout":"False"}︡{"stdout":"\n"}︡{"stdout":"CPU time: 0.00 s, Wall time: 0.00 s"}︡{"stdout":"\n"}︡
+︡19bf9419-1e37-4cb9-b7ba-1e4c2291009c︡{"stdout":"29421252272098370347236652114441058253706464209766339780349618610391561736846772678887237652300736209641875135255076385462639153378890815008861436859186812277424554749570234989914955935991857882065667516728512792149588941453300927514964504774786632144919982057179290830728470152651849157293448909105997795032178222015500924757503001899614186472127742198083064145026257348234898190580112937964382456228137059724636668347038606115304023031675554186528098155446285720643432134792425767470749607360201270L"}︡{"stdout":"\n"}︡{"stdout":"False"}︡{"stdout":"\n"}︡{"stdout":"CPU time: 0.00 s, Wall time: 0.00 s"}︡{"stdout":"\n"}︡
+︠6755e29c-8c81-4335-ad31-a17955982a61︠
+k = next_probable_prime(n);
+n - k
+︡5ad2bf79-d700-4a44-8028-ee551099e57e︡{"stdout":"-197"}︡{"stdout":"\n"}︡
 ︠2e9ddb02-9a25-4ca6-9dc9-fce0731eabba︠
 # But we can *find* a 500 digit (probable) prime with Sage
 %time p = next_probable_prime(n); p
-︡7c42fab1-f956-43d6-a05e-e446b424dae6︡{"stdout":"46438271916675676453209239825401095537189419969846031784902386464536184930479130347444899216698877005612030512107884515126491880970773047233289994125617950771412351301703505285642321152310230300757790378733113973082172799636264516692077035106954341129319642493415752614832729303159142520183953356624810568298736055264348552207289271988230337367679187248245105252583901368283563546802752344254965754432100597084686428091919201839979577522521569949048164802931996656936696604951846590538705826666479651"}︡{"stdout":"\n"}︡{"stdout":"CPU time: 1.09 s, Wall time: 1.07 s"}︡{"stdout":"\n"}︡
+︡fd698261-c785-4acf-b551-980070ad231d︡{"stdout":"29421252272098370347236652114441058253706464209766339780349618610391561736846772678887237652300736209641875135255076385462639153378890815008861436859186812277424554749570234989914955935991857882065667516728512792149588941453300927514964504774786632144919982057179290830728470152651849157293448909105997795032178222015500924757503001899614186472127742198083064145026257348234898190580112937964382456228137059724636668347038606115304023031675554186528098155446285720643432134792425767470749607360201467"}︡{"stdout":"\n"}︡{"stdout":"CPU time: 0.11 s, Wall time: 0.11 s"}︡{"stdout":"\n"}︡
 ︠24195419-47ba-4a6d-9921-8c2d993ac700︠
 %time Mod(2,p)^(p-1)   # this test usually works
-︡9a0f6049-6773-474b-bbe5-5314c2ab9d13︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"CPU time: 0.01 s, Wall time: 0.01 s"}︡{"stdout":"\n"}︡
+︡60b33c37-6c75-4531-bee7-33146fbc80f3︡{"stdout":"1"}︡{"stdout":"\n"}︡{"stdout":"CPU time: 0.00 s, Wall time: 0.00 s"}︡{"stdout":"\n"}︡
 ︠47e4e3cc-2169-4a8e-8750-2b7ea18fdc41i︠
 
 
@@ -162,6 +249,19 @@ n = randint(0,10^500); n
 # Enumerate some primes:
 prime_range(100)
 ︡fe10ab86-cf06-4ccd-86d7-87e8dc39d8db︡{"stdout":"[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]"}︡{"stdout":"\n"}︡
+︠607dd28e-1b77-447f-8d43-4ff945755c3fo︠
+prime_range(10^15,10^15+100)
+︡bb8d4fdd-6b80-433d-a05c-90d8fa01bd16︡{"stderr":"Error in lines 1-1\n"}︡{"stderr":"Traceback (most recent call last):\n"}︡{"stderr":"  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 409, in execute\n"}︡{"stderr":"    block = parsing.preparse_code(block)\n"}︡{"stderr":"  File \"\", line 1, in <module>\n"}︡{"stderr":"  File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4193)\n"}︡{"stderr":"  File \"fast_arith.pyx\", line 141, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3828)\n"}︡{"stderr":"  File \"gen.pyx\", line 9882, in sage.libs.pari.gen.PariInstance.init_primes (sage/libs/pari/gen.c:51461)\n"}︡{"stderr":"KeyboardInterrupt\n"}︡
+︠49d3b247-87f9-4c12-bb06-732238f6fa3c︠
+list(primes(10^15,10^15+100))
+
+︡5ee1c08c-3536-4659-a826-d9bfd3d2d91d︡{"stdout":"[1000000000000037, 1000000000000091]"}︡{"stdout":"\n"}︡
+︠eb79cdfd-9510-418a-9526-f95a87a3b0b2︠
+%timeit list(primes(100))
+︡bd99b01b-00cc-47a8-963b-6040f061e641︡{"stdout":"625 loops, best of 3: 80.5 µs per loop"}︡{"stdout":"\n"}︡
+︠aed7cda9-5d99-494a-b88f-35e76f90e15e︠
+%timeit prime_range(100)
+︡3b0277cc-8d69-4611-9bf6-469bd1fb6377︡{"stdout":"625 loops, best of 3: 1.15 µs per loop"}︡{"stdout":"\n"}︡
 ︠a741d973-8def-4e40-bfcf-d6b2da82bf14︠
 primes(100)
 ︡9a23f781-bfa8-4b92-b70d-8bf1dc4c249c︡{"stdout":"<generator object primes at 0x79ebe60>"}︡{"stdout":"\n"}︡
