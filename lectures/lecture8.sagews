@@ -1,6 +1,6 @@
-︠341045b5-1dd8-4640-af41-14076c8c5e96︠
-md(r"""
-
+︠341045b5-1dd8-4640-af41-14076c8c5e96i︠
+%hide
+%md
 # Lecture 8: Cython Examples -- part 2
 
 Reminder -- start G+ hangout!!
@@ -9,8 +9,8 @@ Reminder -- start G+ hangout!!
 
 ## GCD -- using [binary GCD](http://en.wikipedia.org/wiki/Binary_GCD_algorithm) or "Stein's algorithm"
 (no relation to me!)
-""")
-︡0aa9ce8c-a6ab-4875-a121-71cf3cbb7a83︡{}︡{"html":"<h1>Lecture 8: Cython Examples -- part 2</h1>\n\n<p>Reminder -- start G+ hangout!!</p>\n\n<p>(First, quickly go through the sum example from lecture 6.)</p>\n\n<h2>GCD -- using <a href=\"http://en.wikipedia.org/wiki/Binary_GCD_algorithm\">binary GCD</a> or \"Stein's algorithm\"</h2>\n\n<p>(no relation to me!)</p>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
+
+︡f4537ea2-101e-4be8-b181-1ae5d193aacc︡{"html":"<h1>Lecture 8: Cython Examples &#8211; part 2</h1>\n\n<p>Reminder &#8211; start G+ hangout!!</p>\n\n<p>(First, quickly go through the sum example from lecture 6.)</p>\n\n<h2>GCD &#8211; using <a href=\"http://en.wikipedia.org/wiki/Binary_GCD_algorithm\">binary GCD</a> or &#8220;Stein&#8217;s algorithm&#8221;</h2>\n\n<p>(no relation to me!)</p>\n"}︡
 ︠480cbd09-c751-435c-bb68-0b942b178636︠
 
 # Straightforward Sage implementation
