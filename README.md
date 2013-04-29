@@ -3,7 +3,9 @@
 
 Math 480 during 2013 at University of Washington.
 
-Office Hours: Tuesday 12:30 - 2
+- Office Hours: Tuesday 12:30 - 2
+
+- [SageMath Cloud](https://cloud.sagemath.com) -- use the worksheets from class and Sage here.
 
 # Screencasts of Lectures
 - [Lecture 3](http://youtu.be/YopZzNzwnFw)
@@ -15,3 +17,4 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 10 (April 22, 2013)](http://youtu.be/FvZ4iPqewf0)
 - [Lecture 11 (April 24, 2013)](http://youtu.be/x_8YtOfKA0Q)
 - [Lecture 12 (April 26, 2013)](http://youtu.be/Pl1j1jD920Q)
+
