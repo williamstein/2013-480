@@ -180,7 +180,7 @@ def miller_rabin2(n,secur):
             return 'Composite'
     return 'likely prime'
 
-︡a7a405cc-bc90-440c-8cbc-1d0151aa4f9d︡{"auto":true}︡{"stdout":"double click to see Miller-Rabin code"}︡{"stdout":"\n"}︡
+︡b9dc01c6-781d-4f04-9fc7-94bdec55d185︡{"auto":true}︡{"stdout":"double click to see Miller-Rabin code"}︡{"stdout":"\n"}︡
 ︠5413c9da-2ec9-49d6-a1b8-978819fa382a︠
 miller_rabin(561,10)
 ︡1c931cab-0e96-4441-94bc-ea145950230e︡{"stdout":"'Composite'"}︡{"stdout":"\n"}︡
