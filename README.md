@@ -17,4 +17,4 @@ Math 480 during 2013 at University of Washington.
 - [Lecture 10 (April 22, 2013)](http://youtu.be/FvZ4iPqewf0)
 - [Lecture 11 (April 24, 2013)](http://youtu.be/x_8YtOfKA0Q)
 - [Lecture 12 (April 26, 2013)](http://youtu.be/Pl1j1jD920Q)
-
+- [Lecture 13 (April 29, 2013)](http://youtu.be/bx-up6do5n4)
