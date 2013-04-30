@@ -1,5 +1,12 @@
 # FAQ: Questions about the course
 
+### How do I draw a histogram in Sage?
+
+One way is to use the TimeSeries object:
+
+     stats.TimeSeries([random() for _ in range(100)]).plot_histogram()
+
+
 ### My README.md looks like crap when I view it after saving.
 
 A file that ends in ".md" is a "markdown" file.  It's a special format of file, like HTML.  Learn all about Markdown at [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax).
