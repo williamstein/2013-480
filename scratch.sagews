@@ -1,3 +1,24 @@
+︠c6aefda5-dcd9-411d-86e4-5b9742b8cae3︠
+Mod(1234/4567,10^10)
+︡befd95f1-46e1-42f3-80f8-d7c57a23814d︡{"stdout":"8171666302"}︡{"stdout":"\n"}︡
+︠45d37ac6-b1a1-4fc8-ba90-69744df3d94e︠
+10^10
+︡55d27a86-644e-407a-9916-55cf71a49b75︡{"stdout":"10000000000"}︡{"stdout":"\n"}︡
+︠f93b48a3-5892-43b2-afba-a6134c54b66e︠
+p = next_probable_prime(ZZ.random_element(2^256))
+q = next_probable_prime(p)
+p, q
+︡b87e72fa-233e-4022-8fe9-fde6ebf6a5c5︡{"stdout":"(68222080226222296181917368518534332259513625527062166102114730123514248558349, 68222080226222296181917368518534332259513625527062166102114730123514248558499)"}︡{"stdout":"\n"}︡
+︠0412c136-5791-48c4-9e3d-60d84663f057︠
+p*q
+︡8a1c1297-2ada-4304-b0a1-4d727b6a64ef︡{"stdout":"4654252230393111226989449826741007006486078009450861095070222439898324342353927553909251532232407850265642079868425916328810273416481567992145162141358151"}︡{"stdout":"\n"}︡
+︠2037b305-1f44-4cfb-8dae-c8d57a2b17aa︠
+len((p*q).digits(2))
+︡96aee415-b76e-434b-8671-9f180cb1c57c︡{"stdout":"511"}︡{"stdout":"\n"}︡
+︠8ed5be3e-f797-469d-a8ce-f91c894770e0︠
+%html
+Thanks for the very helpful survey forms. &nbsp;Based on them, this is what we'll do.<br></span><div><br><div><div>&nbsp; &nbsp;1. Python/Cython -- a crash course</div><div>&nbsp; &nbsp;2. Computational number theory -- (maybe: continued fractions, exact linear algebra, arithmetic of elliptic curves)</div><div>&nbsp; &nbsp;3. Typesetting mathematics and sharing it on the web -- (maybe: creating latex documents; using MathJax; etc.)</div><div>&nbsp; &nbsp;4. Statistic/machine learning -- we'll do one solid topic: Hidden Markov Models</div><div>&nbsp; &nbsp;5. Public key cryptography -- Diffie-Hellman, RSA, El Gammal, elliptic curve crypto.</div><div><br></div><div><br></div></div></div>"
+︡b9e90dec-b547-4aab-8fb6-75e9a0b77118︡{"html":"Thanks for the very helpful survey forms. &nbsp;Based on them, this is what we'll do.<br></span><div><br><div><div>&nbsp; &nbsp;1. Python/Cython -- a crash course</div><div>&nbsp; &nbsp;2. Computational number theory -- (maybe: continued fractions, exact linear algebra, arithmetic of elliptic curves)</div><div>&nbsp; &nbsp;3. Typesetting mathematics and sharing it on the web -- (maybe: creating latex documents; using MathJax; etc.)</div><div>&nbsp; &nbsp;4. Statistic/machine learning -- we'll do one solid topic: Hidden Markov Models</div><div>&nbsp; &nbsp;5. Public key cryptography -- Diffie-Hellman, RSA, El Gammal, elliptic curve crypto.</div><div><br></div><div><br></div></div></div>\""}︡
 ︠30ef5f15-ed16-452a-81f6-9cc86f3be726︠
 R.<x> = QQ[]
 f = x^3 - 3*x^2 - x + 9
