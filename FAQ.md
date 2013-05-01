@@ -1,5 +1,12 @@
 # FAQ: Questions about the course
 
+### How do I submit a histogram as part of my homework solution.
+
+Since it is not easy (or even possible?) to upload a new file to github, 
+many of you don't know how to use git yet, and I haven't finished implementing
+sharing at <https://cloud.sagemath.com> yet, you can simply describe what
+your histogram looks like in words for now. 
+
 ### How do you reduce a rational number modulo n!?
 
 If b is an integer coprime to n then by the extended euclidean algorithm,
