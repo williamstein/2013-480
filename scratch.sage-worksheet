@@ -1,7 +1,5 @@
 {
 	"session_uuid": "a455f7e8-449e-40c9-b55a-c5186f76522b",
-	"title": "Title",
-	"description": "Description",
 	"content": [
 		{
 			"id": "9353b612-25be-43cb-9502-255b7e06ccd1",
@@ -34,7 +32,19 @@
 			]
 		},
 		{
-			"id": "ca903626-a7bb-4dd6-9912-ec82274b2c58"
+			"id": "ca903626-a7bb-4dd6-9912-ec82274b2c58",
+			"input": "2/3",
+			"output": [
+				{
+					"stdout": "2/3"
+				},
+				{
+					"stdout": "\n"
+				}
+			]
+		},
+		{
+			"id": "4ea67f7c-86d2-43ee-93bf-3a495de129b8"
 		}
 	]
 }

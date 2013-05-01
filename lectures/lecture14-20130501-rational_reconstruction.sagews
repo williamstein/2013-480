@@ -231,9 +231,17 @@ a.rational_reconstruction()
 ︠6a1bd9a1-96e2-43b9-903b-cb25fe29564d︠
 %timeit a.rational_reconstruction()
 ︡073dd0fc-ea75-4c40-994c-dbf7a1212099︡{"stdout":"625 loops, best of 3: 55.2 µs per loop"}︡{"stdout":"\n"}︡
-︠f98672d1-42f8-4ecb-b2be-3eff6169419e︠
+︠f98672d1-42f8-4ecb-b2be-3eff6169419ei︠
+%hide
+%md
 
-
+### Plan:
+- Public-key cryptography, since it is so closely related to what we just did.
+- Mathematical typesetting (latex, mathjax).
+- Hidden Markov Models (some statistics, machine learning, and and maybe a little finance)
+- Sage development: git, patch review, trac, etc.
+︡73921bfb-a0b1-40e8-9850-687a33bd1727︡{"html":"<h3>Plan:</h3>\n\n<ul>\n<li>Public-key cryptography, since it is so closely related to what we just did.</li>\n<li>Mathematical typesetting (latex, mathjax).</li>\n<li>Hidden Markov Models (some statistics, machine learning, and and maybe a little finance)</li>\n<li>Sage development: git, patch review, trac, etc.</li>\n</ul>\n"}︡
+︠9cbdeda3-82a6-4e88-8534-f546d8fe27e1︠
 
 
 
