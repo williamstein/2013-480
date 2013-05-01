@@ -1,5 +1,16 @@
 # FAQ: Questions about the course
 
+### How do you reduce a rational number modulo n!?
+
+If b is an integer coprime to n then by the extended euclidean algorithm,
+there is a unique integer b' modulo n such that `b*b' = 1 (mod n)`.
+If a/b is a fraction in lowest terms (with b coprime to n),
+then the reduction of a/b modulo n is `a*b'`.  In Sage, you can just write
+
+    Mod(a/b, n)
+
+and the above definition is used.
+
 ### How do I draw a histogram in Sage?
 
 One way is to use the TimeSeries object:
