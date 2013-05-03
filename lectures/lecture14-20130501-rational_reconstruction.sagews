@@ -78,7 +78,7 @@ def rr1(a, m):
             if d and (n - a*d)%m == 0:
                 return ZZ(n)/d
     raise ValueError("no solution")
-︡d1158783-6162-434a-a845-ce49d01112bf︡
+︡55277563-ae4a-4524-8afd-2d1074019e5b︡
 ︠357d54f1-2490-4435-9aeb-b22a4bcc13c3︠
 Mod(7/9,1000)
 ︡8786d382-cc29-44ea-b846-8124e4b19dc5︡{"stdout":"223"}︡{"stdout":"\n"}︡
