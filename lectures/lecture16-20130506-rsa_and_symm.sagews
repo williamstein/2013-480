@@ -11,8 +11,6 @@
 5. RSA
 6. Symmetric ciphers in Sage
 ︡0633385d-80e2-4eb8-b3f0-4c6d01c71600︡{"html":"<h1>Lecture 16: More Cryptography</h1>\n\n<ol>\n<li>Remember to start G+ recorder</li>\n<li>NOTE: new version of <a href=\"https://cloud.sagemath.com\">https://cloud.sagemath.com</a>.   Interacts, faster, new Sage version.</li>\n<li>Reminder: homework due Wednesday at 11:59pm; office hours tomorrow. </li>\n<li>Questions?</li>\n<li>RSA</li>\n<li>Symmetric ciphers in Sage</li>\n</ol>\n"}︡
-︠1d0cae8b-b24c-4675-8271-c11bbca23c3c︠
-
 ︠55a03652-14bd-4c34-9a41-ad588b83f9fbi︠
 %hide
 %html
@@ -150,20 +148,20 @@ m.hexdigest()
 Also:
 
 > "AES, the Advanced Encryption Standard, was chosen by the US National Institute of Standards and Technology from among 6 competitors, and is probably your best choice. It runs at 7060 K/sec, so it's among the faster algorithms around."
-︡bf13d0f8-19d5-472b-9c5e-4252b3a2e68d︡
+︡34b7f8e7-5b58-41b4-b775-411c374b6a30︡{"html":"<h2>Example: Encrypt a Message Using AES</h2>\n\n<blockquote>\n  <p>&#8220;Encryption algorithms transform their input data, or plaintet, in some way that is dependent on a variable key, producing ciphertet. This transformation can easily be reversed, if (and, hopefully, only if) one knows the key. \"</p>\n</blockquote>\n\n<p>Also:</p>\n\n<blockquote>\n  <p>&#8220;AES, the Advanced Encryption Standard, was chosen by the US National Institute of Standards and Technology from among 6 competitors, and is probably your best choice. It runs at 7060 K/sec, so it&#8217;s among the faster algorithms around.&#8221;</p>\n</blockquote>\n"}︡
 ︠8c7173a2-58da-4f01-9cce-5ead9863ff66︠
 import Crypto.Cipher; help(Crypto.Cipher)
-︡d7ad80f4-bce8-47ca-89ff-25087a3bf2ec︡
+︡1a65d49d-b433-4c94-9d93-8d16649b48fa︡{"stdout":"Help on package Crypto.Cipher in Crypto:\n\nNAME\n    Crypto.Cipher - Secret-key encryption algorithms.\n\nFILE\n    /usr/local/sage/sage-5.9/local/lib/python2.7/site-packages/Crypto/Cipher/__init__.py\n\nDESCRIPTION\n    Secret-key encryption algorithms transform plaintext in some way that\n    is dependent on a key, producing ciphertext. This transformation can\n    easily be reversed, if (and, hopefully, only if) one knows the key.\n    \n    The encryption modules here all support the interface described in PEP\n    272, \"API for Block Encryption Algorithms\".\n    \n    If you don't know which algorithm to choose, use AES because it's\n    standard and has undergone a fair bit of examination.\n    \n    Crypto.Cipher.AES         Advanced Encryption Standard\n    Crypto.Cipher.ARC2        Alleged RC2\n    Crypto.Cipher.ARC4        Alleged RC4\n    Crypto.Cipher.Blowfish\n    Crypto.Cipher.CAST\n    Crypto.Cipher.DES         The Data Encryption Standard.  Very commonly used\n                              in the past, but today its 56-bit keys are too small.\n    Crypto.Cipher.DES3        Triple DES.\n    Crypto.Cipher.XOR         The simple XOR cipher.\n\nPACKAGE CONTENTS\n    AES\n    ARC2\n    ARC4\n    Blowfish\n    CAST\n    DES\n    DES3\n    XOR\n\nDATA\n    __all__ = ['AES', 'ARC2', 'ARC4', 'Blowfish', 'CAST', 'DES', 'DES3', '...\n    __revision__ = '$Id$'\n\n\n"}︡
 ︠88ea835a-cf64-4043-90c5-76550362b3b2︠
 from Crypto.Cipher import AES
 obj   = AES.new('abcdefghijklmnop', AES.MODE_ECB)
 plain = "Nikita, they are going to assassinate the Prince of Georgia at a museum gala!"
 secret = obj.encrypt(plain)
-︡3c00ea11-a1c7-4134-9936-9b0b3124f0a6︡{"stderr":"Error in lines 4-4\n"}︡{"stderr":"Traceback (most recent call last):\n"}︡{"stderr":"  File \"/mnt/home/D6VXKxGo/.sagemathcloud/sage_server.py\", line 412, in execute\n"}︡{"stderr":"    exec compile(block, '', 'single') in namespace, locals\n"}︡{"stderr":"  File \"\", line 1, in <module>\n"}︡{"stderr":"ValueError: Input strings must be a multiple of 16 in length\n"}︡
+︡59670f08-7c3d-4fc9-9f57-b5000235901f︡{"stderr":"Error in lines 4-4\nTraceback (most recent call last):\n  File \"/mnt/home/D6VXKxGo/.sagemathcloud/sage_server.py\", line 412, in execute\n    exec compile(block, '', 'single') in namespace, locals\n  File \"\", line 1, in <module>\nValueError: Input strings must be a multiple of 16 in length\n"}︡
 ︠df91d35b-dbfc-4c18-83ce-fcc944695cb0︠
 plain += " "*(16 - len(plain)%16)
 len(plain)   # must be a multiple of 16
-︡02942042-586a-4538-bcaa-bcf2f8c70dd2︡{"stdout":"80"}︡{"stdout":"\n"}︡
+︡81fdbc38-9ed8-4be8-9cbf-ea12e378b307︡{"stdout":"80\n"}︡
 ︠6c10fbe3-3f04-45fa-b760-c39241b79138︠
 ciph = obj.encrypt(plain); ciph
 ︡103de8bd-dd56-4d0d-a982-5e902283a8fa︡{"stdout":"'@\\xd5\\x94\\xc1?Q\\x8dQDw\\xba\\x90\\xd9o\\xec\\xb9E}\\x84\\xb3\\xaa\\xd0\\xc7\\xa4g\\x95\\xb0\\xdeR7-\\x0b\\x19\\xac\\x94\\xc9\\xcaPfVu\\xc6\\t\\xb0Bn\\xc4\\xf9\\x03m\\x06\\x99!\\xd0\\xd8\\x10v}\\xc7\\xa5\\x98IDS\\x03\\xd6\\x82_\\xa0\\xed\\xc3w7\\x9c6\\x1d\\xe8\\xcc\\xd5m'"}︡{"stdout":"\n"}︡
@@ -176,35 +174,38 @@ obj.decrypt(ciph)
 ︠944a08df-2180-4cc2-bd44-175d6da64b67︠
 type(ciph)
 ︡be3061fb-8094-4ac6-b5cd-3fc8348eebef︡{"stdout":"<type 'str'>"}︡{"stdout":"\n"}︡
-︠04378145-5326-4b64-84e7-f7c7bee10fd7︠
-
-
-︠2a7e5b0c-c420-413c-ad34-e355f13c71f8︠
-%hide
+︠04378145-5326-4b64-84e7-f7c7bee10fd7i︠
 %md
-## Example: Encrypt a Messge Using RSA
+## Encrypt using RSA
+︡bbb9ceee-395e-4314-88be-bf9949cdab14︡{"html":"<h2>Encrypt using RSA</h2>\n"}︡
+︠c242e57e-594a-47fa-9e13-4ff5c1df0110︠
 
-> "A problem: you my wnt encryption to communicte sensitive dt over n insecure chnnel, but how cn you tell your correspondent wht the key is? You cn't just e-mil it to her becuse the chnnel is insecure. One solution is to rrnge the key vi some other wy: over the phone or by meeting in person.  Another solution is to use public-key cryptogrphy."
+from Crypto.PublicKey import RSA
+rsa = RSA.generate(int(2048))
+rsa
+︡cded302d-a4e9-43e9-bb3d-33193a46642a︡{"stdout":"<_RSAobj @0x6044e60 n(2048),e,d,p,q,u,private>\n"}︡
+︠48478c76-6b64-4a77-9b18-ced60067d8cc︠
+rsa.e
+︡97a6cadb-8916-43c5-8d83-668b6d5ec0df︡{"stdout":"65537L\n"}︡
+︠852f7d87-5050-4a60-8ebb-c72596b415b7︠
+rsa.d
+︡c90567fd-5234-4d87-853d-ca1bac2a5b03︡{"stdout":"12119373018638832927818569134405300817895922380673619931722778759214564827737271315198470962377446214881690611536525660221208530611289033377872917125723221055640010188027210978852090402960166298744029066909091187806725683519913114381297872780743631353574758126558412519342575122391172788629647600481679302329828326064581876126700921804151625268368783549905237096475699882217567025658683864635016471685477359735664970545675188190939084813080008264928383797974607564198714148988909394396024384692242089540220620313921520788396575916406520810768653135614509111687903953958096328079996118217414283934637455378467247524993L\n"}︡
+︠4b884efc-5edd-425c-9e16-0b6f01720985︠
+rsa.p
+︡29b05741-6fbd-4872-91fd-48e348516584︡{"stdout":"100949641525458239997865258236836129778911244544437801870282083647069561072728093853026580058295882176531155460947069154011353221166127012108804759578368653142797574158360043323685919728406084290592507249597143916252635081552877461733877040897577906108096465247047329839914783298955146577252832840234572839649L\n"}︡
+︠80e54e0f-bcf8-4cd3-9f9a-33569bbd1893︠
+rsa.q
 
-︡08a98197-16ca-49a1-8853-d1e811ab9b1d︡
-︠8c7173a2-58da-4f01-9cce-5ead9863ff66x︠
-import Crypto.PublicKey; help(Crypto.PublicKey)
-︠a28ac681-5ed0-4019-8922-aed608ac0995︠
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+︡9a2027fd-fc5b-467e-a707-e86037493cc7︡{"stdout":"166676329133269262066533920981488505146325351031393682268574740013854853496874452121638519081074421580689444758574727764283577861223738540688592634687728583365264196653945869800808338616401605542731397754941513291272748073324466334755752867839357849461567538725532925318755818321107578830643719205108209252237L\n"}︡
+︠1666582e-474a-498f-a9f5-e5338f5a5e63︠
+plain
+︡21d17483-37b1-46b9-8c38-67b0f0caa4e1︡{"stdout":"'Nikita, they are going to assassinate the Prince of Georgia at a museum gala!   '\n"}︡
+︠174ee5d1-0a69-4678-99b1-89d3684d0fb4︠
+ciph = rsa.encrypt(plain, 0); ciph
+︡e50a7028-30b3-46e2-8c5a-d0367233cfd1︡{"stdout":"('U\\xfa:\\x0b\\xd2\\xf5)\\x1dn|$\\x8c0\\xdc\\x83\\x11\\xecgm.\\xed\\x14\\x17\\x19\\xd5\\xce9\\xd8%\\xaf\\xb5xN\\xe0\\x99T\\xf5\\xfdx\\xad\\xafS&b\\xc6\\x830\\xa6\\x98\\xce\\xef\\x14\\x86\\x00\\xe5\\x05\\x87N\\x1a\\x11\\x01\\xce\\xdb\\x08\\x82\\x01Y\\x9a\\xb4\\xd4\\xaa\\xa13\\xae\\x94cg\\xe7\\xfe\\n\\xcc\\x13\\xf7\\x92\\xe8\\x87\\xb4O\\x9f\\xa8\\xb9A\\x9e\\x0f\\x8e\\xe8\\xc9\\x92\\xc3\\\\\\x8c\\x1a\\xe0\\xfa1\\xdd\\xe8h\\xae\\xd8\\x82\\xac\\xba(V?k\\x95\\x84\\xeaF\\xcb1\\xc3EC\\t\\xcaMF[~c\\x8c\\x04\\x08p\\x8a\\xf2\\x85\\x91\\xcdp\\x06\\x12<\\x8a9\\xc6/\\xb3\\xf8\\xa8g\"\\xe5\\xceKP\\x03zl\\x8eMs\\x9f\\xf8[vP$^\\x8f\\xfdI\\xb5\\x91\\xb4\\x92\\x0fM&U\\x89\\xa7\\xa0\\xbeyBt6\\xab\\x98\\xcb\\xaa\\x82*\\xd0sK\\x82Y\\xa1T\\x98V\\xa1\\x0f\\xbf\\x91\\xee\\xa4\\xdf\\x92\\x99\\x06V\\x9a\\xaa\\xefGKX9\\xa8\\x8e\\n\\xb5\\x89\\xac\\xc5\\xa2\\x89\\x1cI\\xd1\\r_E6\\xc0\\x99\\x8d>6\\x191\\x83\\x07\\xdb\\xee1\\n\\xce.8',)\n"}︡
+︠021a4598-6640-414d-8ba2-7c06232ed5ee︠
+rsa.decrypt(ciph)
+︡b0699ccf-6871-4f1b-a175-01b07fca4100︡{"stdout":"'Nikita, they are going to assassinate the Prince of Georgia at a museum gala!   '\n"}︡
+︠139c9730-d5fb-44fe-bc63-fef9dacb7068︠
 
 
