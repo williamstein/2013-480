@@ -109,50 +109,6 @@ step4_n
 
 ︠3304677b-4ec5-4069-8245-594a146e9a8b︠
 
-︠55a03652-14bd-4c34-9a41-ad588b83f9fbi︠
-%hide
-%html
-
-<img src="http://static.tvfanatic.com/images/gallery/dr-hanson-and-alex_500x332.jpg" class="img-rounded" style="width:30%;">&nbsp;&nbsp;
-<img src="http://0.static.wix.com/media/3557ea_e15a7612089a99e9f628dd59c7751b23.jpg_1024" class="img-rounded" style="width:30%">
-</center>
-<img src="http://1.bp.blogspot.com/_9VadMyosXXU/TLauxaGDieI/AAAAAAAAAcY/mXfzrsEet1E/s1600/nikita+season+1+episode+6.jpg" class="pull-right img-rounded" style="width:30%;">
-︡ec00d21a-00bc-438e-9477-cfe9a9b14d42︡{"html":"\n<img src=\"http://static.tvfanatic.com/images/gallery/dr-hanson-and-alex_500x332.jpg\" class=\"img-rounded\" style=\"width:30%;\">&nbsp;&nbsp;\n<img src=\"http://0.static.wix.com/media/3557ea_e15a7612089a99e9f628dd59c7751b23.jpg_1024\" class=\"img-rounded\" style=\"width:30%\">\n</center>\n<img src=\"http://1.bp.blogspot.com/_9VadMyosXXU/TLauxaGDieI/AAAAAAAAAcY/mXfzrsEet1E/s1600/nikita+season+1+episode+6.jpg\" class=\"pull-right img-rounded\" style=\"width:30%;\">"}︡
-︠803fafea-cddd-469c-ae25-d58ff16ca032i︠
-%hide
-%md
-Diffie-Hellman has some significant drawbacks.  It takes active involvement by both parties.
-
-# The RSA public-key cryptosystem
-
-Problem: Nikita wants to make it easy for her spy Alex (who she has sent to infiltrate Division) to send her secret messages and any point.  What could she do (years earlier) that will make this possible?
-
-1. Nikita chooses two random large prime numbers $p$ and $q$ and computes $n=pq$.
-2. Nikita computes a random integer $e < n$.
-3. Nikita computes an integer $d$ such that $ed\equiv 1\pmod{p-1}{q-1}$.
-4. Nikita tells everybody $n$ and $e$, but deletes $p$ and $q$, and keeps $d$ secret (memorized).
-4. To send Nikita a secret message, encode it as an integer $m < n$, and send her $m^e\pmod{n}$.
-5. Nikita later decrypts a secret message $m$ by computing $m = (m^e)^d \pmod{n}$.
-
-
-This works because of the structure of the group $(\mathbb{Z}/ n\mathbb{Z})^*$.
-
-This setup will last and all messages will stay "unbreakable" so long as nobody else ever figures out how to factor $n$.
-
-(Note: on the first episode of *Nikita*, a character named Birkhoff claims he can hack any encryption quickly, etc.,  but on many subsequent episodes he is completely unable to hack many different types of encryption.  Maybe the writers hired a less clueless technical consultant!)
-
-
-︡f27a31f4-89fc-4d5d-bd75-86313974241d︡{"html":"<p>Diffie-Hellman has some significant drawbacks.  It takes active involvement by both parties.</p>\n\n<h1>The RSA public-key cryptosystem</h1>\n\n<p>Problem: Nikita wants to make it easy for her spy Alex (who she has sent to infiltrate Division) to send her secret messages and any point.  What could she do (years earlier) that will make this possible?</p>\n\n<ol>\n<li>Nikita chooses two random large prime numbers $p$ and $q$ and computes $n=pq$.</li>\n<li>Nikita computes a random integer $e &lt; n$.</li>\n<li>Nikita computes an integer $d$ such that $ed\\equiv 1\\pmod{p-1}{q-1}$.</li>\n<li>Nikita tells everybody $n$ and $e$, but deletes $p$ and $q$, and keeps $d$ secret (memorized).</li>\n<li>To send Nikita a secret message, encode it as an integer $m &lt; n$, and send her $m^e\\pmod{n}$.</li>\n<li>Nikita later decrypts a secret message $m$ by computing $m = (m^e)^d \\pmod{n}$.</li>\n</ol>\n\n<p>This works because of the structure of the group $(\\mathbb{Z}/ n\\mathbb{Z})^*$.</p>\n\n<p>This setup will last and all messages will stay &#8220;unbreakable&#8221; so long as nobody else ever figures out how to factor $n$.</p>\n\n<p>(Note: on the first episode of <em>Nikita</em>, a character named Birkhoff claims he can hack any encryption quickly, etc.,  but on many subsequent episodes he is completely unable to hack many different types of encryption.  Maybe the writers hired a less clueless technical consultant!)</p>\n"}︡
-︠2628f39c-2ac4-4c37-88cf-c372488e231d︠
-
-# Let's implement this: how?
-
-︡a4efbe2c-0361-46ae-8871-7b8c9494c570︡
-︠a404c405-ed3a-4e86-86a1-1d93c99e54c7︠
-
-
-
-
 
 
 
