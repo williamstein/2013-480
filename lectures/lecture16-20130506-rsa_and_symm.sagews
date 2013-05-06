@@ -44,7 +44,7 @@ Problem: Nikita wants to make it easy for Alex (who she has sent to infiltrate D
 
 1. Nikita chooses two random large prime numbers $p$ and $q$ and computes $n=pq$.
 2. Nikita computes a random integer $e < n$.
-3. Nikita computes an integer $d$ such that $ed\equiv 1\pmod{p-1}{q-1}$.
+3. Nikita computes an integer $d$ such that $ed\equiv 1\pmod{(p-1)(q-1)}$.
 4. Nikita tells everybody $n$ and $e$, but deletes $p$ and $q$, and keeps $d$ secret (memorized).
 4. To send Nikita a secret message, Alex encodes it as an integer $m < n$, and send her $m^e\pmod{n}$.
 5. Nikita later decrypts a secret message $m$ by computing $m = (m^e)^d \pmod{n}$.
@@ -57,24 +57,53 @@ This setup will last and all messages will stay "unbreakable" so long as nobody 
 <span class="lighten">(Note: on the first episode of *Nikita*, a character named Birkhoff claims he can hack any encryption quickly, etc.,  but on many subsequent episodes he is completely unable to hack many different types of encryption.  Maybe the writers hired a less clueless technical consultant!  Or maybe his bragging about what he couldn't actually do was in character.)</span>
 
 
-︡f85cc5ea-97b4-4ead-a872-e0781b459cce︡{"html":"<div style=\"width:20%\" class=\"pull-right img-rounded\">\n <img src=\"http://1.bp.blogspot.com/_IBWTFjSJw9k/TM6rLOwEn0I/AAAAAAAAAHg/Bw9aNRJIsf4/s1600/Nikita-Dell-Computer.jpg\">\n </div>\n\n<h2>RSA!</h2>\n\n<ol>\n<li>Nikita chooses two random large prime numbers $p$ and $q$ and computes $n=pq$.</li>\n<li>Nikita computes a random integer $e &lt; n$.</li>\n<li>Nikita computes an integer $d$ such that $ed\\equiv 1\\pmod{p-1}{q-1}$.</li>\n<li>Nikita tells everybody $n$ and $e$, but deletes $p$ and $q$, and keeps $d$ secret (memorized).</li>\n<li>To send Nikita a secret message, Alex encodes it as an integer $m &lt; n$, and send her $m^e\\pmod{n}$.</li>\n<li>Nikita later decrypts a secret message $m$ by computing $m = (m^e)^d \\pmod{n}$.</li>\n</ol>\n\n<p>This works because of the structure of the group $(\\mathbb{Z}/ n\\mathbb{Z})^*$.</p>\n\n<p>This setup will last and all messages will stay &#8220;unbreakable&#8221; so long as nobody else ever figures out how to factor $n$.</p>\n\n<p><span class=\"lighten\">(Note: on the first episode of <em>Nikita</em>, a character named Birkhoff claims he can hack any encryption quickly, etc.,  but on many subsequent episodes he is completely unable to hack many different types of encryption.  Maybe the writers hired a less clueless technical consultant!  Or maybe his bragging about what he couldn&#8217;t actually do was in character.)</span></p>\n"}︡
+︡dfd39fd7-6aec-4a15-bca9-916ea8a64f19︡{"html":"<div style=\"width:20%\" class=\"pull-right img-rounded\">\n <img src=\"http://1.bp.blogspot.com/_IBWTFjSJw9k/TM6rLOwEn0I/AAAAAAAAAHg/Bw9aNRJIsf4/s1600/Nikita-Dell-Computer.jpg\">\n </div>\n\n<h2>RSA!</h2>\n\n<ol>\n<li>Nikita chooses two random large prime numbers $p$ and $q$ and computes $n=pq$.</li>\n<li>Nikita computes a random integer $e &lt; n$.</li>\n<li>Nikita computes an integer $d$ such that $ed\\equiv 1\\pmod{(p-1)(q-1)}$.</li>\n<li>Nikita tells everybody $n$ and $e$, but deletes $p$ and $q$, and keeps $d$ secret (memorized).</li>\n<li>To send Nikita a secret message, Alex encodes it as an integer $m &lt; n$, and send her $m^e\\pmod{n}$.</li>\n<li>Nikita later decrypts a secret message $m$ by computing $m = (m^e)^d \\pmod{n}$.</li>\n</ol>\n\n<p>This works because of the structure of the group $(\\mathbb{Z}/ n\\mathbb{Z})^*$.</p>\n\n<p>This setup will last and all messages will stay &#8220;unbreakable&#8221; so long as nobody else ever figures out how to factor $n$.</p>\n\n<p><span class=\"lighten\">(Note: on the first episode of <em>Nikita</em>, a character named Birkhoff claims he can hack any encryption quickly, etc.,  but on many subsequent episodes he is completely unable to hack many different types of encryption.  Maybe the writers hired a less clueless technical consultant!  Or maybe his bragging about what he couldn&#8217;t actually do was in character.)</span></p>\n"}︡
 ︠2628f39c-2ac4-4c37-88cf-c372488e231d︠
 
 # Let's implement this: how?
+︠fca8f3be-d11d-4a08-9397-2d2b2a240a08︠
+import random
+p = next_probable_prime(random.randint(0,10^20)); p
+︡39881fb3-8e53-4245-82b6-7256a9d52344︡{"stdout":"959157273809290579\n"}︡
+︠921804df-1732-4472-886d-559be26764c5︠
+q = next_probable_prime(random.randint(0,10^20)); q
+︡cee514b3-5b48-46d7-aec3-4f9b980e1166︡{"stdout":"15430579968999736811\n"}︡
+︠f2c54ea8-4247-4531-a438-c1f392bf4317︠
+n = p*q; n
+︡7fe80956-59ad-4a76-8ed4-bb2ed03e78c2︡{"stdout":"14800353016362035094774075457621803569\n"}︡
+︠d953d2a6-9356-44b4-9e69-b1a066efed9f︠
+factor(n)
+︡bab2cd5f-25f3-4dd4-9bd6-51e74205ea5c︡{"stdout":"959157273809290579 * 15430579968999736811\n"}︡
+︠2cb14fcc-35e5-4188-bad8-8e2e9dd49ae2︠
+e = random.randint(0,n); e
+︡45490f99-f773-4d30-b0f8-4ab97f07a464︡{"stdout":"11993200601992637799154177222176339731L\n"}︡
+︠a0363b64-1991-4148-be72-03812a237a46︠
+phi_n = (p-1)*(q-1); phi_n
+︡964e6286-8a47-4bf0-a952-a7c48eb6e309︡{"stdout":"14800353016362035078384338214812776180\n"}︡
+︠7f4525a1-04be-4893-9a8a-7f7b73ce6ea4︠
+d = int(Mod(e, phi_n)^(-1)); d
+︡1bc07329-f7aa-4591-99f9-74a44d289b6e︡{"stdout":"8424061086750187365745922783058859091L\n"}︡
+︠39e393c5-3398-4e56-aec2-4f19534a8908︠
+e*d % phi_n
+︡0fc7728d-833a-4146-ac4f-2aefc40d047c︡{"stdout":"1\n"}︡
+︠43556ae5-9680-46e3-adc7-d7fed7666ab5︠
+(n,e)
+︡2c8d2889-b60d-4cf1-8de9-8587b2c1aaa0︡{"stdout":"(14800353016362035094774075457621803569, 11993200601992637799154177222176339731L)\n"}︡
+︠cabaf9c4-b5c6-4f7a-b8c4-4f9d645f1606︠
+m = 1234567
+cipher = Mod(m, n)^e; cipher
+︡b237d011-94b0-4d72-8343-27e83ac97243︡{"stdout":"13466136204973946434125177853984454800\n"}︡
+︠339127e6-f7db-49c5-be88-be69099113cf︠
+cipher ^ d
+︡2e2b4a77-240b-4df7-8116-b9df7877f955︡{"stdout":"1234567\n"}︡
+︠75c91531-f22e-498f-856e-40c13953c3d8︠
+
+︠e33d30d9-fb32-494f-96a7-c7d47ccac6b5︠
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+︠33e38485-847f-4076-9c6d-69bb4db7d4db︠
 
 ︠6d712f28-4ce6-460b-8616-103d280f4134i︠
 %hide
@@ -130,7 +159,12 @@ from Crypto.Hash import MD5
 m = MD5.new()
 m.update('Nikita, they are going to assassinate the Prince of Georgia at a museum gala!')
 m.hexdigest()
-︡b1aa43dc-b99f-473e-8000-4c8cedc32eb0︡{"stdout":"'cebb15dffc6f22a5db3f353d25177656'"}︡{"stdout":"\n"}︡
+︡1a094072-89fd-47a8-9c5b-fc9a9045e55e︡{"stdout":"'cebb15dffc6f22a5db3f353d25177656'\n"}︡
+︠e034ec08-2f11-47a6-b208-800d8a3d3222︠
+m.digest()
+︡79bd2d76-9e9a-4f33-abfa-ff8bb81672fd︡{"stdout":"'\\xce\\xbb\\x15\\xdf\\xfco\"\\xa5\\xdb?5=%\\x17vV'\n"}︡
+︠0ec7859d-038a-4a68-af5b-8223d82d853a︠
+
 ︠2cd50066-eba1-4676-ad07-a61cbe8e92b7︠
 %timeit
 m = MD5.new()
@@ -165,6 +199,7 @@ len(plain)   # must be a multiple of 16
 ︠6c10fbe3-3f04-45fa-b760-c39241b79138︠
 ciph = obj.encrypt(plain); ciph
 ︡103de8bd-dd56-4d0d-a982-5e902283a8fa︡{"stdout":"'@\\xd5\\x94\\xc1?Q\\x8dQDw\\xba\\x90\\xd9o\\xec\\xb9E}\\x84\\xb3\\xaa\\xd0\\xc7\\xa4g\\x95\\xb0\\xdeR7-\\x0b\\x19\\xac\\x94\\xc9\\xcaPfVu\\xc6\\t\\xb0Bn\\xc4\\xf9\\x03m\\x06\\x99!\\xd0\\xd8\\x10v}\\xc7\\xa5\\x98IDS\\x03\\xd6\\x82_\\xa0\\xed\\xc3w7\\x9c6\\x1d\\xe8\\xcc\\xd5m'"}︡{"stdout":"\n"}︡
+
 ︠afee0c10-335c-42b0-86d6-8a37ce2de878︠
 len(ciph)
 ︡6348f7e8-aa35-4825-ab1a-405f2721b011︡{"stdout":"80"}︡{"stdout":"\n"}︡
@@ -183,19 +218,18 @@ type(ciph)
 from Crypto.PublicKey import RSA
 rsa = RSA.generate(int(2048))
 rsa
-︡cded302d-a4e9-43e9-bb3d-33193a46642a︡{"stdout":"<_RSAobj @0x6044e60 n(2048),e,d,p,q,u,private>\n"}︡
+︡b6c66d7a-c55b-4234-8cc1-d5ef5882680a︡{"stdout":"<_RSAobj @0x62093b0 n(2048),e,d,p,q,u,private>\n"}︡
 ︠48478c76-6b64-4a77-9b18-ced60067d8cc︠
 rsa.e
-︡97a6cadb-8916-43c5-8d83-668b6d5ec0df︡{"stdout":"65537L\n"}︡
+︡fcf42ca5-c475-42b4-9a04-87454eea09ab︡{"stdout":"65537L\n"}︡
 ︠852f7d87-5050-4a60-8ebb-c72596b415b7︠
 rsa.d
-︡c90567fd-5234-4d87-853d-ca1bac2a5b03︡{"stdout":"12119373018638832927818569134405300817895922380673619931722778759214564827737271315198470962377446214881690611536525660221208530611289033377872917125723221055640010188027210978852090402960166298744029066909091187806725683519913114381297872780743631353574758126558412519342575122391172788629647600481679302329828326064581876126700921804151625268368783549905237096475699882217567025658683864635016471685477359735664970545675188190939084813080008264928383797974607564198714148988909394396024384692242089540220620313921520788396575916406520810768653135614509111687903953958096328079996118217414283934637455378467247524993L\n"}︡
+︡a475b9b7-b925-43d4-82dd-cfe836a3aba7︡{"stdout":"8346685133844443041796624308981933905385200816198658354040547064679592685484287047168016642660156836563198196812826092554682408853322603345010930084541997098499486012302104197878226903820991185233575645730604084422376173753723313230700054549648037540326255673338233312785695612779519474174468460351859709696379484518776807289036523166781575414441825310486925604870941358405690738057005067867388835163107776928192654679377469096228990108155753403609144562781386754693793397563026155751974693584832099656286043971202987573915438706579946972164382602354488946394241058764631316840143276099028934000847504529380142269889L\n"}︡
 ︠4b884efc-5edd-425c-9e16-0b6f01720985︠
 rsa.p
 ︡29b05741-6fbd-4872-91fd-48e348516584︡{"stdout":"100949641525458239997865258236836129778911244544437801870282083647069561072728093853026580058295882176531155460947069154011353221166127012108804759578368653142797574158360043323685919728406084290592507249597143916252635081552877461733877040897577906108096465247047329839914783298955146577252832840234572839649L\n"}︡
 ︠80e54e0f-bcf8-4cd3-9f9a-33569bbd1893︠
 rsa.q
-
 ︡9a2027fd-fc5b-467e-a707-e86037493cc7︡{"stdout":"166676329133269262066533920981488505146325351031393682268574740013854853496874452121638519081074421580689444758574727764283577861223738540688592634687728583365264196653945869800808338616401605542731397754941513291272748073324466334755752867839357849461567538725532925318755818321107578830643719205108209252237L\n"}︡
 ︠1666582e-474a-498f-a9f5-e5338f5a5e63︠
 plain
