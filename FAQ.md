@@ -2,7 +2,7 @@
 
 ### How can I use cloud.sagemath.com to modify a file and post the modification to github?
 
-(Answer: See lecture 17.)
+(Answer: See Lecture 17.)
 
 ### How do I submit a histogram as part of my homework solution.
 
