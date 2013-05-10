@@ -171,7 +171,7 @@ m = MD5.new()
 m.update('Nikita, they are going to assassinate the Prince of Georgia at a museum gala!')
 m.hexdigest()
 ︡547dd208-2822-49df-b24a-bb0f0bdbb492︡{"stdout":"625 loops, best of 3: 2.83 µs per loop"}︡{"stdout":"\n"}︡
-︠2a7e5b0c-c420-413c-ad34-e355f13c71f8i︠
+︠2a7e5b0c-c420-413c-ad34-e355f13c71f8︠
 
 %hide
 %md
