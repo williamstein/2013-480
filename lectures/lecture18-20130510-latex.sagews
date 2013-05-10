@@ -1,3 +1,5 @@
+
+
 ︠d29f5555-88a9-4e03-b167-55ddcd1857fdi︠
 %hide
 %md
@@ -9,6 +11,10 @@
 2. Questions?
 
 ︡bd6916e3-4779-4af8-a1d6-718452f255b7︡{"html":"<p><span class=\"pull-right\"> <img src=\"http://math.hws.edu/eck/about_tex/latex_lion.gif\"></span></p>\n\n<h1>Lecture 18: Professional Quality Mathematical Documents (LaTeX)</h1>\n\n<ol>\n<li>Remember to start G+ recorder</li>\n<li>Questions?</li>\n</ol>\n"}︡
+︠e44e73ab-c1dc-430a-b553-2e54ede3e397︠
+
+
+
 ︠8e3f5a80-9b9d-491b-bd7a-222fbc58ded7i︠
 %hide
 %md
