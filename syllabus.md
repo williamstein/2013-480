@@ -19,6 +19,5 @@ Text: The [Sage website](http://www.sagemath.org) has thousands of pages of reso
 
 ## Past Courses
 
-[I](http://wiki.wstein.org/edu/2012/480) [have](http://wiki.wstein.org/11/480a) [taught](http://wiki.wstein.org/edu/2010/581d) [this](http://wiki.wstein.org/10/480b) [course](http://wiki.wstein.org/09/480b) [before](http://wiki.wstein.org/2008/480a).
-
+- I have taught this course before.  See <http://wstein.org/courses/>
 
