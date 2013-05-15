@@ -8,14 +8,16 @@
 
 1. Remember to start G+ recorder
 
-2. Questions?
+2. You should have received an email with your grades.
 
-3. Learn about embedding mathematical formulas
+3. Questions?
 
-4. Student projects
+4. Learn about embedding mathematical formulas
+
+5. Student projects
 
 
-︡62463235-a7c5-469c-8a79-847a1a8f5e66︡{"html":"<h1>Lecture 20: Finish &#8220;Mathematical Formulas Using LaTeX and MathJax&#8221;; student projects</h1>\n\n<h4>May 15, 2013</h4>\n\n<ol>\n<li><p>Remember to start G+ recorder</p></li>\n<li><p>Questions?</p></li>\n<li><p>Learn about embedding mathematical formulas</p></li>\n<li><p>Student projects</p></li>\n</ol>\n"}︡
+︡29e954b4-00d9-4c32-ae36-e14f9c182bd8︡{"html":"<h1>Lecture 20: Finish &#8220;Mathematical Formulas Using LaTeX and MathJax&#8221;; student projects</h1>\n\n<h4>May 15, 2013</h4>\n\n<ol>\n<li><p>Remember to start G+ recorder</p></li>\n<li><p>You should have received an email with your grades.</p></li>\n<li><p>Questions?</p></li>\n<li><p>Learn about embedding mathematical formulas</p></li>\n<li><p>Student projects</p></li>\n</ol>\n"}︡
 ︠4b5c0304-df33-449e-9256-a47994576ba9i︠
 %hide
 %md
@@ -26,12 +28,14 @@
 ︡1f74aeda-f772-4e7f-8113-c6da916ae8cb︡{"html":"<h3>Putting LaTeX in your webpages.</h3>\n\n<ul>\n<li>For your own static html webpage, which you control, you can put this at the top, then just put math in dollars all over your page.   See <a href=\"http://wstein.org/misc/20130513.html\">http://wstein.org/misc/20130513.html</a>.</li>\n</ul>\n"}︡
 ︠4bc89919-e058-4cbd-9a18-35cca9f17589︠
 %html
+
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 <script type="text/javascript"
     src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
 ︠e69323f0-e001-48cb-b7ae-05830d5ae6f0i︠
 %md
 
@@ -53,4 +57,4 @@ At least you can make png images using %latex with Sage, and include them in a g
 
 Go around room and describe them. Clusters?
 
- - 
+ -

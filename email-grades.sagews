@@ -5,17 +5,18 @@ email('wstein@gmail.com', 'hi', 'the message', 'wstein@uw.edu')
 import csv
 cols = None
 data = []
-with open('%s/restricted/grades-480 - Sheet 1.csv'%os.environ['HOME'], 'rb') as csvfile:
+with open('%s/restricted/480-grades/grade_sheet.csv'%os.environ['HOME'], 'rb') as csvfile:
      reader = csv.reader(csvfile)
      for row in reader:
         if cols is None:
             cols = row
         else:
             data.append(dict(zip(cols, row)))
-︡d96bd367-a00a-4ebc-b952-1279cd28ebf4︡{"stderr":"Error in lines 4-10\nTraceback (most recent call last):\n  File \"/mnt/home/D6VXKxGo/.sagemathcloud/sage_server.py\", line 412, in execute\n    exec compile(block, '', 'single') in namespace, locals\n  File \"\", line 1, in <module>\nIOError: [Errno 2] No such file or directory: '/mnt/home/D6VXKxGo/restricted/grades-480 - Sheet 1.csv'\n"}︡
+︡44288138-156f-4a02-8281-4d2410d55327︡
+︠a6c023d7-4c3d-437a-950b-af78443440f6︠
 ︠d7ff65ad-eb26-4fb9-990f-636e4a0e3398︠
 cols
-︡10cfc452-d0fa-410a-a300-71ae4703824e︡{"stdout":"['', 'Name', 'Class', 'Major', 'Email', 'HW1', 'HW2', 'hw2 comment', 'HW3', 'HW3 comment', 'HW4', 'HW5']\n"}︡
+︡722aff99-6021-4326-b418-10a0a41af5ed︡{"stdout":"['', 'Name', 'Class', 'Major', 'Email', 'HW1', 'HW2', 'hw2 comment', 'HW3', 'HW3 comment', 'HW4', 'HW4 comment', 'HW5', 'HW5 comment']\n"}︡
 ︠104694fb-8d88-4628-846c-c2f915b2ecd6︠
 for d in data:
     name = d['Name']
@@ -35,15 +36,22 @@ Your recorded grades so far in Math 480 are:
 
     - Comments on homework 3: "%s"
 
-I haven't finished grading homeworks 4 and 5 yet.
+    - Homework 4 (number theory): %s (out of 1)
+
+    - Comments on homework 4: "%s"
+
+I haven't finished grading homework 5 yet.
 
 I will drop your *two* lowest homework grades when computing your final course grad.
 
  -- William (wstein@uw.edu)
- """%(name, d['HW1'], d['HW2'], d['hw2 comment'], d['HW3'], d['HW3 comment'])
+ """%(name, d['HW1'], d['HW2'], d['hw2 comment'], d['HW3'], d['HW3 comment'], d['HW4'], d['HW4 comment'])
     print name
     sys.stdout.flush()
     email(d['Email'], 'Math 480 grades', s, 'wstein@uw.edu')
+    #print s
+    #sys.stdout.flush()
+    #break
 
 ︠333220fb-fe3f-46b0-9c03-b56c3ea8fa7e︠
 
