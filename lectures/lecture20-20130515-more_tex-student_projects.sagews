@@ -48,13 +48,32 @@ At least you can make png images using %latex with Sage, and include them in a g
 
 
 
+︡c0294353-91c2-493e-b280-46f1a18ee1b4︡{"html":"<ul>\n<li><p>Github: nope.  It seems pretty much impossible to put mathjax in the github pages you browse (e.g., their wiki or md files).  There are security issues.\nAt least you can make png images using %latex with Sage, and include them in a git repo&#8230;</p></li>\n<li><p>Various pages on the internet that let users include content may or may just work with math formulas typeset in dollar signs.  For example <a href=\"http://mathoverflow.net/\">http://mathoverflow.net/</a> works for formulas in the content (though maybe not in the titles).</p></li>\n<li><p>The chat in cloud.sagemath supports math formulas&#8230; (but doesn&#8217;t support chatting with anybody else yet!)</p></li>\n</ul>\n"}︡
+
+︠776a6baf-f6ac-4352-9ad9-cafeb8b0d6e6︠
+%md
+
+A Live Sage Development Example:
+
+    <http://trac.sagemath.org/sage_trac/ticket/14587>
+
+︠ea21376e-8a9a-4876-a223-3739dfd74c4f︠
+# Student projects
+
+Go around room and briefly describe each (take notes here).  Clusters/groups?
 
 
 
-︡ad3e8143-8e33-4629-8f68-df209d2eb9f8︡{"html":"<ul>\n<li><p>Github: nope.  It seems pretty much impossible to put mathjax in the github pages you browse (e.g., their wiki or md files).  There are security issues.\nAt least you can make png images using %latex with Sage, and include them in a git repo&#8230;</p></li>\n<li><p>Various pages on the internet that let users include content may or may just work with math formulas typeset in dollar signs.  For example <a href=\"http://mathoverflow.net/\">http://mathoverflow.net/</a> works for formulas in the content (though maybe not in the titles).</p></li>\n<li><p>The chat in cloud.sagemath supports math formulas&#8230; (but doesn&#8217;t support chatting with anybody else yet!)</p></li>\n</ul>\n"}︡
+
 ︠27931fb2-bbb4-4486-9dcf-6197aec7f4cci︠
 # Student Projects
 
 Go around room and describe them. Clusters?
 
  -
+
+
+
+
+
+
