@@ -23,3 +23,5 @@ Math 480 during Spring 2013 at University of Washington.
 - [Lecture 16 (May 6, 2013)](http://youtu.be/jiykagnvGis)
 - [Lecture 17 (May 8, 2013)](http://youtu.be/2z-0XVSFkZc)
 - [Lecture 18 (May 10, 2013) - LaTeX Documents](http://youtu.be/IhwMbdIGUxM)
+- [Lecture 19 (May 13, 2013) - LaTeX and MathJax](http://youtu.be/QlbpulzxT5I)
+- [Lecture 20 (May 15, 2013) - More MathJax, Final Project Organization](http://youtu.be/ElX__lasto0)
