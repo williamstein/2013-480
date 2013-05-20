@@ -75,7 +75,7 @@ For example:
 ︠7d3d8410-b6be-4ff1-b30a-cee29a3938b9︠
 f = sin(cos(2*x)+3)^3
 f
-︡49032f51-6375-48a7-b8ca-543eb7267c6a︡{"stdout":"sin(cos(2*x) + 3)^3\n"}︡
+︡8e297ff9-7beb-4357-9ed6-80f732ce175f︡{"stdout":"sin(cos(2*x) + 3)^3\n"}︡
 ︠3fc151e1-de00-41a6-b26c-59a9424d1879︠
 latex(f)
 ︡2a0232e9-7acf-4247-9b0c-078dad728e23︡{"stdout":"\\sin\\left(\\cos\\left(2 \\, x\\right) + 3\\right)^{3}\n"}︡
@@ -204,7 +204,7 @@ $$
 ︠839b4df0-416c-4486-b592-874d45e76309︠
 latex(matrix(QQ,3,[1..9]))
 ︡5d41d536-7b81-4b89-a94b-41773b42a2cc︡{"stdout":"\\left(\\begin{array}{rrr}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 9\n\\end{array}\\right)\n"}︡
-︠382f319a-f111-4321-b14e-739c6635cb9bi︠
+︠382f319a-f111-4321-b14e-739c6635cb9b︠
 %md
 ### Crash course (part 2)
 
