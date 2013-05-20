@@ -1,4 +1,4 @@
-︠10ea4cc3-f10d-4cad-b2c7-cbf74aa9d1aa︠
+︠10ea4cc3-f10d-4cad-b2c7-cbf74aa9d1aai︠
 %hide
 %md
 
@@ -12,7 +12,9 @@
 
 3. Topic: Hidden Markov Models in Sage
 
-︡efaee8ef-ef24-41bd-b868-f24289d1827c︡{"html":"<h2>Lecture 22: Intro to Hidden Markov Models with Sage</h2>\n\n<h4>May 20, 2013</h4>\n\n<ol>\n<li><p>Remember to start G+ recorder</p></li>\n<li><p>Questions?  Reminder: homework and office hours.</p></li>\n<li><p>Topic: Hidden Markov Models in Sage</p></li>\n</ol>\n"}︡
+**Remark:** If you do development on Sage with [cloud](https://cloud.sagemath.com), just extract Sage in your home directory.  I've disabled quotas and am fine with people creating 4-5GB of data in a project.
+
+︡0892e18a-337a-4846-aa57-8e5d02b4cd99︡{"html":"<h2>Lecture 22: Hidden Markov Models with Sage</h2>\n\n<h4>May 20, 2013</h4>\n\n<ol>\n<li><p>Remember to start G+ recorder</p></li>\n<li><p>Questions?  Reminder: homework and office hours.</p></li>\n<li><p>Topic: Hidden Markov Models in Sage</p></li>\n</ol>\n\n<p><strong>Remark:</strong> If you do development on Sage with <a href=\"https://cloud.sagemath.com\">cloud</a>, just extract Sage in your home directory.  I&#8217;ve disabled quotas and am fine with people creating 4-5GB of data in a project.</p>\n"}︡
 ︠4aaf550c-9ea9-4de0-b98d-26f4916910b6i︠
 %md
 ## A Model
