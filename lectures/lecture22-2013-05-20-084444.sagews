@@ -12,9 +12,13 @@
 
 3. Topic: Hidden Markov Models in Sage
 
-**Remark:** If you do development on Sage with [cloud](https://cloud.sagemath.com), just extract Sage in your home directory.  I've disabled quotas and am fine with people creating 4-5GB of data in a project.
+**Remarks:**
 
-︡0892e18a-337a-4846-aa57-8e5d02b4cd99︡{"html":"<h2>Lecture 22: Hidden Markov Models with Sage</h2>\n\n<h4>May 20, 2013</h4>\n\n<ol>\n<li><p>Remember to start G+ recorder</p></li>\n<li><p>Questions?  Reminder: homework and office hours.</p></li>\n<li><p>Topic: Hidden Markov Models in Sage</p></li>\n</ol>\n\n<p><strong>Remark:</strong> If you do development on Sage with <a href=\"https://cloud.sagemath.com\">cloud</a>, just extract Sage in your home directory.  I&#8217;ve disabled quotas and am fine with people creating 4-5GB of data in a project.</p>\n"}︡
+ - If you do development on Sage with [cloud](https://cloud.sagemath.com), just extract Sage in your home directory.  I've disabled quotas and am fine with people creating 4-5GB of data in a project.
+
+ - Rest of class will be *surprise* single lecture introductions to various computational capabilities of Sage.  Then final project presentations (June 3-7!!!).  So work hard on your final projects now.  You'll be done June 7.
+
+︡20b7c9ea-4ed1-4f10-9fda-df193e9a1a2c︡{"html":"<h2>Lecture 22: Hidden Markov Models with Sage</h2>\n\n<h4>May 20, 2013</h4>\n\n<ol>\n<li><p>Remember to start G+ recorder</p></li>\n<li><p>Questions?  Reminder: homework and office hours.</p></li>\n<li><p>Topic: Hidden Markov Models in Sage</p></li>\n</ol>\n\n<p><strong>Remarks:</strong></p>\n\n<ul>\n<li><p>If you do development on Sage with <a href=\"https://cloud.sagemath.com\">cloud</a>, just extract Sage in your home directory.  I&#8217;ve disabled quotas and am fine with people creating 4-5GB of data in a project.</p></li>\n<li><p>Rest of class will be <em>surprise</em> single lecture introductions to various computational capabilities of Sage.  Then final project presentations (June 3-7!!!).  So work hard on your final projects now.  You&#8217;ll be done June 7.</p></li>\n</ul>\n"}︡
 ︠4aaf550c-9ea9-4de0-b98d-26f4916910b6i︠
 %md
 ## A Model
@@ -64,27 +68,27 @@ initial = [0,1,0,0]
 
 model = hmm.DiscreteHiddenMarkovModel(A, B, initial, emission_symbols)
 ︡4a4703ec-51be-40ef-8727-a6f32d1ddd23︡
-︠9f5f036d-7b6a-4563-a364-94ef00ca3a15︠
+︠9f5f036d-7b6a-4563-a364-94ef00ca3a15o︠
 # The model:
 model
 ︡20d37c01-5cff-403e-bcb1-3ff767a9625b︡{"stdout":"Discrete Hidden Markov Model with 4 States and 5 Emissions\nTransition matrix:\n[          0.97           0.03            0.0            0.0]\n[          0.05            0.7           0.25            0.0]\n[           0.0            0.0 0.655172413793 0.344827586207]\n[0.236220472441            0.0            0.0 0.763779527559]\nEmission matrix:\n[          0.03           0.97            0.0            0.0            0.0]\n[           0.5            0.0            0.5            0.0            0.0]\n[           0.0            0.0 0.333333333333 0.333333333333 0.333333333333]\n[           0.5            0.0            0.0            0.0            0.5]\nInitial probabilities: [0.0000, 1.0000, 0.0000, 0.0000]\nEmission symbols: ['must sleep', 'zzz', 'good morning', 'awesome!', 'ha ha']\n"}︡
-︠f48fb6b4-3864-499c-9ebe-e0cd61d22c3d︠
+︠f48fb6b4-3864-499c-9ebe-e0cd61d22c3do︠
 # This shows the transition matrix.  It's ugly (developer project idea!)
 model.graph().plot(edge_labels=True, graph_border=True).show(figsize=5, svg=True)
 ︡69087225-d5e1-48ef-bf04-146bb1f3b5a1︡{"file":{"show":true,"uuid":"46daadc9-e0bc-4f6c-8014-76fa62251997","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/11377/tmp_bXImcH.svg"}}︡
-︠46078441-90e6-4e1f-b1fb-da17b6479962︠
+︠46078441-90e6-4e1f-b1fb-da17b6479962o︠
 set_random_seed(0); model.sample(10)
 ︡f0bb3e86-7cf9-4a77-bcfd-13663b396666︡{"stdout":"['must sleep', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz']\n"}︡
-︠33d00064-982f-43e3-a763-8f40cce9847e︠
+︠33d00064-982f-43e3-a763-8f40cce9847eo︠
 set_random_seed(1); model.sample(10)
 ︡b62c6eef-e905-4349-b793-dbb836955ec6︡{"stdout":"['good morning', 'ha ha', 'must sleep', 'ha ha', 'must sleep', 'ha ha', 'must sleep', 'must sleep', 'must sleep', 'ha ha']\n"}︡
-︠3ac7df99-d9a2-41bf-9e48-531180cdcb2a︠
+︠3ac7df99-d9a2-41bf-9e48-531180cdcb2ao︠
 set_random_seed(1); model.generate_sequence(10)
 ︡e79262c7-4991-4936-b7ef-8a1c05d54cd6︡{"stdout":"(['good morning', 'ha ha', 'must sleep', 'ha ha', 'must sleep', 'ha ha', 'must sleep', 'must sleep', 'must sleep', 'ha ha'], [1, 2, 3, 3, 3, 3, 3, 3, 3, 3])\n"}︡
-︠d6ee8205-cb9c-4b7d-a23b-baab4cfd4001︠
+︠d6ee8205-cb9c-4b7d-a23b-baab4cfd4001o︠
 model.viterbi(['must sleep', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz'])
 ︡7aec119e-8989-46f2-8e1d-66145d11ea27︡{"stdout":"([1, 0, 0, 0, 0, 0, 0, 0, 0, 0], -4.206685981353984)\n"}︡
-︠3957695c-0f6d-4af8-a788-69e914ab5d75︠
+︠3957695c-0f6d-4af8-a788-69e914ab5d75o︠
 set_random_seed(1); v,w = model.generate_sequence(50)
 for z in zip(v,w):
     print z
@@ -99,18 +103,18 @@ Say we observe this sequence from a morning person friend:
 
 The *Baum-Welch algorithm* will locally modify our model to find a model that is more likely to produce that sequence.  It's a clever and highly efficient optimization trick -- basically like Newton's method.
 ︡3b827954-9312-477e-a39f-461ae3efc0c4︡{"html":"<h2>Baum-Welch: find a better model.</h2>\n\n<p>Say we observe this sequence from a morning person friend:</p>\n\n<pre><code>obs = ['good morning', 'awesome!', 'awesome!','awesome!','awesome!','awesome!','awesome!','ha ha','must sleep','zzz','zzz''zzz''zzz'\n</code></pre>\n\n<p>The <em>Baum-Welch algorithm</em> will locally modify our model to find a model that is more likely to produce that sequence.  It&#8217;s a clever and highly efficient optimization trick &#8211; basically like Newton&#8217;s method.</p>\n"}︡
-︠6ac0bd07-3a8d-46af-8a52-b225058c515d︠
+︠6ac0bd07-3a8d-46af-8a52-b225058c515do︠
 model
 ︡c333db08-eca5-4299-8aeb-39bb661ec2bb︡{"stdout":"Discrete Hidden Markov Model with 4 States and 5 Emissions\nTransition matrix:\n[          0.97           0.03            0.0            0.0]\n[          0.05            0.7           0.25            0.0]\n[           0.0            0.0 0.655172413793 0.344827586207]\n[0.236220472441            0.0            0.0 0.763779527559]\nEmission matrix:\n[          0.03           0.97            0.0            0.0            0.0]\n[           0.5            0.0            0.5            0.0            0.0]\n[           0.0            0.0 0.333333333333 0.333333333333 0.333333333333]\n[           0.5            0.0            0.0            0.0            0.5]\nInitial probabilities: [0.0000, 1.0000, 0.0000, 0.0000]\nEmission symbols: ['must sleep', 'zzz', 'good morning', 'awesome!', 'ha ha']\n"}︡
-︠6e04895b-c010-49cc-a6be-5b42026f9096︠
+︠6e04895b-c010-49cc-a6be-5b42026f9096o︠
 obs = ['good morning', 'awesome!', 'awesome!','awesome!','awesome!','awesome!','awesome!',
        'ha ha','must sleep','zzz','zzz', 'zzz', 'zzz', 'zzz','good morning']
 model.baum_welch(obs)
 ︡1a78611b-4e87-4072-b72b-d81f743353ef︡{"stdout":"(-7.978045334981683, 15)\n"}︡
-︠b851f56f-9db9-4505-880a-466497777080︠
+︠b851f56f-9db9-4505-880a-466497777080o︠
 model
 ︡08309599-e645-4abc-9046-85202e242681︡{"stdout":"Discrete Hidden Markov Model with 4 States and 5 Emissions\nTransition matrix:\n[0.800002226837 0.199997773163            0.0            0.0]\n[           0.0            0.0            1.0            0.0]\n[           0.0            0.0 0.833336907977 0.166663092023]\n[0.500046094618            0.0            0.0 0.499953905382]\nEmission matrix:\n[1.11341865436e-05    0.999988865813               0.0               0.0               0.0]\n[              0.0               0.0               1.0               0.0               0.0]\n[              0.0               0.0               0.0    0.999978552139  2.1447860811e-05]\n[   0.500018256276               0.0               0.0               0.0    0.499981743724]\nInitial probabilities: [0.0000, 1.0000, 0.0000, 0.0000]\nEmission symbols: ['must sleep', 'zzz', 'good morning', 'awesome!', 'ha ha']\n"}︡
-︠1d4a0c0e-f86d-4541-9b83-aea946e03848︠
+︠1d4a0c0e-f86d-4541-9b83-aea946e03848o︠
 model.graph().plot(edge_labels=True, graph_border=True).show(figsize=5, svg=True)
 ︡cc523291-4d92-4d72-87da-efa505d22bfe︡{"file":{"show":true,"uuid":"a8f3ebd9-0f73-448c-99c8-e71d0a997ffb","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/11377/tmp_vuQ2VZ.svg"}}︡
 ︠1ff8ba15-d513-4cc6-927d-83a69a0e39a6i︠
