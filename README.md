@@ -27,3 +27,5 @@ Math 480 during Spring 2013 at University of Washington.
 - [Lecture 20 (May 15, 2013) - More MathJax, Final Project Organization](http://youtu.be/ElX__lasto0)
 - [Lecture 21 (May 17, 2013) - Sage Development in cloud.sagemath.com](http://youtu.be/IrMsl3lzNE8)
 - [Lecture 22 (May 20, 2013) - Hidden Markov Models in Sage](http://youtu.be/0yv8EByYf3E)
+- Lecture 23 failed to record due to Google Plus Live Streams being buggy (so many recent changes!).
+- [Lecture 24 (May 24, 2013) - Plotting 2d graphics in Sage](http://youtu.be/RKLzhPAzcNg)

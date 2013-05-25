@@ -52,6 +52,7 @@ Right now the rendered output images vanish after a few minutes.  This is becaus
 # see what is available:
 sage.plot.all.   # [tab key]
 
+︡64b4e650-1f21-4e48-8d34-1391d7d6868e︡{"stderr":"Error in lines 2-2\nTraceback (most recent call last):\n  File \"/mnt/home/D6VXKxGo/.sagemathcloud/sage_server.py\", line 412, in execute\n    exec compile(block, '', 'single') in namespace, locals\n  File \"<string>\", line 1\n    sage.plot.all.\n                 ^\nSyntaxError: unexpected EOF while parsing\n"}︡
 ︠9ce95d6d-63c2-486e-a2d4-ed5251319ddf︠
 # Plot a function
 plot(sin(x^2), (x, 0, 3*pi)).show(svg=True, figsize=[8,2])
