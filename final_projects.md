@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Final Projects
 
 5-minute [lightning talks](http://en.wikipedia.org/wiki/Lightning_talk)
