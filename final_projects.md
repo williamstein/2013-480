@@ -51,6 +51,7 @@
 
 I'm not going to force anybody to give a presentation.  If you don't feel like presenting for any personal reason, that's OK, and will not negatively impact your grade.
 
+- **Convergence Series** (Chol Yoon): Exploring various convergent theorems such as Root Test and Ratio Test in computationally
 
 
 
