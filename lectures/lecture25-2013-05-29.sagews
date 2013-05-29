@@ -54,6 +54,15 @@
 
         ~\$ cd; nano .hgrc
 ︡0ec16593-85f9-4570-9eef-eacc686d5aa0︡{"html":"<h3>Some Updates Regarding <a href=\"https://cloud.sagemath.com\">https://cloud.sagemath.com</a></h3>\n\n<ol>\n<li><p>I&#8217;ve finally added the first snapshot feature.  Demo it. This could save your ass.</p></li>\n<li><p>How to build Sage from source code:</p>\n\n<pre><code>~\\$ wget http://boxen.math.washington.edu/home/sagemath/sage-mirror/src/sage-5.9.tar\n~\\$ tar xf sage-5.9.tar\n~\\$ cd sage-5.9/\n~/sage-5.9\\$ MAKE=\"make -j8\" make &gt; log  2&gt;err         # wait about 1 hour.\n~/sage-5.9\\$ ./sage   # sage should start up fine.\n...\n</code></pre></li>\n<li><p>Or, how to install Sage from a binary:</p>\n\n<pre><code>~\\$ wget figure out url of file for ubuntu 12.04 at http://boxen.math.washington.edu/home/sagemath/sage-mirror/linux/64bit/index.html\n~\\$ tar xf name of file   # wait 3 minutes (?)\n~\\$ cd name of sage install\n...\n</code></pre></li>\n<li><p>To make a patch, you&#8217;ll need an $HOME/.hgrc file with this in it:</p>\n\n<pre><code>        [ui]\n            username = John Doe &lt;john@example.com&gt;\n\n~\\$ cd; nano .hgrc\n</code></pre></li>\n</ol>\n"}︡
+︠2aa5326e-ad7d-4720-b9b5-809d8fca9fd8︠
+@interact
+def f(n=[1..10], m=(1..100), a=Color('red')):
+    print n, m, a
+
+︡5a9c3136-2dab-4103-a8a5-d10aaa58d9bd︡{"interact":{"style":"None","flicker":false,"layout":[[["n",12,null]],[["m",12,null]],[["a",12,null]],[["",12,null]]],"id":"a965ac13-0d8c-4a46-b6c9-dba6c10a4038","controls":[{"buttons":false,"control_type":"selector","ncols":null,"button_classes":null,"default":0,"lbls":["1","2","3","4","5","6","7","8","9","10"],"label":"n","nrows":null,"width":null,"var":"n"},{"control_type":"slider","default":0,"var":"m","width":null,"vals":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100"],"animate":true,"label":"m","display_value":true},{"widget":null,"control_type":"color-selector","hide_box":false,"Color":"<class 'sage.plot.colors.Color'>","label":"a","default":"#ff0000","readonly":false,"var":"a"}]}}︡
+︠18d8c823-258a-4561-a6c5-dc9f8f5b24b3︠
+f.m = 80
+︡99b67f22-b7aa-4621-843c-6f793978c78d︡{"obj":"{\"var\": \"m\", \"default\": 79, \"id\": \"a965ac13-0d8c-4a46-b6c9-dba6c10a4038\"}","javascript":{"coffeescript":false,"code":"worksheet.set_interact_var(obj)"},"once":true}︡
 ︠1605472d-9d1f-4f5e-b675-4df23d3296f1i︠
 %hide
 %md
@@ -84,7 +93,7 @@ help(interact)
  - %html -- a way to put any HTML (hence Javascript, CSS, etc. too!) in a worksheet
 
  You can also use these as normal functions, e.g., md(string) and html(string).  Thus any way of making nice HTML (say) output display in html will work.
-︡a05ebf89-a609-41fc-aa9b-a731fd59f5c5︡{"html":"<h3>Some Useful Cell decorators</h3>\n\n<ul>\n<li><p>%hide &#8211; hides the input that produces some output (you can also click a button at the top to do this)</p></li>\n<li><p>%auto &#8211; put at top of a cell so that the code in the cell is executed when that worksheet is first loaded, started or restarted.</p></li>\n<li><p>%md &#8211; put markdown in a cell.  You may put math in $'s, $$&#8217;s, or in [ and ]&#8217;s (which currently works better in some cases).</p></li>\n<li><p>%html &#8211; a way to put any HTML (hence Javascript, CSS, etc. too!) in a worksheet</p>\n\n<p>You can also use these as normal functions, e.g., md(string) and html(string).  Thus any way of making nice HTML (say) output display in html will work.</p></li>\n</ul>\n"}︡
+︡bb25594a-1725-43d4-ab62-69cc0e690d66︡{"html":"<h3>Some Useful Cell decorators</h3>\n\n<ul>\n<li><p>%hide &#8211; hides the input that produces some output (you can also click a button at the top to do this)</p></li>\n<li><p>%auto &#8211; put at top of a cell so that the code in the cell is executed when that worksheet is first loaded, started or restarted.</p></li>\n<li><p>%md &#8211; put markdown in a cell.  You may put math in $'s, $$&#8217;s, or in [ and ]&#8217;s (which currently works better in some cases).</p></li>\n<li><p>%html &#8211; a way to put any HTML (hence Javascript, CSS, etc. too!) in a worksheet</p>\n\n<p>You can also use these as normal functions, e.g., md(string) and html(string).  Thus any way of making nice HTML (say) output display in html will work.</p></li>\n</ul>\n"}︡
 ︠1df45139-53c9-46d7-a26d-67591afc1261i︠
 %hide
 %md
@@ -112,9 +121,10 @@ Examples to illustrate this:
 ︠a19c5bbd-59bc-42ae-89ec-75647769cdae︠
 javascript("console.log('hi')")  # look in javascript debugger
 
-# message at top of screen for 1 second:
-javascript("alert_message({message:'hello there', timeout:1})")
-︡ee6b7933-c6fa-44d5-9ad3-d121f6feb158︡{"obj":"{}","javascript":{"coffeescript":false,"code":"console.log('hi')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there', timeout:1})"},"once":true}︡
+for i in range(10):
+   # message at top of screen for 1 second:
+   javascript("alert_message({message:'hello there %s', timeout:1})"%i)
+︡221b7e7d-2f81-422c-9233-156b3f0b3154︡{"obj":"{}","javascript":{"coffeescript":false,"code":"console.log('hi')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 0', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 1', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 2', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 3', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 4', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 5', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 6', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 7', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 8', timeout:1})"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"alert_message({message:'hello there 9', timeout:1})"},"once":true}︡
 ︠4319b023-893a-4529-8a3c-d7224ecce012︠
 %html
 Answer: <span id="foobar">great</span>.
@@ -123,12 +133,12 @@ Answer: <span id="foobar">great</span>.
 for i in range(5):
     javascript("$('#foobar').html('<b>number %s</b>')"%i)
     sleep(1)
-︡6ca8d69f-b6eb-4699-914a-84a16dc35e7a︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 0</b>')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 1</b>')"},"once":true}︡{"stdout":"\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 2</b>')"},"once":true}︡{"stdout":"\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 3</b>')"},"once":true}︡{"stdout":"\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 4</b>')"},"once":true}︡{"stdout":"\n"}︡
+︡e3ec93ed-3462-44e1-b53c-848f3c38e59f︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 0</b>')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 1</b>')"},"once":true}︡{"stdout":"\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 2</b>')"},"once":true}︡{"stdout":"\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 3</b>')"},"once":true}︡{"stdout":"\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"$('#foobar').html('<b>number 4</b>')"},"once":true}︡{"stdout":"\n"}︡
 ︠cf2f84eb-a1c8-4909-b333-54c11bf1f704︠
 # Finally, run Python code from Javascript
 a = 10
 a
-︡a5247893-dae7-44fe-ba51-32377559e9d0︡{"stdout":"10\n"}︡
+︡ce988450-588f-448b-9f24-4e09a67e5ba4︡{"stdout":"10\n"}︡
 ︠d1137184-d45d-4ed4-9045-6984eac49fc8︠
 %javascript
 
@@ -136,14 +146,14 @@ function cb() {
     alert_message({message:"code execution"});
 }
 
-worksheet.worksheet.execute_code({code:"a = 20", cb:cb})
+worksheet.worksheet.execute_code({code:"a = 50", cb:cb})
 
-︡27aa97ff-d930-4194-8b30-d2d0b97783dd︡{"obj":"{}","javascript":{"coffeescript":false,"code":"\nfunction cb() {\n    alert_message({message:\"code execution\"});\n}\n\nworksheet.worksheet.execute_code({code:\"a = 20\", cb:cb})"},"once":true}︡
+︡5053cece-0737-415f-afe2-be79edccbed3︡{"obj":"{}","javascript":{"coffeescript":false,"code":"\nfunction cb() {\n    alert_message({message:\"code execution\"});\n}\n\nworksheet.worksheet.execute_code({code:\"a = 50\", cb:cb})"},"once":true}︡
 ︠1be599a8-685b-49d3-8e21-edb624344800︠
 a
-︡7fdd6538-a92c-432e-8b10-51d2ddefe868︡{"stdout":"20\n"}︡
+︡761094be-82e7-41ee-ad9f-db2878374978︡{"stdout":"50\n"}︡
 ︠ac91355b-8fae-4253-8d2c-c7b98241b035︠
-html('<div class="my-button btn">click me</div>')
+html('<div class="my-button btn btn-danger">click me</div>')
 javascript("""
   $('.my-button').click(
       function() {
@@ -151,18 +161,33 @@ javascript("""
       }
   )
 """)
-︡5255dfaa-4a24-4f12-bc51-1908287e39ab︡{"html":"<div class=\"my-button btn\">click me</div>"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"\n  $('.my-button').click(\n      function() { \n          worksheet.worksheet.execute_code({code:'a=a*a'});\n      }\n  )\n"},"once":true}︡
+︡642bb334-3120-4fba-bde6-c14d622acd1c︡{"html":"<div class=\"my-button btn btn-danger\">click me</div>"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"\n  $('.my-button').click(\n      function() {\n          worksheet.worksheet.execute_code({code:'a=a*a'});\n      }\n  )\n"},"once":true}︡
 ︠92b71657-d999-4c32-80c6-a49c3c00e810︠
 a
-︡61a2ac53-fa21-408f-8e56-6afc53fbc599︡{"stdout":"20\n"}︡
+︡a28bcf87-32ea-4a6e-a3c7-004485f9b70d︡{"stdout":"1525878906250000000000000000\n"}︡
 ︠777fd5e4-e9e6-4da0-b7c4-189ef90ad058︠
 a
 ︡e9c059cc-2e68-4ce7-8101-5cb94f7823cd︡{"stdout":"400\n"}︡
+︠938765e5-8d30-41a2-a274-04881982610c︠
+%lisp
+
+(+ 2 3)
+︡e36d5182-7d40-43bb-b0f8-d873ea486503︡{"stdout":"5"}︡
 ︠f038db14-d1da-4c73-98ed-442d9f95ec96︠
+%md
 
+### You Desparately want to know....?!
 
+ - How to use your own copy of Sage as the Python process for a worksheet.
 
+ - Install Haskell and Racket (scheme dialect)
 
+ -
+
+︠30fb7bcd-9bf0-4df2-bddb-e93b30e6293d︠
+javascript(open('%s/tmp/a.js'%os.environ['HOME']).read())
+︡9fc6b3df-f599-4627-b86d-3da556bf442f︡{"obj":"{}","javascript":{"coffeescript":false,"code":"function f() { \n    console.log(\"HI\");\n}\n\n\nf();\n"},"once":true}︡
+︠a08f1697-539a-4668-8a53-436542535a2f︠
 
 
 

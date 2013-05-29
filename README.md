@@ -31,3 +31,4 @@ Math 480 during Spring 2013 at University of Washington.
 - [Lecture 22 (May 20, 2013) - Hidden Markov Models in Sage](http://youtu.be/0yv8EByYf3E)
 - Lecture 23 failed to record due to Google Plus Live Streams being buggy (so many recent changes!).
 - [Lecture 24 (May 24, 2013) - Plotting 2d graphics in Sage](http://youtu.be/RKLzhPAzcNg)
+- [Lecture 25 (May 29, 2013) - Project organization; building Sage; cloud.sagemath worksheet tricks](http://youtu.be/IS5QQeFXwt8)
