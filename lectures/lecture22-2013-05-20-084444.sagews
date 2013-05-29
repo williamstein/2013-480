@@ -75,7 +75,7 @@ model
 ︠f48fb6b4-3864-499c-9ebe-e0cd61d22c3do︠
 # This shows the transition matrix.  It's ugly (developer project idea!)
 model.graph().plot(edge_labels=True, graph_border=True).show(figsize=5, svg=True)
-︡cd35ae67-bd7e-4030-a5f6-a63f18fbce41︡{"file":{"show":true,"uuid":"753c9b94-72f6-43e1-9924-2cb4380eeb9d","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/28005/tmp_0mjORR.svg"}}︡
+︡c242a071-3b67-427d-ace0-47acb9bcdedc︡{"stderr":"Error in lines 2-2\nTraceback (most recent call last):\n  File \"/mnt/home/D6VXKxGo/.sagemathcloud/sage_server.py\", line 412, in execute\n    exec compile(block, '', 'single') in namespace, locals\n  File \"\", line 1, in <module>\nNameError: name 'model' is not defined\n"}︡
 ︠46078441-90e6-4e1f-b1fb-da17b6479962o︠
 set_random_seed(0); model.sample(10)
 ︡895d3645-f60c-4b3f-bafc-760402d52aa2︡{"stdout":"['must sleep', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz', 'zzz']\n"}︡
