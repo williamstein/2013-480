@@ -45,3 +45,12 @@
   2. Computing Fermat points -- m points in R^d; find one point so that the sum of the distance to the m points is minimized. Three algorithms to solve... which is best.  Use cvxopt to implement one of them.
 
  - **Elliptic Curve Diffie-Hellman** (Josh): implement elliptic curve cryptosystem... Diffie-Hellman.  Koblitz book on this.
+
+
+## Won't be presenting
+
+I'm not going to force anybody to give a presentation.  If you don't feel like presenting for any personal reason, that's OK, and will not negatively impact your grade.
+
+
+
+
