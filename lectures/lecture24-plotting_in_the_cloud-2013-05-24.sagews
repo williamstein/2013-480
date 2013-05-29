@@ -3,7 +3,7 @@
 
 <div class="pull-right"><img src="http://sagemath.org/pix/sage_logo_new.png"></div>
 
-## Lecture 23: 2D Plotting in the Sage Cloud
+## Lecture 24: 2D Plotting in the Sage Cloud
 
 #### May 24, 2013
 
@@ -11,7 +11,7 @@
 
 2. Topic: Plotting Graphics in the Sage Cloud
 
-︡75ca776e-bf9b-46f8-95a9-aa9b2b3c9464︡{"html":"<div class=\"pull-right\"><img src=\"http://sagemath.org/pix/sage_logo_new.png\"></div>\n\n<h2>Lecture 23: 2D Plotting in the Sage Cloud</h2>\n\n<h4>May 24, 2013</h4>\n\n<ol>\n<li><p>Remember to start G+ recorder</p></li>\n<li><p>Topic: Plotting Graphics in the Sage Cloud</p></li>\n</ol>\n"}︡
+︡a3fc0c89-a288-4b97-bb1a-3c9ffb282cfe︡{"html":"<div class=\"pull-right\"><img src=\"http://sagemath.org/pix/sage_logo_new.png\"></div>\n\n<h2>Lecture 24: 2D Plotting in the Sage Cloud</h2>\n\n<h4>May 24, 2013</h4>\n\n<ol>\n<li><p>Remember to start G+ recorder</p></li>\n<li><p>Topic: Plotting Graphics in the Sage Cloud</p></li>\n</ol>\n"}︡
 ︠258cede7-5822-4d8c-ae51-ec4aa277d675i︠
 %md
 
