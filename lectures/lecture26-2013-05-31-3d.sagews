@@ -102,7 +102,7 @@ In <https://cloud.sagemath.com>, the only way to see a 3d plot g is to type `sho
 c = sphere()
 show(c)
 # show this in class -- http://480.sagenb.org/home/William_Stein/80/
-︡a4635567-c3ad-4deb-b566-dc7d381c831d︡{"file":{"show":true,"uuid":"82bc7e33-919a-427b-b7b6-be51caa1053e","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/3822/tmp_nMHwwY.png"}}︡
+︡2b05ce39-b90b-4aba-8815-83a1ee07b888︡{"file":{"show":true,"uuid":"82bc7e33-919a-427b-b7b6-be51caa1053e","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_aQw8KH.png"}}︡
 ︠10d3450f-0f1a-426c-b010-fffa43fd6afai︠
 %md
 
@@ -113,13 +113,20 @@ show(c)
 var('x,y')
 g = plot3d(4*x*exp(-x^2-y^2), (x,-2,2), (y,-2,2))
 show(g)
-︡294056ed-2293-4e9f-9daf-7e91eb51ce95︡{"stdout":"(x, y)\n"}︡{"file":{"show":true,"uuid":"6dbd240e-8101-4754-83f7-2346292c25e4","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/3822/tmp_JH800q.png"}}︡
+︡5c0c0b12-bb0d-43b6-9882-01479b73e079︡{"stdout":"(x, y)\n"}︡{"file":{"show":true,"uuid":"6dbd240e-8101-4754-83f7-2346292c25e4","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_tSCq_W.png"}}︡
 ︠244dc534-ca7b-4cde-9f99-9f397afd1845︠
 x,y = var('x,y')
 P = plot3d(x+y+sin(x*y), (x,-10,10),(y,-10,10), opacity=0.87, color='blue')
 Q = plot3d(x-2*y-cos(x*y),(x,-10,10),(y,-10,10),opacity=0.3,color='red')
 show(P + Q)
-︡17fe0753-62be-41f1-b3ed-a3b0d5f7aa62︡{"file":{"show":true,"uuid":"5be35e41-2f87-4c7b-8be1-dbce55c0942c","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_Upn5zt.png"}}︡
+︡ab6f53cb-32f8-4394-bbce-a9674a5594ce︡{"file":{"show":true,"uuid":"5be35e41-2f87-4c7b-8be1-dbce55c0942c","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_DYjWPH.png"}}︡
+︠517b7ec5-885a-431c-97e0-53cd0639eea3︠
+g = dodecahedron(opacity=.8)
+print g
+︡0d290b27-fa72-45d2-9dd8-0ac40dae5da4︡{"stdout":"Graphics3d Object\n"}︡
+︠4ba0076b-5ef8-4dd7-b3fd-d0146540b827︠
+show(g + g.translate((1,0,0)))
+︡6a0bcf40-36ad-459c-883c-69d3500324e8︡{"file":{"show":true,"uuid":"5c5ab73f-85dc-4cc8-b0ac-2cfd748c3e3b","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_DMyYUr.png"}}︡
 ︠7b35508c-53c3-45ed-83ba-49d4a7270e96i︠
 %md
 ## The 3d Plotting Commands
@@ -162,12 +169,12 @@ for v in [tetrahedron(), cube(), octahedron(color='purple'),
           dodecahedron(color='red'), icosahedron()]:
     show(v,figsize=2)
 
-︡e2a40b66-dbc7-40b2-9ddb-73be9cdbce1b︡{"file":{"show":true,"uuid":"dee9c4c1-7d9c-4ccf-b1bd-92f32b69f14b","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_4fv5Bk.png"}}︡{"file":{"show":true,"uuid":"5d15d2d0-91fc-4507-8832-02b0f5e2ca47","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_hcJ7wS.png"}}︡{"file":{"show":true,"uuid":"e07153e6-c95b-4c14-a815-dc4061dd1f8d","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_txzgx8.png"}}︡{"file":{"show":true,"uuid":"d9dd5d9a-d504-4b66-beea-ebf490c06e39","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_p84_5K.png"}}︡{"file":{"show":true,"uuid":"48a6baab-b72e-4ffd-b613-9361cab44c6b","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_89DAf6.png"}}︡
+︡db02fe00-0ec3-4edf-8939-68ee8ee4a87e︡{"file":{"show":true,"uuid":"dee9c4c1-7d9c-4ccf-b1bd-92f32b69f14b","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_6zewDq.png"}}︡{"file":{"show":true,"uuid":"5d15d2d0-91fc-4507-8832-02b0f5e2ca47","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_xGPyEF.png"}}︡{"file":{"show":true,"uuid":"e07153e6-c95b-4c14-a815-dc4061dd1f8d","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_AD_Lql.png"}}︡{"file":{"show":true,"uuid":"d9dd5d9a-d504-4b66-beea-ebf490c06e39","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_R8pkYH.png"}}︡{"file":{"show":true,"uuid":"48a6baab-b72e-4ffd-b613-9361cab44c6b","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_Bz3Mjk.png"}}︡
 ︠722985bc-1a76-479b-ae80-a47cc51116e5︠
 # Oragami?
-v = [(randrange(-5,5), randrange(-5,5), randrange(-5, 5)) for _ in range(20)]
+v = [(randrange(-5,5), randrange(-5,5), randrange(-5, 5)) for _ in range(50)]
 show(polygon3d(v, opacity=.7), frame=False)
-︡512c5d48-115f-4bcc-bdd6-ce276f33d50a︡{"file":{"show":true,"uuid":"10d3040b-5707-407c-a96d-9ebd7c18d74e","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_FFAowm.png"}}︡
+︡ca2e63b4-8424-4f2f-8012-f0dfccb90d1a︡{"file":{"show":true,"uuid":"2d867005-edd5-423a-a124-f32f2ff6610d","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_5kSsLL.png"}}︡
 ︠7fdb50a1-feb2-4f05-9041-7715d94c1d82i︠
 %md
 ### Some Implicit Plots...
@@ -179,15 +186,16 @@ var('x,y,z')
 T = RDF(golden_ratio)
 p = 2 - (cos(x + T*y) + cos(x - T*y) + cos(y + T*z) + cos(y - T*z) + cos(z - T*x) + cos(z + T*x))
 r = 4.77
-show(implicit_plot3d(p, (x, -r, r), (y, -r, r), (z, -r, r)))
-︡634d4bed-7870-45d8-ac30-e4be0b53cab6︡{"stdout":"(x, y, z)\n"}︡{"file":{"show":true,"uuid":"d7206509-481b-4313-a072-8f8760cee9e2","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_cS852O.png"}}︡
+show(implicit_plot3d(p, (x, -r, r),
+                     (y, -r, r), (z, -r, r)))
+︡658a57b6-c76d-4c02-a91a-2f284158aefc︡{"stdout":"(x, y, z)\n"}︡{"file":{"show":true,"uuid":"d7206509-481b-4313-a072-8f8760cee9e2","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_jLFPkx.png"}}︡
 ︠0ed76a5c-587e-4e4b-b378-7f4e0b58875e︠
 # Kleine bottle
 var('x,y,z')
 g = implicit_plot3d((x^2+y^2+z^2+2*y-1)*((x^2+y^2+z^2-2*y-1)^2-8*z^2)+16*x*z*(x^2+y^2+z^2-2*y-1),
                 (x, -3, 3), (y, -3.1, 3.1), (z, -4, 4), opacity=.8, color='green')
 show(g)
-︡79ee1d6a-0c4d-4478-97a2-194d6e6eeb98︡{"stdout":"(x, y, z)\n"}︡{"file":{"show":true,"uuid":"d1187650-ae92-4743-82a7-473c4bdf9eda","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_tanG0p.png"}}︡
+︡eaed0401-41f6-4fc2-a7dd-9e3fce0b8621︡{"stdout":"(x, y, z)\n"}︡{"file":{"show":true,"uuid":"d1187650-ae92-4743-82a7-473c4bdf9eda","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_c34SHi.png"}}︡
 ︠b9029dfe-e280-4f62-8997-7881c7ffbbfai︠
 %md
 ### List plots for data people...
@@ -197,18 +205,22 @@ show(g)
 pi = float(pi)
 m = matrix(RDF, 6, [sin(i^2 + j^2) for i in [0,pi/5,..,pi] for j in [0,pi/5,..,pi]])
 show(list_plot3d(m, texture='yellow', frame_aspect_ratio=[1,1,1/3]))
-︡254744a0-7978-47d3-919a-acaedea93723︡{"file":{"show":true,"uuid":"2a77db62-ffcc-49e7-8f02-5bc1fbe155b8","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_D1JqtF.png"}}︡
+︡560a420e-4bc5-468e-a203-cfe5829b10a7︡{"file":{"show":true,"uuid":"2a77db62-ffcc-49e7-8f02-5bc1fbe155b8","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_i4_nUK.png"}}︡
 ︠4f144e60-4490-4624-9750-bd8f708bd402︠
 g = list_plot3d(m, texture='yellow', interpolation_type='nn',frame_aspect_ratio=[1,1,1/3], num_points=30)
 show(g)
-︡d5814187-793f-480e-9cb3-e9a361d877b6︡{"file":{"show":true,"uuid":"b1a500aa-d7f4-4679-8ba6-f3f62fe8d009","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/32085/tmp_MZcZ6p.png"}}︡
+︡c7d71f2f-c353-4e89-8df7-93b08378d8fd︡{"file":{"show":true,"uuid":"b1a500aa-d7f4-4679-8ba6-f3f62fe8d009","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_Pbp6OY.png"}}︡
 ︠05ca19b0-c4e2-46e3-ba54-15bfffdd5021︠
 # Any Requests?
 
 ︠e5682588-945f-4de1-a116-a8be1ae77b85︠
+var('x,y')
+B = .1
+show(plot3d(x^3-3*x*y^2, (x,-B,B), (y,-B,B)))
 
 
-
+︡56334f46-f667-4864-a633-e8b65c06e080︡{"stdout":"(x, y)\n"}︡{"file":{"show":true,"uuid":"3477bbe3-bf53-419e-b733-c90db38b64f5","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/27853/tmp_RpzH_0.png"}}︡
+︠8d240eb1-3530-4218-969f-7c5dac7774c8︠
 
 
 

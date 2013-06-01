@@ -32,3 +32,4 @@ Math 480 during Spring 2013 at University of Washington.
 - Lecture 23 failed to record due to Google Plus Live Streams being buggy (so many recent changes!).
 - [Lecture 24 (May 24, 2013) - Plotting 2d graphics in Sage](http://youtu.be/RKLzhPAzcNg)
 - [Lecture 25 (May 29, 2013) - Project organization; building Sage; cloud.sagemath worksheet tricks](http://youtu.be/IS5QQeFXwt8)
+- [Lecture 26 (May 31, 2013) - Mainly 3d graphics in Sage](http://youtu.be/rdnDK4iC2V0)
