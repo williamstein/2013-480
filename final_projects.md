@@ -53,4 +53,6 @@ If you don't feel like presenting for any personal reason, that's OK, and will n
 
  - (Jason Uanon, Ayla Lampard): ?
 
+ - **Baseball statistics** (Tyler Oshiro): My project is a coordinate descent LASSO algorithm used to test linear models within baseball statistics.
+
 
