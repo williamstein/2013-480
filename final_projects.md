@@ -56,3 +56,7 @@ If you don't feel like presenting for any personal reason, that's OK, and will n
  - **Baseball statistics** (Tyler Oshiro): My project is a coordinate descent LASSO algorithm used to test linear models within baseball statistics.
 
  - **Volumes and Areas** (Lucy Wy)
+
+ - **Generate Music using HMM's** (Kevin Clark) A program that procedurally generates music. I plan to do this by using Markov Models trained on a database of music notations.
+
+ - **Groebner Bases** (Abraham Engle) 
