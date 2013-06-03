@@ -55,4 +55,4 @@ If you don't feel like presenting for any personal reason, that's OK, and will n
 
  - **Baseball statistics** (Tyler Oshiro): My project is a coordinate descent LASSO algorithm used to test linear models within baseball statistics.
 
-
+ - **Volumes and Areas** (Lucy Wy)
