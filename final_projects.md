@@ -41,6 +41,7 @@
 
  - **Elliptic Curve Diffie-Hellman** (Josh): implement elliptic curve cryptosystem... Diffie-Hellman.  Koblitz book on this.
 
+ - **Groebner Bases** (Abraham Engle) 
 
 ## Not presenting
 
@@ -59,4 +60,3 @@ If you don't feel like presenting for any personal reason, that's OK, and will n
 
  - **Generate Music using HMM's** (Kevin Clark) A program that procedurally generates music. I plan to do this by using Markov Models trained on a database of music notations.
 
- - **Groebner Bases** (Abraham Engle) 
