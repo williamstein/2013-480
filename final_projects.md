@@ -19,11 +19,14 @@
 
  - **Markov Process** (Mark): raw data; updating transitional matrix.  markov process.  (see stats.hmm)
 
- - **Real World Graphs** (Clara): Sage graphs using "real world" data.
+ - **Music generation using Markov Models** (Kevin Clark)
+
+- **Real World Graphs** (Clara): Sage graphs using "real world" data.
 
  - **Statistics Data** (Tian Yu): Sage/Python <---> statistics data.  Given a bunch of data, you give feedback. Consider <http://statsmodels.sourceforge.net/> which is in cloud.sagemath.
 
  - **Game of GO AI** (Sean & Alex & Daae): game of GO AI;   human versus computer.
+
 
  - **Statistics in Sage** (Shannon Zylstra)
 
@@ -41,7 +44,7 @@
 
  - **Elliptic Curve Diffie-Hellman** (Josh): implement elliptic curve cryptosystem... Diffie-Hellman.  Koblitz book on this.
 
- - **Groebner Bases** (Abraham Engle) 
+ - **Groebner Bases** (Abraham Engle)
 
 ## Not presenting
 
