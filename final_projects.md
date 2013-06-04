@@ -36,8 +36,6 @@
 
  - **The Golden Ratio** (Trevor): exploring `golden_ratio`
 
- - **Improve logic.py** (Dwight & Tannor & Jessica): the logic.py file (beginner sage tickets).
-
  - **Problem** (Hon, Hao, Wu, Qian) --pos integer in binary; put + digits in compute sum, get another binary number.  Is there a number  c so that any number goes to 1 in at most c steps.
 
  - **Computing Fermat points** (Hon, Hao, Wu, Qian) -- m points in R^d; find one point so that the sum of the distance to the m points is minimized. Three algorithms to solve... which is best.  Use cvxopt to implement one of them.
@@ -62,4 +60,10 @@ If you don't feel like presenting for any personal reason, that's OK, and will n
  - **Volumes and Areas** (Lucy Wy)
 
  - **Generate Music using HMM's** (Kevin Clark) A program that procedurally generates music. I plan to do this by using Markov Models trained on a database of music notations.
+
+ - **Improve logic.py** (Dwight & Tannor & Jessica): the logic.py file (beginner sage tickets).
+
+
+ - **Improve logic.py** (Dwight & Tannor & Jessica): the logic.py file (beginner sage tickets).
+
 
