@@ -7,7 +7,7 @@ Math 480 during Spring 2013 at University of Washington.
 
 - [SageMath Cloud](https://cloud.sagemath.com) -- use the worksheets from class and Sage here.
 
-- (Final projects)[final_projects.md]
+- [Final projects](final_projects.md)
 
 # Screencasts of Lectures
 - [Lecture 3](http://youtu.be/YopZzNzwnFw)
