@@ -4,6 +4,19 @@
 
  - **Baseball statistics and coordinate descent LASSO** (Tyler Oshiro): My project is a coordinate descent LASSO algorithm used to test linear models within baseball statistics. <https://github.com/oshiroty/project>
 
+ - **Matrix Interact** (Henry Riely) : <https://github.com/hriely/MATH480-FINAL>
+
+
+ - **Tic-Tac-Toe** (Jasper Mishra): AI engine for 2-player game. Implement n x m tic-tac-toe *and* obstacles.  Find the best move. <https://github.com/jbloom1704/finalproj>
+
+ - **Income prediction using decision trees** (Jason Uanon, Ayla Lampard):  <https://github.com/uanonj/uw-math480-final>
+
+ - **Convergence of Infinite Series** (Chol Yoon): Exploring various series convergence theorems such as the Root Test and the Ratio Test computationally <https://github.com/susuk4/Final_Project>
+
+ - **Black-Scholes** (Brian Manion): <https://github.com/Globey/M480-Final-Black-Scholes-Options-Pricing>
+
+ - **The Golden Ratio** (Trevor Lewis): exploring the Golden ratio. -- <https://github.com/lewis103/Math480-FinalProject>
+
 
 ## Monday, June 3
 
@@ -13,7 +26,6 @@
 
  - **Thin SVD** (Taylor & James): thin SVD (remove some columns); something new
 
- - **Tic-Tac-Toe** (Jasper): AI engine for 2-player game. Implement n x m tic-tac-toe *and* obstacles.  Find the best move.
 
 
 ## Wednesday, June 5
@@ -37,7 +49,7 @@
 
  - **Musical Tempered Scale** (Kippy):  make your own musical scale.
 
- - **The Golden Ratio** (Trevor): exploring `golden_ratio`
+
 
  - **Problem** (Hon, Hao, Wu, Qian) --pos integer in binary; put + digits in compute sum, get another binary number.  Is there a number  c so that any number goes to 1 in at most c steps.
 
@@ -54,11 +66,6 @@
 I'm not going to force anybody to give a presentation.
 If you don't feel like presenting for any personal reason, that's OK, and will not negatively impact your grade.
 
- - **Black-Scholes** (Brian Manion)
-
- - **Convergent Series** (Chol Yoon): Exploring various convergent theorems such as Root Test and Ratio Test in computationally
-
- - (Jason Uanon, Ayla Lampard): ?
 
  - **Volumes and Areas** (Lucy Wy)
 
