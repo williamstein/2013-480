@@ -1,6 +1,6 @@
 # Final Projects
 
- - - **Billera-Lee Polytopes** (Jose Samper): Construct Billera-Lee polytopes (for Ph.D. research) using combination of Sage and polymake... but Sage has a lot hidden for this.  <https://github.com/samper/final-project-sage>
+ - **Billera-Lee Polytopes** (Jose Samper): Construct Billera-Lee polytopes (for Ph.D. research) using combination of Sage and polymake... but Sage has a lot hidden for this.  <https://github.com/samper/final-project-sage>
 
  - **Baseball statistics and coordinate descent LASSO** (Tyler Oshiro): My project is a coordinate descent LASSO algorithm used to test linear models within baseball statistics. <https://github.com/oshiroty/project>
 
