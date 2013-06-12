@@ -1,12 +1,13 @@
 # Final Projects
 
-5-minute [lightning talks](http://en.wikipedia.org/wiki/Lightning_talk)
+ - - **Billera-Lee Polytopes** (Jose Samper): Construct Billera-Lee polytopes (for Ph.D. research) using combination of Sage and polymake... but Sage has a lot hidden for this.  <https://github.com/samper/final-project-sage>
+
+ - **Baseball statistics and coordinate descent LASSO** (Tyler Oshiro): My project is a coordinate descent LASSO algorithm used to test linear models within baseball statistics. <https://github.com/oshiroty/project>
+
 
 ## Monday, June 3
 
  - **Polygons** (Mary & Rebecca): 2d polygon class, intersections, areas, etc.; done currently by the Sage Polyhedral class.  Improve documentation.
-
- - **Billera-Lee Polytopes** (Jose): Construct Billera-Lee polytopes (for Ph.D. research) using combination of Sage and polymake... but Sage has a lot hidden for this.
 
  - **The Simplex Algorithm** (Andrea & Brian & Mellisa, Gary): Simplex algorithm for optimization.   (cvxopt package; always give inputs like float(2.3) rather than 2.3; or put percent "python";  simplex algorithm, min/max; TUTORIAL. Graphically visualize each ste; Optimization.  Making some functionality of cvxopt more user friendly...
 
@@ -32,6 +33,8 @@
 
  ## Friday, June 7
 
+
+
  - **Musical Tempered Scale** (Kippy):  make your own musical scale.
 
  - **The Golden Ratio** (Trevor): exploring `golden_ratio`
@@ -44,6 +47,8 @@
 
  - **Groebner Bases** (Abraham Engle)
 
+
+
 ## Not presenting
 
 I'm not going to force anybody to give a presentation.
@@ -54,8 +59,6 @@ If you don't feel like presenting for any personal reason, that's OK, and will n
  - **Convergent Series** (Chol Yoon): Exploring various convergent theorems such as Root Test and Ratio Test in computationally
 
  - (Jason Uanon, Ayla Lampard): ?
-
- - **Baseball statistics** (Tyler Oshiro): My project is a coordinate descent LASSO algorithm used to test linear models within baseball statistics.
 
  - **Volumes and Areas** (Lucy Wy)
 
