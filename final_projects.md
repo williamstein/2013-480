@@ -15,65 +15,52 @@
 
  - **Black-Scholes** (Brian Manion): <https://github.com/Globey/M480-Final-Black-Scholes-Options-Pricing>
 
- - **The Golden Ratio** (Trevor Lewis): exploring the Golden ratio. -- <https://github.com/lewis103/Math480-FinalProject>
+ - **The Golden Ratio** (Trevor Lewis): exploring the Golden ratio. -- <https://github.com/williamstein/2013-480/blob/master/projects/trevor_lewis.pdf?raw=true> (see also <https://github.com/lewis103/Math480-FinalProject>)
 
 
-## Monday, June 3
+ - **Random Trees and Discrete Excursions** (Ting-Kam Leonard Wong):   <https://dl.dropboxusercontent.com/u/62148465/Final%20Project/Final%20Project.pdf> and <https://dl.dropboxusercontent.com/u/62148465/Final%20Project/codes.txt>
 
- - **Polygons** (Mary & Rebecca): 2d polygon class, intersections, areas, etc.; done currently by the Sage Polyhedral class.  Improve documentation.
+ - **Finding the Best Location for Business** (Tianyu Yang): <https://github.com/TianyuYang/final_project>
 
- - **The Simplex Algorithm** (Andrea & Brian & Mellisa, Gary): Simplex algorithm for optimization.   (cvxopt package; always give inputs like float(2.3) rather than 2.3; or put percent "python";  simplex algorithm, min/max; TUTORIAL. Graphically visualize each ste; Optimization.  Making some functionality of cvxopt more user friendly...
+ - **Challenge Problem** (Hon, Hao, Wu, Qian) --pos integer in binary; put + digits in compute sum, get another binary number.  Is there a number  c so that any number goes to 1 in at most c steps.
+<https://github.com/honleungdydx/Math480-Project/tree/master/Challenge%20Problem>
 
- - **Thin SVD** (Taylor & James): thin SVD (remove some columns); something new
+ - **Computing Fermat points** (Hon, Hao, Wu, Qian) -- m points in R^d; find one point so that the sum of the distance to the m points is minimized. Three algorithms to solve... which is best.
+Use cvxopt to implement them. <https://github.com/honleungdydx/Math480-Project/tree/master/Fermat-Point-Problem>
 
 
+ - **Groebner Bases** (Abraham Engle): <https://github.com/aengle1429/583c/tree/master/Final_Project>
 
-## Wednesday, June 5
+ - **Pokeman** (Anna Edgar): <https://github.com/aedgar93/480_Final>
 
- - **Markov Process** (Mark): raw data; updating transitional matrix.  markov process.  (see stats.hmm)
+ - **Portfolio Analysis** (Marc Lobree): <https://github.com/mlobree/Final_Project>
 
- - **Music generation using Markov Models** (Kevin Clark)
+ - **Improve logic.py** (Tanor Missler, Jessica Junk, Dwight Hohnstein): the logic.py file --  <https://github.com/hohnsdwi/Math_480_Project/tree/wtf-happened>
 
-- **Real World Graphs** (Clara): Sage graphs using "real world" data.
+ - **Thin SVD** (Taylor Steiger & James Pak): thin SVD (remove some columns); <https://github.com/tdsteiger/Project>
 
- - **Statistics Data** (Tian Yu): Sage/Python <---> statistics data.  Given a bunch of data, you give feedback. Consider <http://statsmodels.sourceforge.net/> which is in cloud.sagemath.
+ - **Polygons** (Mary Solbrig & Rebecca Hoberg): 2d polygon class, intersections, areas, etc.; done currently by the Sage Polyhedral class.  Improve documentation. <https://github.com/solbrigm/Sage-Polygons>
 
- - **Game of GO AI** (Sean & Alex & Daae): game of GO AI;   human versus computer.
+ - **The Simplex Algorithm** (Melissa Jones, Gary Morales, Brian Purviance, Andrea Gagliano): Simplex algorithm for optimization.  <https://github.com/jonesm22/Final-Project>
 
+ - **Real World Graphs** (Clara Moore): Sage graphs using "real world" data. <https://github.com/claram2/Math480_project>
+
+ - **Multivariable integration** (Lucy Wyles): <https://github.com/lucyw3/Final.git>
+
+ - **Tetris** (Sanford Lam): <https://github.com/ioCx/Math480_FinalProject>
+
+ - **Music generation using Markov Models** (Kevin Clark): <https://github.com/clarkkev/480-final-project>
+
+ - **Game of GO AI** (Jingpeng Wu, Daae Oh, Sean Kim): game of GO AI;   human versus computer.  <https://github.com/remindjp/Math480Final>
+
+ - **Elliptic Curve Diffie-Hellman** (Josh): implement elliptic curve cryptosystem... Diffie-Hellman.  Koblitz book on this. <https://github.com/chos9/Project>
+
+ - **Musical Tempered Scale** (Kippy Gascoigne):  make your own musical scale. <https://github.com/kippig/Final_project>
+
+ - **Basketball stats** (Maxwell Hoover): <https://github.com/mhoov9/BASKETBALL_PROJECT.git>
 
  - **Statistics in Sage** (Shannon Zylstra)
 
- ## Friday, June 7
 
-
-
- - **Musical Tempered Scale** (Kippy):  make your own musical scale.
-
-
-
- - **Problem** (Hon, Hao, Wu, Qian) --pos integer in binary; put + digits in compute sum, get another binary number.  Is there a number  c so that any number goes to 1 in at most c steps.
-
- - **Computing Fermat points** (Hon, Hao, Wu, Qian) -- m points in R^d; find one point so that the sum of the distance to the m points is minimized. Three algorithms to solve... which is best.  Use cvxopt to implement one of them.
-
- - **Elliptic Curve Diffie-Hellman** (Josh): implement elliptic curve cryptosystem... Diffie-Hellman.  Koblitz book on this.
-
- - **Groebner Bases** (Abraham Engle)
-
-
-
-## Not presenting
-
-I'm not going to force anybody to give a presentation.
-If you don't feel like presenting for any personal reason, that's OK, and will not negatively impact your grade.
-
-
- - **Volumes and Areas** (Lucy Wy)
-
- - **Generate Music using HMM's** (Kevin Clark) A program that procedurally generates music. I plan to do this by using Markov Models trained on a database of music notations.
-
- - **Improve logic.py** (Dwight & Tannor & Jessica): the logic.py file (beginner sage tickets).
-
-
- - **Improve logic.py** (Dwight & Tannor & Jessica): the logic.py file (beginner sage tickets).
 
 
